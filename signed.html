@@ -1,0 +1,2896 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentContent" value="school">
+<div class="content-index">
+    <a class="school-picture" style="background-image:url(static/image/school-default.jpg)"></a>
+</div>
+<div class="content school-list-intro ">
+    <div class="school-course-box">
+        <h3 class="sc-list-header">
+            <i class="icon-build"></i>合作院校
+        </h3>
+        <ul class="sc-list clearfix">
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/7fd47f44213147cabef73c33f53722e3.png">
+                                <a class="view-shadow" href="signed-190.html">
+                                    <div class="shadow-box">
+                                        <p>IBM认知学堂</p>
+                                        <p>Cognitive Class</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/cc223e957f4a4942ba801d5ae4e270a7.png">
+                                <a class="view-shadow" href="signed-288.html">
+                                    <div class="shadow-box">
+                                        <p>万学教育集团</p>
+                                        <p>Universal Education Group</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s.jpg">
+                                <a class="view-shadow" href="signed-4.html">
+                                    <div class="shadow-box">
+                                        <p>上海中医药大学</p>
+                                        <p>Shanghai University of T.C.M</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s1.jpg">
+                                <a class="view-shadow" href="signed-1.html">
+                                    <div class="shadow-box">
+                                        <p>上海交通大学</p>
+                                        <p>Shanghai Jiao Tong University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s2.jpg">
+                                <a class="view-shadow" href="signed-24.html">
+                                    <div class="shadow-box">
+                                        <p>上海商学院</p>
+                                        <p>Shanghai Business School</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s3.jpg">
+                                <a class="view-shadow" href="signed-22.html">
+                                    <div class="shadow-box">
+                                        <p>上海对外经贸大学</p>
+                                        <p>Shanghai University of International Business and Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s4.jpg">
+                                <a class="view-shadow" href="signed-25.html">
+                                    <div class="shadow-box">
+                                        <p>上海师范大学</p>
+                                        <p>Shanghai Normal University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/5a1772c5ad9c40cf900972ae860b1fec.jpg">
+                                <a class="view-shadow" href="signed-258.html">
+                                    <div class="shadow-box">
+                                        <p>上海戏剧学院</p>
+                                        <p>Shanghai Theatre Academy</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/9fd7c1fe9bca4325a06684b6f4f02896.jpg">
+                                <a class="view-shadow" href="signed-324.html">
+                                    <div class="shadow-box">
+                                        <p>上海海事大学</p>
+                                        <p>Shanghai Maritime University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/882523e5c2c64325be00471f1bd8c01d.jpg">
+                                <a class="view-shadow" href="signed-161.html">
+                                    <div class="shadow-box">
+                                        <p>上海立信会计学院</p>
+                                        <p>Shanghai Lixin University of Commerce</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s5.jpg">
+                                <a class="view-shadow" href="signed-20.html">
+                                    <div class="shadow-box">
+                                        <p>上海第二工业大学</p>
+                                        <p>Shanghai Second Polytechnic University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/15dbfa0f8d0044ba892807ba5b70be2e.jpg">
+                                <a class="view-shadow" href="signed-133.html">
+                                    <div class="shadow-box">
+                                        <p>上海财经大学</p>
+                                        <p>Shanghai University of Finance and Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s6.jpg">
+                                <a class="view-shadow" href="signed-5.html">
+                                    <div class="shadow-box">
+                                        <p>中国科学技术大学</p>
+                                        <p>University of Science and Technology of China </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2c8638f6e8de4f8a849e53fa4f153721.png">
+                                <a class="view-shadow" href="signed-444.html">
+                                    <div class="shadow-box">
+                                        <p>中国高校微信应用教育联盟</p>
+                                        <p>China Collegiate Wechat Application Education Alliance</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/5e639393c2d54799905c8daafeffd634.png">
+                                <a class="view-shadow" href="signed-34.html">
+                                    <div class="shadow-box">
+                                        <p>云南财经大学</p>
+                                        <p>Yunnan University of Finance and Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/1b6edfff003649a9ba99a48ccb7c5fa3.jpg">
+                                <a class="view-shadow" href="signed-37.html">
+                                    <div class="shadow-box">
+                                        <p>云林科技大学</p>
+                                        <p>Yunlin University of Science and Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/cad3d8843fb148f1ae8a45408ac1242e.png">
+                                <a class="view-shadow" href="signed-631.html">
+                                    <div class="shadow-box">
+                                        <p>交大创业JIA</p>
+                                        <p>JIA OF SJTU</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8714bb0d32be4cd39e76a8cce1771fa3.png">
+                                <a class="view-shadow" href="signed-604.html">
+                                    <div class="shadow-box">
+                                        <p>全国高校混合式教学设计创新大赛</p>
+                                        <p>Blended Teaching Competition</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s7.jpg">
+                                <a class="view-shadow" href="signed-18.html">
+                                    <div class="shadow-box">
+                                        <p>兰州大学</p>
+                                        <p>Lanzhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/0ae6aaf5d5e74273b25ec522e30da039.png">
+                                <a class="view-shadow" href="signed-632.html">
+                                    <div class="shadow-box">
+                                        <p>兰州理工大学</p>
+                                        <p>Lanzhou University of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/13de0fca234a4b8080478d704751ab20.jpg">
+                                <a class="view-shadow" href="signed-32.html">
+                                    <div class="shadow-box">
+                                        <p>北京大学</p>
+                                        <p>Peking University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s8.jpg">
+                                <a class="view-shadow" href="signed-13.html">
+                                    <div class="shadow-box">
+                                        <p>华东师范大学</p>
+                                        <p>East China Normal University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/1e2e9cba255d463c8e6a678a9bf504f4.png">
+                                <a class="view-shadow" href="signed-436.html">
+                                    <div class="shadow-box">
+                                        <p>华为e学云</p>
+                                        <p>e-Learning Cloud of Huawei</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/87ac4d25bfd54e4d8da62aceded2ef67.jpg">
+                                <a class="view-shadow" href="signed-42.html">
+                                    <div class="shadow-box">
+                                        <p>华侨大学</p>
+                                        <p>Huaqiao University Digital Curriculum Center Platform</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/79729f227ae1493c9044ecf00f26ddae.jpg">
+                                <a class="view-shadow" href="signed-92.html">
+                                    <div class="shadow-box">
+                                        <p>华北科技学院</p>
+                                        <p>North China Institute of Science and Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s9.jpg">
+                                <a class="view-shadow" href="signed-16.html">
+                                    <div class="shadow-box">
+                                        <p>华南师范大学</p>
+                                        <p>South China Normal University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s10.jpg">
+                                <a class="view-shadow" href="signed-15.html">
+                                    <div class="shadow-box">
+                                        <p>华南理工大学</p>
+                                        <p>South China University of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/e79381b3d967493db3ce3933395eb926.jpg">
+                                <a class="view-shadow" href="signed-77.html">
+                                    <div class="shadow-box">
+                                        <p>华南理工大学软件学院</p>
+                                        <p>South China University of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/4da9e10b4f094380806ccde91b56950a.png">
+                                <a class="view-shadow" href="signed-169.html">
+                                    <div class="shadow-box">
+                                        <p>台北医学大学</p>
+                                        <p>Taipei Medical University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/d884c377587646d38159fc2d61964d5f.jpg">
+                                <a class="view-shadow" href="signed-136.html">
+                                    <div class="shadow-box">
+                                        <p>台湾宜兰大学</p>
+                                        <p>Taiwan Ilan University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/1730bfeeb88d489d82b3f346e75bd081.png">
+                                <a class="view-shadow" href="signed-44.html">
+                                    <div class="shadow-box">
+                                        <p>合肥学院</p>
+                                        <p>HEFEI UNIVERSITY</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/0451a1f4f5854ce08898a3fd094e0627.jpg">
+                                <a class="view-shadow" href="signed-95.html">
+                                    <div class="shadow-box">
+                                        <p>同济大学</p>
+                                        <p>Tongji University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/38ea53bd401c487a8206fccb0d2d8bf3.png">
+                                <a class="view-shadow" href="signed-625.html">
+                                    <div class="shadow-box">
+                                        <p>呼和浩特民族学院</p>
+                                        <p>Huhhot University for Nationalities</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s11.jpg">
+                                <a class="view-shadow" href="signed-11.html">
+                                    <div class="shadow-box">
+                                        <p>哈尔滨工业大学</p>
+                                        <p>Harbin Institute of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/0fc0f573767146a4b42b57884e44c5f1.jpg">
+                                <a class="view-shadow" href="signed-151.html">
+                                    <div class="shadow-box">
+                                        <p>哈尔滨工程大学</p>
+                                        <p>Harbin Engineering University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2234df06427d431f884829a9020492b1.png">
+                                <a class="view-shadow" href="signed-145.html">
+                                    <div class="shadow-box">
+                                        <p>国家开放大学</p>
+                                        <p>The Open University of China</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/a276d703d55d4430a912ff77c9956a36.png">
+                                <a class="view-shadow" href="signed-96.html">
+                                    <div class="shadow-box">
+                                        <p>复旦大学</p>
+                                        <p>Fudan University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/3aaca3404f65437bbd0f5ddc0d4ea002.png">
+                                <a class="view-shadow" href="signed-606.html">
+                                    <div class="shadow-box">
+                                        <p>好干部在线</p>
+                                        <p>School of Continuing Education SJTU</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/396e6241bf6044719eff37686775fb72.jpg">
+                                <a class="view-shadow" href="signed-197.html">
+                                    <div class="shadow-box">
+                                        <p>宁夏大学</p>
+                                        <p>NINGXIA University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/c2d99ba8086d43bca26477d47201a430.jpg">
+                                <a class="view-shadow" href="signed-165.html">
+                                    <div class="shadow-box">
+                                        <p>宁波大学</p>
+                                        <p>Ningbo University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/f24e360121a94a35a517afee521e8967.png">
+                                <a class="view-shadow" href="signed-76.html">
+                                    <div class="shadow-box">
+                                        <p>安徽新华学院</p>
+                                        <p>Anhui Xinhua University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s12.jpg">
+                                <a class="view-shadow" href="signed-8.html">
+                                    <div class="shadow-box">
+                                        <p>对外经济贸易大学</p>
+                                        <p>University of International Business and Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ffded112050d45f38d6968dd01f1cd95.jpg">
+                                <a class="view-shadow" href="signed-192.html">
+                                    <div class="shadow-box">
+                                        <p>山东工艺美术学院</p>
+                                        <p>Shandong University Of Art &amp; Design</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/e8e4de10458a446e9d9c226d1d43b756.jpg">
+                                <a class="view-shadow" href="signed-177.html">
+                                    <div class="shadow-box">
+                                        <p>常州大学</p>
+                                        <p>Changzhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/24b8585bb749443c80159aca01b51aa3.jpg">
+                                <a class="view-shadow" href="signed-196.html">
+                                    <div class="shadow-box">
+                                        <p>广东工业大学</p>
+                                        <p>Guangdong University Of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/fead32698fdf4abb848693dea70bc696.png">
+                                <a class="view-shadow" href="signed-9.html">
+                                    <div class="shadow-box">
+                                        <p>广州大学</p>
+                                        <p>Guangzhou University  </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ddc6f1e7b8554f5eb1b910bfd3e301d1.jpg">
+                                <a class="view-shadow" href="signed-454.html">
+                                    <div class="shadow-box">
+                                        <p>成均馆大学</p>
+                                        <p>Sungkyunkwan University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/5376fd89ea4e48b1b653f30362e0b31c.png">
+                                <a class="view-shadow" href="signed-173.html">
+                                    <div class="shadow-box">
+                                        <p>新疆农业大学</p>
+                                        <p>Xinjiang Agricultural University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s13.jpg">
+                                <a class="view-shadow" href="signed-3.html">
+                                    <div class="shadow-box">
+                                        <p>新竹交通大学</p>
+                                        <p>Chiao Tung University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/52cf974bcb6f4e7eaedf0e9bbadd0945.png">
+                                <a class="view-shadow" href="signed-172.html">
+                                    <div class="shadow-box">
+                                        <p>新竹清华大学</p>
+                                        <p>Xinzhu Tsing Hua University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ca0506a997664184831ab73a68e18031.jpg">
+                                <a class="view-shadow" href="signed-229.html">
+                                    <div class="shadow-box">
+                                        <p>暨南大学</p>
+                                        <p>JINAN University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s14.jpg">
+                                <a class="view-shadow" href="signed-19.html">
+                                    <div class="shadow-box">
+                                        <p>曲靖师范学院</p>
+                                        <p>Qujing Normal University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/44f8d2ce40834609b9a0f6ce17c72f39.png">
+                                <a class="view-shadow" href="signed-374.html">
+                                    <div class="shadow-box">
+                                        <p>枣庄学院</p>
+                                        <p>Zaozhuang University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2e6984f46ef84614bc5d5d904204549b.jpg">
+                                <a class="view-shadow" href="signed-155.html">
+                                    <div class="shadow-box">
+                                        <p>桃园中原大学</p>
+                                        <p>Chung Yuan Christian University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/541642e699214bbf80c7e340bc04f92a.png">
+                                <a class="view-shadow" href="signed-167.html">
+                                    <div class="shadow-box">
+                                        <p>江苏大学</p>
+                                        <p>Jiangsu University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/72907413527a4ca7924428a814fe2595.jpg">
+                                <a class="view-shadow" href="signed-191.html">
+                                    <div class="shadow-box">
+                                        <p>海南医学院</p>
+                                        <p>Hainan Medical University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s15.jpg">
+                                <a class="view-shadow" href="signed-2.html">
+                                    <div class="shadow-box">
+                                        <p>海南大学</p>
+                                        <p>Hainan University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/a18b778d627b4ca1a554f19b70c66454.jpg">
+                                <a class="view-shadow" href="signed-508.html">
+                                    <div class="shadow-box">
+                                        <p>海德堡大学孔子学院</p>
+                                        <p>konfuzius-institut-heidelberg</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ee74fc9d70e14221846ae982312bacfa.jpg">
+                                <a class="view-shadow" href="signed-59.html">
+                                    <div class="shadow-box">
+                                        <p>淡江大学</p>
+                                        <p>Tamkang University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/c8a7cee20e90462999aac25f717c83ae.jpg">
+                                <a class="view-shadow" href="signed-64.html">
+                                    <div class="shadow-box">
+                                        <p>温州大学</p>
+                                        <p>Wenzhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/87489783aed6482f8f1f060715fe6d44.jpg">
+                                <a class="view-shadow" href="signed-199.html">
+                                    <div class="shadow-box">
+                                        <p>牡丹江大学</p>
+                                        <p>Mudanjiang University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/889998cc71e14d82aae11fe86947a26b.png">
+                                <a class="view-shadow" href="signed-470.html">
+                                    <div class="shadow-box">
+                                        <p>百度云智学院</p>
+                                        <p>Baidu cloud school</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/dfdc88a70ede4a4dbd881eb4ff24ce58.jpg">
+                                <a class="view-shadow" href="signed-31.html">
+                                    <div class="shadow-box">
+                                        <p>科技部中国21世纪议程管理中心</p>
+                                        <p>China&#039;s Agenda21</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/f940f4ffa3fb4ea4bd6021dd2045cd71.jpg">
+                                <a class="view-shadow" href="signed-189.html">
+                                    <div class="shadow-box">
+                                        <p>英特尔亚太研发有限公司</p>
+                                        <p>Intel Asia-Pacific Research &amp; Development Ltd</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8591815bbc56470ebcec30691f50d846.jpg">
+                                <a class="view-shadow" href="signed-41.html">
+                                    <div class="shadow-box">
+                                        <p>西安交通大学</p>
+                                        <p>Xi`an Jiaotong University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/87f21ebbed614b4fa94fa161371bcaeb.png">
+                                <a class="view-shadow" href="signed-28.html">
+                                    <div class="shadow-box">
+                                        <p>西安理工大学</p>
+                                        <p>Xi&#039;an University of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/833b9026442e415c9956f610d7b9ab1c.png">
+                                <a class="view-shadow" href="signed-166.html">
+                                    <div class="shadow-box">
+                                        <p>郑州大学</p>
+                                        <p>Zhengzhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/a997beb59e5a458996a1fe47316587b9.jpg">
+                                <a class="view-shadow" href="signed-39.html">
+                                    <div class="shadow-box">
+                                        <p>长江大学</p>
+                                        <p>Yangtze University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/200216d7c3244d0dba32b3ad7033ba63.png">
+                                <a class="view-shadow" href="signed-437.html">
+                                    <div class="shadow-box">
+                                        <p>阿里云在线课程</p>
+                                        <p> Ali Yun online course</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/b50bbf48cf18427cbac3f29e0c369a6b.jpg">
+                                <a class="view-shadow" href="signed-460.html">
+                                    <div class="shadow-box">
+                                        <p>青海省高级人民法院</p>
+                                        <p>qhfychinacourt</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/a7580a257cbc4dedaceeacc6ed87aa68.jpg">
+                                <a class="view-shadow" href="signed-261.html">
+                                    <div class="shadow-box">
+                                        <p>香港中文大学</p>
+                                        <p>The Chinese University of Hong Kong</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8b576ebb526c41ca9315f8a392b5cc0a.jpg">
+                                <a class="view-shadow" href="signed-439.html">
+                                    <div class="shadow-box">
+                                        <p>香港中文大学 &amp; 墨尔本大学</p>
+                                        <p>The Chinese University of Hong Kong &amp; The University of Melbourne</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/eedefbf3ee914ed78e6d73c32f9bbb95.jpg">
+                                <a class="view-shadow" href="signed-315.html">
+                                    <div class="shadow-box">
+                                        <p>香港城市大学</p>
+                                        <p>City University of Hong Kong</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/847577bc689e41f9b547c6e45235a7d6.jpg">
+                                <a class="view-shadow" href="signed-404.html">
+                                    <div class="shadow-box">
+                                        <p>黑龙江大学</p>
+                                        <p>Heilongjiang University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/cbd38d743f2045b5837598a2d3c0f62d.jpg">
+                                <a class="view-shadow" href="signed-146.html">
+                                    <div class="shadow-box">
+                                        <p>黑龙江工程学院</p>
+                                        <p>Heilongjiang Institue Of Technogly</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/46b64aaf62ed432abafae3bcc0ef5499.jpg">
+                                <a class="view-shadow" href="signed-38.html">
+                                    <div class="shadow-box">
+                                        <p>ewant育网</p>
+                                        <p>ewant courses</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s16.jpg">
+                                <a class="view-shadow" href="signed-23.html">
+                                    <div class="shadow-box">
+                                        <p>上海工程技术大学</p>
+                                        <p>Shanghai University Of Engineering Science</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8a7002af3fa04c8ca8a4b4b2caa11548.png">
+                                <a class="view-shadow" href="signed-53.html">
+                                    <div class="shadow-box">
+                                        <p>上海应用技术大学</p>
+                                        <p>Shanghai Institute of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s17.jpg">
+                                <a class="view-shadow" href="signed-27.html">
+                                    <div class="shadow-box">
+                                        <p>上海政法学院</p>
+                                        <p>Shanghai University of Political Science and Law</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/37e4c003c4b94d1195dfec5593d41df8.png">
+                                <a class="view-shadow" href="signed-272.html">
+                                    <div class="shadow-box">
+                                        <p>上海科技大学</p>
+                                        <p>ShanghaiTech University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s18.jpg">
+                                <a class="view-shadow" href="signed-26.html">
+                                    <div class="shadow-box">
+                                        <p>上海音乐学院</p>
+                                        <p>Shanghai Conservatory of Music</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/79252cc5e74642af913749bd7d794591.jpg">
+                                <a class="view-shadow" href="signed-150.html">
+                                    <div class="shadow-box">
+                                        <p>东北农业大学</p>
+                                        <p>Northeast Agricultural University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/fce11c77414744e89bc1c31285d7deac.jpg">
+                                <a class="view-shadow" href="signed-316.html">
+                                    <div class="shadow-box">
+                                        <p>东北师范大学信息与软件工程学院</p>
+                                        <p>School of Information and Software Engineering, Northeast Normal University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/93a590297ae249cca1aa5ff676b953cf.png">
+                                <a class="view-shadow" href="signed-405.html">
+                                    <div class="shadow-box">
+                                        <p>东北石油大学</p>
+                                        <p>NEPU</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s19.jpg">
+                                <a class="view-shadow" href="signed-7.html">
+                                    <div class="shadow-box">
+                                        <p>东华大学</p>
+                                        <p>Donghua University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/5329d349d33f4568a221f2b93992c8e2.png">
+                                <a class="view-shadow" href="signed-594.html">
+                                    <div class="shadow-box">
+                                        <p>丝路商学院</p>
+                                        <p>Silk Road Business School</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/e914fd6c34b04ffbb5193d72ee6a7dbe.jpg">
+                                <a class="view-shadow" href="signed-240.html">
+                                    <div class="shadow-box">
+                                        <p>中国石油大学（华东）</p>
+                                        <p>China University Of Petroleum</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s20.jpg">
+                                <a class="view-shadow" href="signed-30.html">
+                                    <div class="shadow-box">
+                                        <p>云南中医学院</p>
+                                        <p>Yunnan University of Traditional Chinese Medicine</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s21.jpg">
+                                <a class="view-shadow" href="signed-29.html">
+                                    <div class="shadow-box">
+                                        <p>云南农业大学</p>
+                                        <p>YUNNAN AGRICULTURAL UNIVERSITY</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/891ba101867140f3b821845f18b02516.jpg">
+                                <a class="view-shadow" href="signed-538.html">
+                                    <div class="shadow-box">
+                                        <p>云南财经大学中华职业学院</p>
+                                        <p>Yunnan University of Finance and Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2b2943774db7462d84d5c97870f2c78d.jpg">
+                                <a class="view-shadow" href="signed-629.html">
+                                    <div class="shadow-box">
+                                        <p>仰恩大学</p>
+                                        <p>Yang-En University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ecac20f39e3048898ce1fb73f9a100e8.jpg">
+                                <a class="view-shadow" href="signed-163.html">
+                                    <div class="shadow-box">
+                                        <p>北京语言大学</p>
+                                        <p>Beijing Language &amp; Culture University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s22.jpg">
+                                <a class="view-shadow" href="signed-14.html">
+                                    <div class="shadow-box">
+                                        <p>华东政法大学</p>
+                                        <p>East China University of Political Science and Law</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s23.jpg">
+                                <a class="view-shadow" href="signed-12.html">
+                                    <div class="shadow-box">
+                                        <p>华东理工大学</p>
+                                        <p>East China University of Science and Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/d8bd883747574c5d9d15bfad429216ad.png">
+                                <a class="view-shadow" href="signed-376.html">
+                                    <div class="shadow-box">
+                                        <p>南通大学</p>
+                                        <p>Nantong University2</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/99bc194827c845f09f8d2d71349a12e9.png">
+                                <a class="view-shadow" href="signed-613.html">
+                                    <div class="shadow-box">
+                                        <p>合肥鼎真信息科技有限公司</p>
+                                        <p>dingzhen</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ad3f7218fcb84fce8a3d671ae7a966f9.jpg">
+                                <a class="view-shadow" href="signed-462.html">
+                                    <div class="shadow-box">
+                                        <p>呼伦贝尔学院</p>
+                                        <p>Hulunbuir University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ea87567207d54f8c93aea5086889bcb5.jpg">
+                                <a class="view-shadow" href="signed-134.html">
+                                    <div class="shadow-box">
+                                        <p>哈尔滨工业大学（威海）</p>
+                                        <p>Harbin Institute of Technology at Weihai</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/d3fb439f805f46c6ac14012e4e6150ee.jpg">
+                                <a class="view-shadow" href="signed-149.html">
+                                    <div class="shadow-box">
+                                        <p>哈尔滨石油学院</p>
+                                        <p>Harbin Institute of Petroleum</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/6aab4bdce28349adb066ff984686becd.jpg">
+                                <a class="view-shadow" href="signed-633.html">
+                                    <div class="shadow-box">
+                                        <p>四川农业大学</p>
+                                        <p>Sichuan Agricultural University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/f553812478b548e0bc06364a02ced8ba.jpg">
+                                <a class="view-shadow" href="signed-54.html">
+                                    <div class="shadow-box">
+                                        <p>大连交通大学</p>
+                                        <p>Dalian Jiaotong University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/743fbb5f6a424f9ea576f10e9a5febe5.jpg">
+                                <a class="view-shadow" href="signed-602.html">
+                                    <div class="shadow-box">
+                                        <p>天津商业大学</p>
+                                        <p>Tianjin University Of Commerce</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/78c4aa521f8940b48b22347c9a8401b4.jpg">
+                                <a class="view-shadow" href="signed-233.html">
+                                    <div class="shadow-box">
+                                        <p>太原科技大学</p>
+                                        <p>Taiyuan University of Science and Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/3aaca3404f65437bbd0f5ddc0d4ea002.png">
+                                <a class="view-shadow" href="signed-607.html">
+                                    <div class="shadow-box">
+                                        <p>学在交大</p>
+                                        <p>study at SJTU</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/9c8e02c25cc9467f9311d2de3ac41484.jpg">
+                                <a class="view-shadow" href="signed-201.html">
+                                    <div class="shadow-box">
+                                        <p>宁夏大学新华学院</p>
+                                        <p>Xinhua College of Ningxia University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s24.jpg">
+                                <a class="view-shadow" href="signed-6.html">
+                                    <div class="shadow-box">
+                                        <p>安徽建筑大学</p>
+                                        <p>Anhui Jianzhu University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/7fc994a5bf004bd6af773410d4d46537.jpg">
+                                <a class="view-shadow" href="signed-234.html">
+                                    <div class="shadow-box">
+                                        <p>山西财经大学</p>
+                                        <p>Shanxi University Of Finance And Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/520b99c593744fbaa0fd1e6333c7d752.jpg">
+                                <a class="view-shadow" href="signed-555.html">
+                                    <div class="shadow-box">
+                                        <p>广东理工学院 </p>
+                                        <p>guangdong polytechnic college</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/s25.jpg">
+                                <a class="view-shadow" href="signed-10.html">
+                                    <div class="shadow-box">
+                                        <p>广州中医药大学</p>
+                                        <p>Guangzhou University of Chinese Medicine</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8da1e234bf4e45129250943b82e7a2aa.jpg">
+                                <a class="view-shadow" href="signed-603.html">
+                                    <div class="shadow-box">
+                                        <p>扬州大学</p>
+                                        <p>Yangzhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/66b1b68d86264fc09dcbb80d5fc751f0.jpg">
+                                <a class="view-shadow" href="signed-464.html">
+                                    <div class="shadow-box">
+                                        <p>昆明医科大学</p>
+                                        <p>Kunming Medical University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/8577928683cb4f26bf160bd43772de8d.png">
+                                <a class="view-shadow" href="signed-343.html">
+                                    <div class="shadow-box">
+                                        <p>江苏开放大学</p>
+                                        <p>Jiangsu Open University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/7fcd0f57b2324691ba5d14e6d6f48a6f.jpg">
+                                <a class="view-shadow" href="signed-66.html">
+                                    <div class="shadow-box">
+                                        <p>浙江财经大学</p>
+                                        <p>Zhejiang University of Finance &amp; Economics</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/eb90580a792e405986aaed2bd175bf91.jpg">
+                                <a class="view-shadow" href="signed-469.html">
+                                    <div class="shadow-box">
+                                        <p>湖南师范大学</p>
+                                        <p>hunan normal university</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/3d5200246da042e48cb2287c643627f4.png">
+                                <a class="view-shadow" href="signed-270.html">
+                                    <div class="shadow-box">
+                                        <p>福州大学至诚学院</p>
+                                        <p>Fuzhou University Zhicheng College</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/c9062dcf54954a4c9adee76232b06fee.jpg">
+                                <a class="view-shadow" href="signed-202.html">
+                                    <div class="shadow-box">
+                                        <p>贵州大学</p>
+                                        <p>Guizhou University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/3eb4b7bfed994b92a21003d6a911609d.jpg">
+                                <a class="view-shadow" href="signed-143.html">
+                                    <div class="shadow-box">
+                                        <p>辽宁何氏医学院</p>
+                                        <p>He University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/f17e679fc1c14c75b5f83c99d18fc1cf.gif">
+                                <a class="view-shadow" href="signed-337.html">
+                                    <div class="shadow-box">
+                                        <p>辽宁工程技术大学</p>
+                                        <p>Liaoning Technical University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/4d935e16585d45d7ad2db2da09defe5f.jpg">
+                                <a class="view-shadow" href="signed-461.html">
+                                    <div class="shadow-box">
+                                        <p>重庆护理职业学院</p>
+                                        <p>Chongqing Nursing Vocational College</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/e17a2b5e7acf4ef9b4e046594758402a.png">
+                                <a class="view-shadow" href="signed-17.html">
+                                    <div class="shadow-box">
+                                        <p>金陵科技学院</p>
+                                        <p>JINLING INSTITUTE OF TECHNOLOGY</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/85aa49f55fc94655b3365face466e67a.png">
+                                <a class="view-shadow" href="signed-440.html">
+                                    <div class="shadow-box">
+                                        <p>长春大学</p>
+                                        <p>changchun university</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2bc4728ea768465da0ab2a232319377b.jpg">
+                                <a class="view-shadow" href="signed-278.html">
+                                    <div class="shadow-box">
+                                        <p>长春工业大学</p>
+                                        <p>Changchun University Of Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/0f00e4f2849c4496a4e9d78d05e96e4f.png">
+                                <a class="view-shadow" href="signed-144.html">
+                                    <div class="shadow-box">
+                                        <p>陕西科技大学</p>
+                                        <p>Shaanxi University of Science &amp; Technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/edb4f53c6d8c4a098a6b98a155657e0d.png">
+                                <a class="view-shadow" href="signed-438.html">
+                                    <div class="shadow-box">
+                                        <p>青岛理工大学</p>
+                                        <p>qingdao university of technology</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/fe4cd5f297be4e758954011b955a0f85.jpg">
+                                <a class="view-shadow" href="signed-147.html">
+                                    <div class="shadow-box">
+                                        <p>黑龙江东方学院</p>
+                                        <p>East University of Heilongjiang</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/ae2118dd623640ab9452108e8260eced.jpg">
+                                <a class="view-shadow" href="signed-148.html">
+                                    <div class="shadow-box">
+                                        <p>黑龙江外国语学院</p>
+                                        <p>Heilongjiang International University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/10c0f16ffcbb423989c9fbc9baa997a2.png">
+                                <a class="view-shadow" href="signed-410.html">
+                                    <div class="shadow-box">
+                                        <p>齐齐哈尔大学</p>
+                                        <p>qiqihar university</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/5bfd82e4a19a4ca49dc0aa674dd495b0.jpg">
+                                <a class="view-shadow" href="signed-635.html">
+                                    <div class="shadow-box">
+                                        <p>新疆天山职业技术学院（本科）</p>
+                                        <p>Xinjiang Tianshan Vocational&amp;technical college</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/2bd180c7c36b46ffa562f11f8fcb9bbc.jpg">
+                                <a class="view-shadow" href="signed-639.html">
+                                    <div class="shadow-box">
+                                        <p>贵州商学院</p>
+                                        <p>GUIZHOU UNIVERSITY OF COMMERCE</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+        </ul>
+    </div>
+    <!--联盟-->
+    <div class="school-course-box">
+        <h3 class="sc-list-header">
+            <i class="icon-mulbuild"></i>院校联盟
+        </h3>
+        <ul class="sc-list clearfix">
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/46b64aaf62ed432abafae3bcc0ef5499.jpg">
+                                <a class="view-shadow" href="alliance-242.html">
+                                    <div class="shadow-box">
+                                        <p>ewant育网</p>
+                                        <p>ewant</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/48ccf811bffb47d79f81be175896bcc4.png">
+                                <a class="view-shadow" href="alliance-359.html">
+                                    <div class="shadow-box">
+                                        <p>江苏CNMOOC联盟</p>
+                                        <p>jscmlm</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/484720b3b5754cbfabb051f168679985.jpg">
+                                <a class="view-shadow" href="alliance-93.html">
+                                    <div class="shadow-box">
+                                        <p>示范性软件学院联盟 </p>
+                                        <p>The Pilot Software Engineering Schools Association</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/1bc5a70cf32348969cee05b7b6fb75a5.png">
+                                <a class="view-shadow" href="alliance-60.html">
+                                    <div class="shadow-box">
+                                        <p>重庆大学城联盟</p>
+                                        <p>Chongqing College Town</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="sc-item">
+                    <div class="view view-course">
+                        <div class="view-show">
+                            <div class="view-img" href="javascript:void(0)">
+                                <img src="static/picture/760b956766c34d13a2980f2d3c7b8846.png">
+                                <a class="view-shadow" href="alliance-402.html">
+                                    <div class="shadow-box">
+                                        <p>黑龙江省优质在线课程联盟</p>
+                                        <p>Open Quality Courses Alliance of Heilongjiang Colleages &amp; University</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

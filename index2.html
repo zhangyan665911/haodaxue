@@ -1,0 +1,2123 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html"> 
+                 	<span class="h-nav-text">首页</span>
+	                <span class="h-sub-text">Home</span> 
+                </a>
+                <a class="h-nav-item" content="course" href="course.html">
+                    <span class="h-nav-text">课程</span>
+                    <span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+                 	<span class="h-nav-text">院校</span>
+               		<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+                    <div class="login-nav">
+                        
+                            <a href="register.html" id="register">注册</a>/
+                        
+                        <a href="login.html">登录</a>
+                    </div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="header-search">
+                <i class="icon-search01"></i>
+                <div class="search">
+                 	<input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+        addCurrentToHeadLink();
+
+
+        //ajax加载spoc学校定制的栏目
+        var schoolId = '';
+        if (schoolId!=null && schoolId!=""){
+            $.ajax({
+                type:'post',
+                data:{
+                    schoolId:schoolId
+                },
+                url:CONTEXTPATH+"/home/querySchoolColumn.mooc",
+                success:function(result){
+                    $("#schoolColumn").empty().html(result);
+                }
+            })
+        }
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentContent" value="micro">
+<input type="hidden" id="path" value="https://static.cnmooc.org">
+<link rel="stylesheet" href="static/css/view-micro.css" type="text/css">
+
+<div id="main">
+	<div class="content-index micro-course-top">
+		<div class="content">
+			<p class="top-txt-01">知途联合好大学在线出品</p>
+			<p class="top-txt-02 icon-micro icon-r7c1">数据分析师 | Python实现</p>
+			<p class="top-txt-03"><b>14</b>周Get职场精英数据技能装备，挑战<b>15</b>万年薪</p>
+			<ul class="top-txt-04">
+				<li><i class="icon-micro icon-r1c1"></i>零基础学习</li>
+				<li><i class="icon-micro icon-r1c2"></i>4个行业案例实战</li>
+				<li><i class="icon-micro icon-r1c3"></i>上海交大师资+企业大牛辅导</li>
+				<li><i class="icon-micro icon-r1c4"></i>微专业认证证书+奖学金</li>
+			</ul>
+			<div class="course-publicize-video">
+				<div class="video-mask">
+				</div>
+				<div class="video-tip">
+					<div class="view-middle">
+						<p>“从此做一个用数据感知世界的工程师”</p>
+						<a href="javascript:void(0)" class="btn-play"><i class="icon-play"></i></a>
+					</div>
+				</div>
+				<img src="static/picture/video-img.jpg" class="video-img">
+				<div class="video-box" id="videoPlayer">
+
+				</div>
+			</div>
+			<p class="top-price-area">
+				<span class="before-price"><span class="txt-price"><small>￥</small>2498<small>元</small></span></span>
+				
+				
+			</p>
+			<div class="btn-area">
+				
+					<a class="btn-public" target="_blank" href="10.html">立即报名</a>
+				
+				
+				
+				
+				
+
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					课程直播
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						与名师直接互动交流学习、职业发展等问题
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<div class="micro-tab-double">
+					<ul class="tabs clearfix">
+						<li class="zt-active" style="width:100%;">
+							<a href="javascript:void(0)" class="tab-inner">
+								数据分析师如何养成
+							</a>
+						</li>
+					</ul>
+					<ul class="tab-panels">
+						<li class="tab-panel">
+							<div class="view view-micro">
+								<div class="view-show">
+									<div class="view-img">
+										<img src="static/picture/pic-data-analyst.jpg" class="zt-size-parent">
+									</div>
+								</div>
+								<div class="view-intro">
+									<div class="view-title">
+										数据分析师如何养成？
+										<p class="zt-subtitle">从业经验分享，数据分析师技能解读</p>
+									</div>
+									<div class="view-lr view-tea">
+										<div class="view-l">
+											<img src="static/picture/tea-head-05.png"> David
+										</div>
+										<div class="view-r">
+											<span class="txt-price">免费</span>
+										</div>
+									</div>
+									<div class="view-row reservation">
+										<a href="javascript:;" target="_blank" class="btn-public">回看直播</a>
+										<span>2018-7-12 20:00</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg01" id="sight-python">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					微专业先导课
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						带你零基础走进Python的世界
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<div class="pilot-lesson">
+					<div class="view view-micro">
+						<div class="view-show">
+							<div class="view-img" href="javascript:void(0)">
+								<img src="static/picture/pic-see-python.jpg" class="zt-size-parent">
+								<a class="view-shadow" href="10348.html">
+									<div class="view-tips view-action">
+										<i class="icon-play"></i>查看详情
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="view-intro">
+							<div class="view-title">
+								初见Python<span class="tab-tag has-preview" style="cursor: pointer;">有试听</span>
+							</div>
+							<div class="view-subtitle">
+								从搭建Python环境和了解代码规范开始，了解Python变量与基本数据类型，并利用分支和循环完成基本函数。
+							</div>
+							<div class="view-table">
+								<div class="view-before">
+									<p>￥99</p>
+									
+										<a class="btn-public" target="_blank" href="103481.html">立即报名</a>
+									
+									
+								</div>
+								<div class="view-after">
+									<div class="add-wx">
+										<img src="static/picture/pic-wx-xk.png">
+										<span class="tab-tag tag-free">限时优惠</span>
+										<dl>
+											<dt>扫码添加微信客服</dt>
+											<dd class="free-learn">领券<b>免费学</b></dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg02">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					为什么要学？
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						抓住时代的风口，才会成就好的未来
+					</p>
+				</div>
+			</div>
+
+			<div class="content-body">
+				<ul class="view-why-learn">
+					<li>
+						<div class="zt-title">
+							<span class="zt-tag">理由1</span>
+						</div>
+						<div class="zt-subtitle">该微专业可以作为你踏入人工智能领域（机器学习和深度学习）的入门基础</div>
+						<div class="zt-intro">
+							<img src="static/picture/pic-reason-01.png" class="zt-img">
+						</div>
+					</li>
+					<li>
+						<div class="zt-title">
+							<span class="zt-tag">理由2</span>
+						</div>
+						<div class="zt-subtitle">相关统计数据显示，未来3~5年，中国需要180万数据人才，但目前只有约30万人。</div>
+						<div class="zt-intro">
+							<img src="static/picture/pic-reason-02.png" class="zt-img">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					大数据时代急需能读懂数据、用数据做出正确决策的人才
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						掌握数据分析技能，让你拥有决策话语权，从激烈竞争中脱颖而出
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<ul class="need-user-list">
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c3"></i>
+							</div>
+							<div class="zt-title">业务数据分析师</div>
+							<div class="zt-subtitle">年薪15万</div>
+						</div>
+					</li>
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c1"></i>
+							</div>
+							<div class="zt-title">中高级数据分析师</div>
+							<div class="zt-subtitle">年薪18万</div>
+						</div>
+					</li>
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c6"></i>
+							</div>
+							<div class="zt-title">Python开发工程师</div>
+							<div class="zt-subtitle">年薪20万</div>
+						</div>
+					</li>
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c4"></i>
+							</div>
+							<div class="zt-title">高级数据分析师</div>
+							<div class="zt-subtitle">年薪24万</div>
+						</div>
+					</li>
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c5"></i>
+							</div>
+							<div class="zt-title">数据挖掘工程师</div>
+							<div class="zt-subtitle">年薪25万</div>
+						</div>
+					</li>
+					<li>
+						<div class="zt-view">
+							<div class="zt-intro">
+								<i class="icon-micro icon-r4c2"></i>
+							</div>
+							<div class="zt-title">高级数据产品经理</div>
+							<div class="zt-subtitle">年薪30万</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg03">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					出品机构
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						知途联合好大学在线出品
+					</p>
+				</div>
+			</div>
+
+			<div class="content-body">
+				<ul class="agency-list">
+					<li>
+						<div class="zt-title">
+							<img src="static/picture/zhitu-logo.png">
+						</div>
+						<div class="zt-intro">
+							从事在线教育10+年，是金智教育信息技术股份有限公司旗下的子公司，聚焦云计算、大数据、虚拟现实、人工智能等高科技产业领域。
+						</div>
+					</li>
+					<li>
+						<div class="zt-title">
+							<img src="static/picture/logo.png">
+						</div>
+						<div class="zt-intro">
+							是由上海交通大学主办的，是中国高水平大学慕课联盟的官方网站，提供优质课程教学、第二专业系列课程教学、高端培训系列课程以及相关在线教育产品，愿景是让所有人，都能上最好的大学。
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					师资团队
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						来自名企和名校的一线数据分析师团队
+					</p>
+				</div>
+			</div>
+
+			<div class="content-body">
+				<div class="dp-slides tea-slides">
+					<div class="slides-item">
+						<ul class="course-tea-list clearfix">
+							<li>
+								<img src="static/picture/tea-head-03.png">
+								<p class="tea-name">徐逸卿</p>
+								<p class="tea-speaker">主讲：面向大数据分析的Python编程</p>
+								<p class="tea-desc">英国利兹大学硕士，东南大学本科博士，南京林业大学软件工程系副教授，IBM高级软件开发工程师，中国中医药信息研究会人工智能分会理事，北京大学南京创新研究院大数据研究所技术专家，具有扎实的理论功底和丰富的应用经验，主要研究方向为大数据可视化及其在生物信息学中的应用。</p>
+							</li>
+							<li>
+								<img src="static/picture/tea-head-01.png">
+								<p class="tea-name">孙承栋</p>
+								<p class="tea-speaker">主讲：多元统计分析基础</p>
+								<p class="tea-desc">中国数学学会会员，江苏省生物数学会会员。南京理工大学数学系毕业，大学数学建模总教练。擅长数据处理，数据挖掘，大数据分析处理。</p>
+							</li>
+							<li>
+								<img src="static/picture/tea-head-chp.png">
+								<p class="tea-name">陈昊鹏</p>
+								<p class="tea-speaker">主讲：数据科学引论(Python之道)</p>
+								<p class="tea-desc">上海交通大学副教授软件学院教师，研究方向：软件工程，包括软件架构和软件开发技术，分布式计算，包括服务计算和云计算等。
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="slides-item">
+						<ul class="course-tea-list clearfix">
+							<li>
+								<img src="static/picture/tea-head-04.png">
+								<p class="tea-name">Alex</p>
+								<p class="tea-speaker">主讲：基于spark的citibike案例分析与实践</p>
+								<p class="tea-desc">数据安全业务部产品负责人 某知名IT企业安全技术部部门经理，物联网业务安全产品负责人。曾主导多个电信行业产品：终端综合管理系统、综合监控系统、流量经营等。主要研究方向：大数据、并行计算、人工智能。</p>
+							</li>
+							<li>
+								<img src="static/picture/tea-head-02.png">
+								<p class="tea-name">田潇</p>
+								<p class="tea-speaker">主讲：医保数据及医保欺诈行为识别分析</p>
+								<p class="tea-desc">南京大学硕士， 秋名山联合创始人，曾就职于清华信息技术研究院，担任过百度机器学习等课程讲师，拥有多年的大数据分析与架构经历。</p>
+							</li>
+							<li>
+								<img src="static/picture/tea-head-05.png">
+								<p class="tea-name">David</p>
+								<p class="tea-speaker">主讲：电力数据分析与欠费预测</p>
+								<p class="tea-desc">
+									资深数据分析员，曾就职于世界500强外企，任MES、ECS系统研发工程师。目前从事网络数据分析师工作，先后负责上网行为分析、物联网网络安全分析等多个项目。此次课程David将带领大家坚持以数据说话，用模型探索大千世界。
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="slide-item">
+						<ul class="course-tea-list clearfix">
+							<li>
+								<img src="static/picture/com-mentor.png">
+								<p class="tea-name">企业Mentor</p>
+								<p class="tea-desc">行业资深工程师作为你身边的Mentor，他们将对您的项目和代码做出详尽的审阅和反馈，通过鼓励、批评、和建议多种模式，按照知名企业编码规范培养您编程习惯，拓宽您的视野。</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn-area">
+					<a href="javascript:;" target="_blank" class="btn-public btn-yellow btn-advisory">点我咨询</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg02">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					14周包含数据分析工程师需要的全部技术要求
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						学习需要及时反馈指导，企业导师将对你一对一辅导以及评审项目代码，助你迅速提升实战能力
+					</p>
+				</div>
+			</div>
+
+			<div class="content-body">
+				<div class="panel panel-outline">
+					<div class="panel-header">
+						<h3>第1-3周</h3>
+						万丈高楼平地起，零基础学习Python语言，带你从入门到实战应用
+					</div>
+					<div class="panel-body">
+						<ul class="outline-group">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第1周<small>初见Python</small></p>
+									<div class="view-desc">
+										从搭建Python环境和了解代码规范开始，了解Python变量与基本数据类型，并利用分支和循环完成基本函数编写。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第2周<small>开启Python编程之旅</small></p>
+									<div class="view-desc">
+										学习Python的类，进行面向对象的Python编程，并完成读取文件和处理异常。学会使用常见标准库和第三方库。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第3周<small>用Python编写爬虫</small></p>
+									<div class="view-desc">
+										介绍爬虫和网页，学会解析HTML，并利用Python完成基本数据爬取程序，以及使用scrapy完成复杂网站数据爬取。
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-outline">
+					<div class="panel-header">
+						<h3>第4-12周</h3>
+						实战行业案例（医保、电力、共享单车等），锻炼你的数据编程、挖掘和分析能力
+					</div>
+					<div class="panel-body">
+						<p class="inner-title">牛刀小试：医保欺诈行为分析，通过简单案例引入数据分析数学知识以及完成一个简单的分析案例。</p>
+						<ul class="outline-group group-color-02">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第4周<small>描述性分析处理</small></p>
+									<div class="view-desc">
+										介绍医保欺诈问题的数据背景，并对数据进行清理和预处理。并通过变量关系，分析哪些变量对医保欺诈更具有现实意义的关系。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第5周<small>推断性分析处理</small></p>
+									<div class="view-desc">
+										通过<em>聚类分析</em>来识别出疑似有欺诈行为的病人，掌握建模技巧，训练评估的完整过程。
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="inner-title">庖丁解牛：揪出那个电耗子，通过一个相对复杂的案例，加深数据排序、清洗和特征转换， 并利用逻辑回归、支持向量机SVM算法模型完成电力欠费用户预测。</p>
+						<ul class="outline-group group-color-03">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第6周<small>案例背景解读</small></p>
+									<div class="view-desc">
+										介绍电力公司欠费预测的案例背景，以及相关数据解读。并对数据进行排序，清洗，和特征转换。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第7周<small>逻辑回归</small></p>
+									<div class="view-desc">
+										利用Python语言，通过<em>逻辑回归</em>模型，对数据进行建模，训练和评估，完成电力欠费的预测。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第8周<small>支持向量机SVM</small></p>
+									<div class="view-desc">
+										利用Python语言，通过<em>支持向量机SVM</em>模型，对数据进行建模，训练和评估，对比预测的实际效果。
+									</div>
+								</div>
+							</li>
+						</ul>
+						<p class="inner-title">茧丝牛毛：共享单车使用数据大揭秘，通过该案例完成一个复杂的完整的数据工程，包含数据爬取、清洗、建模、分析以及可视化。</p>
+						<ul class="outline-group group-color-04">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第9周<small>案例背景及数据预处理</small></p>
+									<div class="view-desc">
+										了解案例的基本情况，掌握数据预处理的基本方法。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第10周<small>描述性分析</small></p>
+									<div class="view-desc">
+										熟练掌握python中的可视化技术，并能从中找到数据间的关系及特征。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第11周<small>站点画像</small></p>
+									<div class="view-desc">
+										学习主成分分析方法降维的基本原理，<em>K-means聚类算法</em>的原理和步骤，应用到数据集中，对站点画像。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第12周<small>站点使用情况预测</small></p>
+									<div class="view-desc">
+										学习<em>决策树，随机森林，线性回归算法，贝叶斯参数估计，</em>并使用这些模型来对站点满载与空载进行预测，比较模型间的优劣。
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel panel-outline">
+					<div class="panel-header">
+						<h3>第13-14周</h3>
+						学习数据分析的其他经典算法，独立完成一个完整数据分析实战项目作业，成功毕业获得智联认证勋章
+					</div>
+					<div class="panel-body">
+						<ul class="outline-group group-color-05">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第13周<small>朴素贝叶斯算法和分类回归树算法</small></p>
+									<div class="view-desc">
+										理解<em>朴素贝叶斯算法、分类回归树算法 ，树回归算法</em>的基本原理，以及其常见的应用场景。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第14周<small>毕业大设计</small></p>
+									<div class="view-desc">
+										独立挑战一个数据分析实战项目：社会收入影响因素分析，通过企业导师在线辅导，完成项目设计和编码，并提交毕业设计作品。
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel panel-outline">
+					<div class="panel-header">
+						<h3>第1-14周</h3>
+						智联高管亲自讲述求职技巧，面经等职场经验和套路
+					</div>
+					<div class="panel-body">
+						<ul class="outline-group group-color-06">
+							<li>
+								<div class="view-detail">
+									<p class="view-title">第1-14周<small>找到一份好工作</small></p>
+									<div class="view-desc">
+										智联高管教您面经，让您求职前充分准备，搞定面试官。并了解初入职场的沟通技巧，以及职场规划。
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="view-detail view-new">
+									<p class="view-title">第1-14周<small>数据科学引论(Python之道)</small><span class="tab-tag">选修课</span></p>
+									<div class="view-desc">
+										了解数据科学的知识体系，并且初步具备使用Python语言及其工具来进行数据分析的能力。
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg01">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					课程优势与特色
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+					</p>
+				</div>
+			</div>
+
+			<div class="content-body">
+				<dl class="features-list">
+					<dt>特色企业导师辅导服务，在名师指导实战中掌握技能</dt>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-01.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">项目和代码评审</div>
+							<div class="zt-desc">行业资深工程师作为您身边的Mentor，通过鼓励、批评和建议等模式对您的项目和代码做出详尽的审阅和反馈，培养您正确的编程习惯，拓宽您的思维。</div>
+						</div>
+					</dd>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-02.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">1对1辅导</div>
+							<div class="zt-desc">您可以与企业导师进行预约，利用一对一的在线交流方式解决您学习中难题和困惑。</div>
+						</div>
+					</dd>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-03.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">直播点评作业</div>
+							<div class="zt-desc">导师定期会对作业进行直播点评，复盘课程内容，巩固已掌握知识。</div>
+						</div>
+					</dd>
+				</dl>
+				<dl class="features-list">
+					<dt>特色学习监督管理服务，助你完成学习不掉队</dt>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-04.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">班主任制监督辅导</div>
+							<div class="zt-desc">孤军奋战容易拖延、想放弃。班主任会每周"骚扰"你、关怀你，就是要让你一起坚持完成学习。</div>
+						</div>
+					</dd>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-05.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">学习打卡制度</div>
+							<div class="zt-desc">坚持久了就会形成一种习惯，你的学习也许需要打卡来养成。</div>
+						</div>
+					</dd>
+					<dd>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-features-06.png">
+						</div>
+						<div class="zt-intro">
+							<div class="zt-title">线下学习小组</div>
+							<div class="zt-desc">加入学习小组，认识志同道合的学习小伙伴，通过抱团学习方式互相监督，共同成长，收获一个最具职场价值的朋友圈。</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					课程安排计划
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						课程内容会随着技术发展而进行实时更新，你的认知一直站巨人的肩膀上
+					</p>
+				</div>
+			</div>
+			<div class="content-content">
+				<ul class="course-plan">
+					<li class="cp-item">
+						<p class="cp-title">1 Python语言基础</p>
+						
+						
+						<a href="10358.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body" style="display: block">
+								<dl class="cpo-items">
+									<dt>1 初见Python</dt>
+									<dd>1.1 你听说的那个Python </dd>
+									<dd>1.2 Python中的数据  </dd>
+									<dd>1.3 Python中的控制  </dd>
+									<dd>1.4 初尝高级Python</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 Python编程 </dt>
+									<dd>2.1 函数统治世界？ </dd>
+									<dd>2.2 对象表示不服！</dd>
+									<dd>2.3 文件与异常处理</dd>
+									<dd>2.4 标准库、第三方库、虚拟环境</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 Python与网络爬虫 </dt>
+									<dd>3.1 爬虫是什么？  </dd>
+									<dd>3.2 数据采集</dd>
+									<dd>3.3 HTML解析 </dd>
+									<dd>3.4 Scrapy入门</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">2 牛刀小试： 医保欺诈行为分析</p>
+						
+						
+						<a href="10360.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body" style="display: none;">
+								<dl class="cpo-items">
+									<dt>1 案例背景以及项目目标</dt>
+									<dd>1.1 案例背景 </dd>
+									<dd>1.2 已有数据结构的解释 </dd>
+									<dd>1.3 项目目标</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 实验环境准备</dt>
+									<dd>2.1 Python库（官网案例， 怎么装， 怎么用）</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 特征工程：数据预处理</dt>
+									<dd>3.1 医保数据字段分析</dd>
+									<dd>3.2 对原始数据进行指标筛选、处理变换、表间合并、数据清洗</dd>
+									<dd>3.3 对医嘱单价、医嘱数量、医嘱总费用进行描述性统计分析</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>4 找到一卡多用的用户</dt>
+									<dd>4.1 对样本中重复医保卡进行整理，以降低数据复杂度</dd>
+									<dd>4.2 统计每张医保卡的用卡病人数量</dd>
+									<dd>4.3 筛选对应病人数量大于1，得到该部分医保欺诈名单</dd>
+									<dd>4.4 整理欺诈人群身份证、手机号、居住地、所在单位等相关信息</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>5 模型生成与训练</dt>
+									<dd>5.1 聚类算法模型以及适用场景</dd>
+									<dd>5.2 通过聚类分析识别疑似欺诈记录</dd>
+									<dd>5.3 聚类算法模型评估调优</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>6 复习和总结</dt>
+									<dd>6.1 特征工程的重要性</dd>
+									<dd>6.2 聚类分析算法</dd>
+									<dd>大作业：用其他的聚类算法来实现本案例的数据分析， 提交设计思路</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">3 庖丁解牛：揪出那个电耗子</p>
+						
+						
+						<a href="10363.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body">
+								<dl class="cpo-items">
+									<dt>1 案例背景以及数据介绍</dt>
+									<dd>1.1 电力数据采集、字段类型分析</dd>
+									<dd>1.2 脏数据清洗</dd>
+									<dd>1.3 按账户和时间进行排序</dd>
+									<dd>1.4 补充：Python 函数编程之lambda</dd>
+									<dd>1.5 根据业务进行特征转换</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 逻辑回归模型生成与训练</dt>
+									<dd>2.1 空值填充的方法</dd>
+									<dd>2.2 生成训练集与测试集</dd>
+									<dd>2.3 逻辑回归模型训练</dd>
+									<dd>2.4 逻辑回归模型评估</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 SVM模型生成与训练</dt>
+									<dd>3.1 SVM简介以及和核函数原理</dd>
+									<dd>3.2 基于高斯核的SVM模型训训练</dd>
+									<dd>3.2 基于多项式核的SVM模型训练</dd>
+									<dd>3.3 基于Sigmoid核的SVM模型训练</dd>
+									<dd>3.4 各SVM模型在测试集上的效果评估</dd>
+									<dd>3.5 Python 误差评估高阶函数 sklearn.metrics讲解</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>4 复习和练习</dt>
+									<dd>4.1 特征工程在电力欠费预测项目中的重要性</dd>
+									<dd>4.2 分类模型拓展介绍</dd>
+									<dd>作业：提交项目实现思路（类似小论文），任选一种模型提交代码</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">4 茧丝牛毛：共享单车使用数据大揭秘</p>
+						
+						
+						<a href="10364.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body">
+								<dl class="cpo-items">
+									<dt>1 案例背景</dt>
+									<dd>1.1 案例背景</dd>
+									<dd>1.2 数据介绍</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 数据预处理</dt>
+									<dd>2.1 数据选择与预处理</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 描述性分析</dt>
+									<dd>3.1 用户骑行时间帕累托图</dd>
+									<dd>3.2 用户骑行距离分布</dd>
+									<dd>3.3 天气对骑行的影响</dd>
+									<dd>3.4 特殊事件对骑行的影响</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>4 站点画像</dt>
+									<dd>4.1 主成分分析</dd>
+									<dd>4.2 K-means聚类算法</dd>
+									<dd>4.3 站点分类</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>5 站点使用情况预测</dt>
+									<dd>5.1 数据预处理</dd>
+									<dd>5.2 使用随机森林模型预测</dd>
+									<dd>5.3 使用贝叶斯估计预测</dd>
+									<dd>5.4 使用回归模型预测</dd>
+									<dd>5.5 模型的比较</dd>
+								</dl>
+							</div>
+							<!--<div class="cpo-body">
+										<dl class="cpo-items">
+									<dt>1 Scala语言初探</dt>
+									<dd>1.1 Scala语言概述</dd>
+									<dd>1.2 Hello Scala </dd>
+									<dd>1.3 Scala 基本语法</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 Hadoop快速入门</dt>
+									<dd>2.1 Hadoop大数据平台概述</dd>
+									<dd>2.2 分布式文件系统HDFS使用</dd>
+									<dd>2.3 资源管理器YARN使用</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 Spark快速入门</dt>
+									<dd>3.1 Spark介绍</dd>
+									<dd>3.2 Spark原理</dd>
+									<dd>3.3 Spark开发入门</dd>
+									<dd>3.4 Spark交互方式使用</dd>
+									<dd>3.5 Spark提交任务</dd>
+									<dd>3.6 Spark查看任务</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>4 案例数学知识补充</dt>
+									<dd>4.1 基于混淆矩阵的模型评价</dd>
+									<dd>4.2 “随机森林”及其使用场景</dd>
+									<dd>4.3 “k-means”以及使用场景</dd>
+									<dd>4.4 主成份以及使用场景</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>5 案例背景及分析</dt>
+									<dd>5.1 案例背景</dd>
+									<dd>5.2 问题分析</dd>
+									<dd>5.3 解决思路</dd>
+									<dd>5.4 源数据分析</dd>
+									<dd>5.5 数据提取及正则介绍</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>6 用户骑行分析</dt>
+									<dd>6.1 用户骑行时间分析</dd>
+									<dd>6.2 用户在工作日与周末的骑行距离比较分析</dd>
+									<dd>6.3 降雨对用户骑行距离的影响分析</dd>
+									<dd>6.4 温度对用户骑行距离的影响分析</dd>
+									<dd>6.5 特殊事件对骑行的影响分析</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>7 站点聚类分析</dt>
+									<dd>7.1 特征提取</dd>
+									<dd>7.2 聚类</dd>
+									<dd>7.3 结果分析及价值体现</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>8 站点使用情况预测</dt>
+									<dd>8.1 特征分析及数据预处理</dd>
+									<dd>8.2 数据集拆分</dd>
+									<dd>8.3 基于随机森林建模及分析</dd>
+									<dd>8.4 参数调优</dd>
+									<dd>8.5 数据预测及结果分析</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>9 作业</dt>
+									<dd>9.1 用逻辑回归实现站点使用情况预测，并提交设计思路</dd>
+								</dl>
+							</div>-->
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">5 数学知识全覆盖及毕业设计</p>
+						
+						
+						<a href="10365.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body">
+								<dl class="cpo-items">
+									<dt>1 数学知识</dt>
+									<dd>1.1 朴素贝叶斯算法</dd>
+									<dd>1.2 分类回归树算法</dd>
+									<dd>1.3 树回归算法</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 毕业设计-社会收入影响因素分析</dt>
+									<dd>2.1 通过可视化方式查看各种因素对收入的影响</dd>
+									<dd>2.2 通过1~2种合适的算法进行建模，对收入进行预测</dd>
+									<dd>2.3 通过优化模型，尝试提升预测的准确率</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">6 让好工作找到你</p>
+						
+						
+						<a href="10372.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body">
+								<dl class="cpo-items">
+									<dt>1 高管故事</dt>
+									<dd>1.1 越努力越幸运！</dd>
+									<dd>1.2 你需要微笑的力量！</dd>
+									<dd>1.3 职场小套路，让你突破重围！</dd>
+									<dd>1.4 我的人生可以心想事呈！</dd>
+									<dd>1.5 找到自己的职业定位，你就能心想事呈！</dd>
+									<dd>1.6 有目标敢尝试，做自己职场的常胜将军</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>2 求职前的准备工作</dt>
+									<dd>2.1 实习=打杂？如何利用实习期提升自己？ </dd>
+									<dd>2.2 好工作的标准是什么？</dd>
+									<dd>2.3 3问3看搞定你的职业定位</dd>
+									<dd>2.4 决策平衡单</dd>
+									<dd>2.5 找工作和父母意见不一致，怎么办</dd>
+									<dd>2.6 如何在陌生的城市，找到安全感</dd>
+									<dd>2.7 如何找到一份专业不对口的工作？</dd>
+									<dd>2.8 什么样的企业或者行业有前景呢</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>3 小妙招搞定面试</dt>
+									<dd>3.1 企业到底喜欢什么样的人？</dd>
+									<dd>3.2 三步，高效提升应聘岗位的核心技能！</dd>
+									<dd>3.3 两步！搞定你的简历</dd>
+									<dd>3.4 面试中要注意的8个细节</dd>
+									<dd>3.5 1分钟高效打动面试官，麦肯锡方法论来帮你！</dd>
+									<dd>3.6 如何与HR谈薪资？</dd>
+									<dd>3.7 面试频繁失利，就业OR择业？</dd>
+									<dd>3.8 这样的劳动合同，千万不能签！</dd>
+									<dd>3.9 入职前我都要做什么准备呢？</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>4 初入职场的那些事</dt>
+									<dd>4.1 如何在自己不喜欢的工作中找到快乐？</dd>
+									<dd>4.2 求职必读-学校和企业到底有啥不同？</dd>
+									<dd>4.3 职场新人如何融入团队？</dd>
+									<dd>4.4 如何规划职场的头三年？</dd>
+									<dd>4.5 如何在职场扩充自己的人脉？</dd>
+									<dd>4.6 初入职场如何与同事保持良好的关系？</dd>
+									<dd>4.7 揭秘企业中的职业晋升路径！</dd>
+								</dl>
+								<dl class="cpo-items">
+									<dt>5 提升工作效能，让你事半功倍</dt>
+									<dd>5.1 工作没思路，怎么办？</dd>
+									<dd>5.2 工作中付出与回报不成正比，怎么办？</dd>
+									<dd>5.3 害怕被无聊的工作打败？请打开你的觉知来工作！</dd>
+									<dd>5.4 如何应对领导的善变？</dd>
+									<dd>5.5 如何在职场中快速学习？</dd>
+									<dd>5.6 如何面对客户的负面评价？</dd>
+									<dd>5.7 如何应对职场暴力？</dd>
+									<dd>5.8 汇报不对，努力白费—如何向领导汇报工作</dd>
+									<dd>5.9 如何让周报指导我们的工作？</dd>
+									<dd>5.10 如何具备领导思维？</dd>
+									<dd>5.11 时间管理？任务管理才是硬道理！</dd>
+									<dd>5.12 如何接打商务电话？</dd>
+									<dd>5.13 如何进行一场愉快的跨部门沟通？</dd>
+									<dd>5.14 如何在企业升职加薪？</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="cp-item">
+						<p class="cp-title">7 数据科学引论(Python之道)<span class="tab-tag">选修课</span></p>
+						
+						
+						<a href="10383.html" class="btn-public btn-detail">查看课程详情</a>
+						<div class="cp-outline">
+							<a href="javascript:void(0)" class="cpo-header">课程大纲 <i class="icon-arrow01"></i></a>
+							<div class="cpo-body">
+								<dl class="cpo-items">
+									<dd>1 数据科学基础概念</dd>
+									<dd>2 数据科学的应用</dd>
+									<dd>3 Python基础知识</dd>
+									<dd>4 数据科学方法与数据分析</dd>
+									<dd>5 数据收集分析方法</dd>
+									<dd>6 课程大作业立项答辩</dd>
+									<dd>7 数据统计方法介绍</dd>
+									<dd>8 数据科学方法学</dd>
+									<dd>9 数据可视化</dd>
+									<dd>10 机器学习</dd>
+									<dd>11 大数据分析工具TensorFlow的使用</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="btn-area">
+					<a href="javascript:;" target="_blank" class="btn-public btn-yellow btn-advisory">点我咨询</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg03">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					实战项目案例（展示部分 ）
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						在工业界的真实、经典案例中锻炼你的数据处理和应用能力
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<ul class="project-cases">
+					<li>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-case-01.jpg">
+							<div class="zt-hover">
+								<dl>
+									<dt>Get技能</dt>
+									<dd>• 获取分析数据，熟悉数据的格式、数据量，理解数据的含义</dd>
+									<dd>• 对数据进行整合、清洗等预处理工作，使之符合建模分析所需要的格式要求</dd>
+									<dd>• 逻辑回归模型实现模型训练、预测</dd>
+									<dd>• 支持向量机SVM模型实现模型训练、预测</dd>
+									<dd>• 根据测试数据评估模型性能，判断模型是否能较好推广到未知数据</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="zt-title">某地区电力公司欠费预测</div>
+						<div class="zt-desc">
+							根据某地区电力公司工业用户的用电数据和缴费数据，通过机器学习等算法，完成对用电用户进行电费欠费概率预测的数据分析。
+						</div>
+					</li>
+					<li>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-case-02.jpg">
+							<div class="zt-hover">
+								<dl>
+									<dt>Get技能</dt>
+									<dd>本项目通过描述统计对不同环境下不同站点的使用情况进行分析，并使用Truncated SVD选取聚类依据的关键因素，随后使用K-Means聚类算法进行聚类，进行站点画像。</dd>
+									<dd>&nbsp;</dd>
+									<dd>本项目选择了随机森林模型、贝叶斯模型和线性回归模型对数据建模，预测站点是否满载，并比较各个模型的差异。</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="zt-title">gobike 站点使用情况分析</div>
+						<div class="zt-desc">
+							共享单车的出现，让民众多了一种绿色的出行方式可以选择。本项目致力于探究不同环境下站点的使用情况，以及对站点未来五分钟停车位的情况进行预测。
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg-trophy">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					颁发微专业认证证书+奖励高额奖学金
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						你的努力和优秀，“他们”  看得见
+					</p>
+				</div>
+			</div>
+			<div class="content-body content-trophy">
+				<div class="zt-view zt-horizontal">
+					<div class="zt-img-box">
+						<img src="static/picture/pic-cert.jpg">
+					</div>
+					<div class="zt-intro">
+						<dl class="zt-info">
+							<dt class="zt-title"><em>●</em> 成绩合格颁发微专业认证证书</dt>
+							<dd><b>权威：</b>证书由知途、好大学在线联合颁发，由<em>上海交通大学在线教育中心认证。</em></dd>
+							<dd><b>专业：</b>证书代表你通过坚持不懈的学习，系统地掌握了本专业的全部知识，能<em>独立完成相关项目的开发。</em></dd>
+							<dd><b>真实：</b>每一张证书都会绑定着学习者的真实身份，审核身份证号和姓名的唯一性，可<em>录入证书号和二维码进行验真查询。</em></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="zt-view zt-horizontal">
+					<div class="zt-img-box">
+						<img src="static/picture/pic-trophy.jpg">
+					</div>
+					<div class="zt-intro">
+						<dl class="zt-info">
+							<dt class="zt-title"><em>●</em> 获得技能同时还有助学福利</dt>
+							<dd>成绩优秀<em>前10名</em><em>奖励高额奖学金</em></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					听听学长学姐他们的评价
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+						已有超18238位学员报名学习知途课程，看看他们怎么说
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<ul class="user-evaluates">
+					<li>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-user-xy.png">
+						</div>
+						<div class="zt-title">xy</div>
+						<div class="zt-desc">
+							知途的课程视频不管是阿里云的ACP还是这个数据分析师的视频给我感觉能真的学到东西 ，也很实用。 阿里云的视频是在 考试前几天的时间熬夜看完的 ，因为时间真的很紧张，我平时都很忙，家里的事情小孩，还有工作的事情。所以对我来说抽时间来看真的也不容易 。还好阿里云也考过了 ，考了 85分。
+						</div>
+					</li>
+					<li class="active">
+						<div class="zt-img-box">
+							<img src="static/picture/pic-user-xt.png">
+						</div>
+						<div class="zt-title">夏天</div>
+						<div class="zt-desc">
+							关于我们课程，印象深刻的服务那肯定是班主任和企业导师无微不至的关心和帮助。关于作业批阅部分，老师的评价很中肯，指点出了不足之处，好评送上！
+						</div>
+					</li>
+					<li>
+						<div class="zt-img-box">
+							<img src="static/picture/pic-user-jb.png">
+						</div>
+						<div class="zt-title">羁绊</div>
+						<div class="zt-desc">
+							知途的团队正在不断的成长和提升，导师们对学员的服务支持都很好，特别是周末的时候，QQ答疑群内的周老师和其它老师都还热心得回答我们的疑问，很贴心，这点做得很棒了。
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-custom-plan">
+		<div class="content view-table">
+			<div class="view-before">&nbsp;</div>
+			<div class="view-after">
+				<a href="mini.html" class="btn-public">查看详情</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-index layout-micro layout-bg03">
+		<div class="content">
+			<div class="content-header">
+				<div class="zt-title">
+					学习帮助Q&A
+					<p class="zt-subtitle">
+						<span class="small-underline"></span> <br>
+					</p>
+				</div>
+			</div>
+			<div class="content-body">
+				<ul class="qa-list">
+					<li>
+						<p class="item-q">Q: 学习时间安排？</p>
+						<p class="item-a">A: 14周, 每周学习负载大约为8 小时，包含完成实验和代码。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 学习结束后是否可以访问课程？</p>
+						<p class="item-a">A: 课程结束后，你可以在3个月有效期复习回顾课程。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 我需要具备什么基础才可以更好的学习？</p>
+						<p class="item-a">A: 只要修炼大学编程课程以及数学课程后，即可以报名数据分析微专业课程，如果想了解更清楚去咨询知途小可。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 课程是录播还是直播？</p>
+						<p class="item-a">A: 课程采取部分直播+录播视频+项目作业（Project Review+Code Review）+线上实验+直播答疑的形式，你可以自主安排时间学习教学视频；但需在规划的学习周期内完成作业和参加考试。所有视频有6个月的学习有效期。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 如果考试没有通过怎么办？</p>
+						<p class="item-a">A: 学员本期未能完成学习或者考试未通过的，享有一次免费重修的机会，重修同享相应学期教学服务。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 学习课程有疑问，上哪里提问？</p>
+						<p class="item-a">A: 成功报名后，我们会有专门的小姐姐邀请您加入QQ学习群，群内可以答疑课程问题，有疑问可以随时提出，在工作日内我们的老师会实时回答疑问。或者在网页课程【讨论区】提出问题，也会有老师解答疑问。</p>
+					</li>
+					<li>
+						<p class="item-q">Q: 课程有效期是多久？</p>
+						<p class="item-a">A: 所有课程学习视频自开课日起有6个月的学习有效期。</p>
+					</li>
+
+				</ul>
+				<div class="btn-area click-me">
+					<a href="javascript:;" target="_blank" class="btn-public btn-auto">还有问题，点我咨询</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="zt-hover-box">
+
+</div>
+<div class="zt-template job-detail-temp" style="max-width:600px;">
+	<div class="zt-title">{0}<span class="jw-tag">年薪：{1}万</span></div>
+	<div class="zt-subtitle">来源：{2}</div>
+	<dl class="zt-intro">
+		<dt>岗位职责：</dt>
+		{3}
+	</dl>
+</div>
+<div class="right-service style-border-step">
+	<div class="block-one">
+		<div class="border-top"></div>
+		<div class="border-right"></div>
+		<div class="border-bottom"></div>
+		<div class="border-left"></div>
+		<div class="fixed-block rs-advisory">
+			<span class="img-qq"><img src="static/picture/qq.png"></span>
+			<a href="javascript:;" class="btn-public" target="_blank">在线咨询</a>
+		</div>
+	</div>
+	<div class="block-one">
+		<div class="border-top"></div>
+		<div class="border-right"></div>
+		<div class="border-bottom"></div>
+		<div class="border-left"></div>
+		<a class="fixed-block rs-link" href="#sight-python">
+			<span class="fb-def">学习先导课<b>初见Python</b></span>
+		</a>
+	</div>
+
+	<div class="block-one">
+		<div class="border-top"></div>
+		<div class="border-right"></div>
+		<div class="border-bottom"></div>
+		<div class="border-left"></div>
+		<a class="fixed-block fixed-default" href="javascript:;" target="_blank">
+			<span class="fb-def">领取<b>学习资料</b></span>
+		</a>
+	</div>
+	<!-- <div class="fixed-block rs-share" href="#micro-experience">
+         <span>分享到</span>
+         <div></a><i class="icon icon-wchat"></i><i class="icon icon-qq"></i><i class="icon icon-weibo"></i></div>
+     </div>-->
+	<a class="fixed-block fixed-back" href="javascript:void(0)">
+		<span class="style-arrow">︿</span>
+		<p>TOP</p>
+	</a>
+</div>
+<div class="bottom-toolbar micro-bottom-bar">
+	<div class="bt-inner clearfix">
+		<div class="view-before">
+			<span class="before-price"><span class="txt-price"><small>￥</small>2498<small>元</small></span></span>
+			
+			
+		</div>
+		<div class="view-after">
+			
+			
+				<a class="btn-public" target="_blank" href="10.html">立即报名</a>
+			
+			
+		</div>
+	</div>
+</div>
+<script src="static/js/jwplayer.js" type="text/javascript"></script>
+<script src="static/js/player.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var jobList=[
+		{
+			title:'业务数据分析师',salary:'15',by:'BOSS直聘',
+			require:[
+				'本科以上学历；',
+				'有大数据、智能商务应用数据分析经验；',
+				'优秀的业务需求理解能力，较强的数据分析运用能力；',
+				'熟练掌握基础统计和数据挖掘模型应用，熟悉SQL、Python等语言；',
+				'敏锐的数据洞察力，逻辑分析能力和文档撰写能力。'
+			]
+		},{
+			title:'中高级数据分析师',salary:'18',by:'51job',
+			require:[
+				'熟悉Deep Learning和数据挖掘算法，包括但不限于决策树、K-means、SVM、线性回归、逻辑回归以及神经网络等算法；',
+				'对Hadoop、Spark、Storm等大规模数据存储与运算平台有实践经验；',
+				'有过海量数据系统开发经验者优先；在开源社群活跃并有积极贡献者优先；',
+				'对新技术钻研有强烈兴趣，有良好的学习能力和强烈的进取心, 有创新精神。'
+			]
+		},{
+			title:'Python开发工程师',salary:'20',by:'BOSS直聘',
+			require:[
+				'了解自然预处理（舆情分析、情感分析、中文分词）的原理；',
+				'熟悉分布式爬虫实现原理；',
+				'熟练使用redis、mongodb技术；',
+				'熟练使用mysql、hadoop、spark技术；',
+				'熟练使用RabbitMQ消息队列技术；',
+				'熟练使用Scrapy爬虫框架或其他框架；',
+				'熟练使用Tornado、Django、dpark；',
+				'有良好的代码编写习惯，并且能够书写良好的开发文档；',
+				'学历要求：本科以上。'
+			]
+		},{
+			title:'高级数据分析师',salary:'24',by:'智联招聘',
+			require:[
+				'本科及以上学历, 有 JAVA或者Python 相关开发经验。',
+				'良好的数据敏感度，有数据质量控制意识。扎实的技术功底, 了解常用数据结构、工作流调度引擎，了解大数据相关技术。熟悉数据仓库建模，有数仓建设经验, 熟悉大数据治理。有大数据设计开发经验者优先；',
+				'了解常用数据分析模型方法，有用户画像系统、数据类应用或项目建设经验优先；',
+				'主动性强，能深刻理解业务，能运用数据协助解决业务方运营及决策问题；',
+				'自我驱动力强，责任心强，有owner意识，交付能力强，面对复杂情况能够独立工作，结果导向；',
+				'跨团队与部门的沟通能力强，有较强的团队协作意识和能力。'
+			]
+		},{
+			title:'数据挖掘工程师',salary:'25',by:'拉勾网',
+			require:[
+				'具有本科及以上学历，数据挖掘、应用数学、数理统计、计算机应用科学等相关专业；',
+				'有用户行为分析、精准营销、风控等领域相关项目工作经验；',
+				'精通机器学习算法和原理，深刻理解算法特点，能快速制定算法实现方案；',
+				'熟悉SQL和PL/SQL，熟悉SPSS或者R,Python；',
+				'性格积极且沉稳，勤奋严谨，强烈的进取心、求知欲和团队合作精神。'
+			]
+		},{
+			title:'高级数据产品经理',salary:'30',by:'拉勾网',
+			require:[
+				'互联网广告或用户画像产品3年以上工作经验,有互联网广告商业化、推荐算法、大数据产品相关领域工作经验优先；',
+				'统计学、数据挖掘、机器学习背景，具备数据库查询和编程能力优先；',
+				'思维敏捷,有很强的逻辑分析能力和市场洞察力,对发现和思考问题充满乐趣；',
+				'熟悉SQL和PL/SQL，熟悉SPSS或者R,Python；',
+				'具有良好的沟通能力、推动能力、协调能力、团队融入能力,拥有强烈的责任心和团队合作精神。'
+			]
+		}
+	]
+
+	$(".to-down").click(function(){
+		var $target=$(this).parent();
+		$("html,body").animate({
+			scrollTop:$target.offset().top
+		},500);
+	});
+
+	$(function() {
+		var back=$(".fixed-back");
+		var $window=$(window),bottomBar=$(".micro-bottom-bar");
+		$window.scroll(function() {
+			if($window.scrollTop()>300){
+				back.addClass("active");
+			}else{
+				back.removeClass("active");
+			}
+
+			if($window.scrollTop()>$window.height()-100){
+				bottomBar.fadeIn();
+				$("#footer").css("marginBottom",bottomBar.height())
+			}else{
+				bottomBar.fadeOut();
+			}
+
+		});
+		back.on("click",function(){
+			$("html,body").animate({scrollTop: 0}, 500);
+		});
+
+		//仅需人才弹框
+		var jv=$(".job-detail-temp");
+		var template=jv.html().toString();
+		var showTimeout=null;
+		$(".need-user-list li").hover(function(){
+			window.clearTimeout(showTimeout);
+			var that=$(this);
+			var _index=that.index();
+			var current=jobList[_index];
+			var strRequire='';
+			for(var i=0;i<current.require.length;i++){
+				strRequire+='<dd>{0}、{1}</dd>'.strFormat(i+1,current.require[i]);
+			}
+			jv.show();
+
+			jv.html(template.strFormat(current.title,current.salary,current.by,strRequire));
+			jv.css({
+				"top":that.offset().top+that.outerHeight()+10,
+				"left":that.offset().left-(jv.outerWidth()-that.outerWidth())/2
+			})
+
+		},function(){
+			showTimeout=window.setTimeout(function(){
+				jv.hide();
+			},200)
+		})
+
+		$(".cp-item .btn-detail,.cp-item .btn-try-learn").on("click",function(e){
+			e.stopPropagation();
+		})
+
+		$(".cp-item").unbind().on("click",function(){
+			var that=$(this),
+					body=that.closest(".cp-item").find(".cpo-body");
+			body.slideToggle();
+			that.siblings().find(".cpo-body").slideUp();
+		})
+
+		$('.tea-slides').slidesjs({
+			navigation:{active:true},
+			pagination:{active:false},
+			effect:{slide:{speed: 1000}},
+			play: {
+				active: true,
+				auto: true,
+				interval: 4000,
+				swap: true,
+				pauseOnHover: true,
+				restartDelay: 2500
+			}
+		});
+
+		$(".user-evaluates li").on("hover",function(){
+			$(this).addClass("active").siblings().removeClass("active")
+		})
+
+		$(".btn-play").click(function(){
+			$(".course-publicize-video .video-mask").hide();
+			$(".course-publicize-video .video-tip").hide();
+			$(".course-publicize-video img").hide();
+			var resourcePath = $("#path").val();
+            initPreviewPlay('videoPlayer', "https://s.cnmooc.org/bda/video-img.jpg", "https://s.cnmooc.org/bda/video.mp4", 372, 210, resourcePath,true,null,null);
+		});
+
+		$(".has-preview").click(function(){
+			location.href=CONTEXTPATH+"/portal/course/4541/10348.mooc?tabIndex=2";
+		});
+	})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

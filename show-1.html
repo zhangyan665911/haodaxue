@@ -1,0 +1,1532 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="notice-banner" style="background: url(static/image/notice-banner.jpg) no-repeat center center"></div>
+<div class="content notice-content">
+	<div class="content ">
+	    
+
+
+
+
+
+
+
+
+
+	    <!-- sidebar start -->
+	    
+
+
+
+
+
+
+
+
+	<div class="sidebar">
+		<div class="panel">
+			<div class="panel-body">
+				<div class="sidebar-nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="" content="sysBulletin" class="nav-text"><i class="icon-nav icon-snotice01"></i>通知通告</a>
+						</li>
+						<li class="nav-item">
+							<a href="show-11.html" content="news" class="nav-text"><i class="icon-nav icon-news"></i>新闻动态</a>
+						</li>
+						<li class="nav-item">
+							<a href="media-1.html" content="media" class="nav-text"><i class="icon-nav icon-media"></i>媒体报道</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+
+    //初始化
+	var menuType = $("#currentMenu").val();
+	$(".nav-text").each(function(){
+		if ($(this).attr("content")==menuType){
+			$(this).addClass("current");
+		}
+	})
+})
+</script>
+	    <!-- sidebar end -->
+	    
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentMenu" value="sysBulletin">
+<div class="main main-media">
+	<div class="main-header">
+		通知通告
+	</div>
+	<ul class="media-report-list clearfixlist">
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="121.html" target="_blank">停课不停学，上海交大校内学习指南专区</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2020-02-24
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						亲爱的同学们： 在这个特殊的春天，学校即将以在线教学形式开始新学期，一部分专业课、通识课将结合好大学在线中的慕课授课，在这里简要介绍交大校内同学“好大学在线”的登录和使用方式，以助大家快速了解平台，顺...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p>亲爱的同学们：</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;在这个特殊的春天，学校即将以在线教学形式开始新学期，一部分专业课、通识课将结合好大学在线中的慕课授课，在这里简要介绍交大校内同学“好大学在线”的登录和使用方式，以助大家快速了解平台，顺利学习！（外校同学会有所在学校的通知哦~）</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;本平台支持电脑PC端和手机微信小程序两种学习方式，均可完成所有学习内容，同步保留学习记录。</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;（1）&nbsp;好大学在网站：http://www.cnmooc.org&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;（2）&nbsp;微信小程序：好大学在线（微信小程序直接搜索“好大学在线”）</p>
+<p><br></p>
+<p>一、创建账号</p>
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; 网页注册登录（<a href="index5.html" target="_blank" rel="nofollow">http://www.cnmooc.org</a>）</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;请采用JAccount学校统一身份认证方式登录，默认完成“在校认证”，为方便与QQ、微信登陆同步，建议为JAccount登录创建的账号设置密码，账户名就是邮箱号，密码可以通过登录界面的“忘记密码”重置。设置完成后也可以用邮箱+密码登录。</p>
+<p><br></p>
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; 微信小程序登录（微信搜索：好大学在线小程序）</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;首次微信登录需要绑定好大学账号（JAccount账号），此后小程序将保持登录状态，若无特殊情况，请不要主动退出。</p>
+<p>&nbsp;</p>
+<p>二、课程学习</p>
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; 查看课程</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;在个人账号的“学习中心”可查看课程，进入学习。选课名单由老师导入，无需在平台上选课（课程名中会含开设学期和班次，如2020春SPOC）。如“学习中心”暂无课程，等待即可。</p>
+<p><br></p>
+<p>2.<span>&nbsp;&nbsp;&nbsp;&nbsp; </span>进入学习</p>
+<p class="MsoListParagraph"><span><span>&nbsp;&nbsp; </span></span><strong><span>课程信息</span></strong></p>
+<p>学习时请注意查看“课程信息”，包括老师发布的<strong><span>“课程公告”，“课程大纲”，以及“考核标准<span>”</span>（不同学习活动所占分数比例），</span></strong>同样可以查看<strong><span>课程开始和结束时间。</span></strong></p>
+<p><strong><span><br></span></strong></p>
+<p><strong><span></span></strong></p>
+<p class="MsoListParagraph"><span><span>&nbsp;&nbsp; </span></span><strong><span>课程内容</span></strong></p>
+<p>点击<strong>“章节导航”</strong>即可开始学习。</p>
+<p><strong>“测验与作业”</strong>中显示课程作业，请按作业截止时间提交哦！（如果有主观题互评，将在答题截止后开启，对互评打分不满意，可以在互评截止<span>3</span>天之内进行申诉）</p>
+<p><strong>“课件浏览”</strong>不仅包括观看视频，也包括其他学习材料，如文档等。</p>
+<p>如参加<strong>“线上考试”</strong>，请注意在完成后“提交”，否则没有答题记录，如果中途离开，可以“暂存”，考试时间将累计。</p>
+<p><br></p>
+<p><strong><span>注意：学习过程中，需要保持登录状态才有学习记录，页面长时间静止超过<span>15</span>分钟会自动掉线。</span></strong></p>
+<p><strong><span><br></span></strong></p>
+<p><span><strong>&nbsp;</strong></span>三、成绩及学分</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;课程结束以后，同学们可以在“我的课程”中查看所选课程的线上成绩，完成学习任务，成绩合格的同学将由学校认定学分。</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;其他常见问题可下载《好大学在线使用指南及常见问答》：</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;链接: https://pan.baidu.com/s/1FUb6fGsmfJlteQKkHVDGxw&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;提取码: en5p</p>
+<p>&nbsp; &nbsp; &nbsp; 或咨询客服：QQ（<a title="在线咨询" href="javascript:;" rel="nofollow">2782661530</a>），微信公众号（<a href="javascript:;" rel="nofollow">sjtucnmooc</a>），祝大家学习愉快，身体健康！</p>
+<p></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="120.html" target="_blank">防控疫情，“好大学在线”应急服务方案</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2020-01-30
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						为打赢疫情防控阻击战，教育部做出了春季学期延期开学的工作部署，以防止疫情在学校蔓延。我们建议，在此期间各高校可充分利用在线开放课程平台，“停课不停学”，以减少疫情对教育教学的影响。
+上海交通大学“好大...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p><br></p>
+<p>为打赢疫情防控阻击战，教育部做出了春季学期延期开学的工作部署，以防止疫情在学校蔓延。我们建议，在此期间各高校可充分利用在线开放课程平台，“停课不停学”，以减少疫情对教育教学的影响。</p>
+<p>上海交通大学“好大学在线”即日起启动应急方案，为国内所有高校（优先保证湖北省高校）提供完全免费的平台及课程服务，包括慕课课程、<span>SPOC</span>平台、在线直播、小程序应用、在线实验（<span>EduCoder</span>）、教学服务支持、学习数据支持等。</p>
+<p><span>&nbsp;</span></p>
+<p>一、“好大学在线”免费提供的平台及课程服务包括：</p>
+<p class="MsoListParagraph"><span>1） </span>慕课课程</p>
+<p>“好大学在线”在<span>2020</span>春季学期开设有<span>300</span>余门课程，涵盖通识课程、专业基础课、专业课、校企合作课程（<span>IBM</span>、华为、阿里、英特尔等）。各高校可以选用适合的课程。详细课程清单请见附件，春季学期的课程开课时间可以根据学校需求灵活调整。</p>
+<p><span>&nbsp;</span></p>
+<p><span>2</span>）<span>SPOC</span>平台</p>
+<p>“好大学在线”为合作高校开设<span>SPOC</span>云平台，有指定的域名和独立首页。<span>SPOC</span>平台可以直接选用主平台课程；也可以引用他人合适的主平台课程改造成校内课程，灵活设置和整合在线学习资源及内容；还可以利用平台零起点搭建全新的课程。教师通过导入学生名单来帮助学生实现快速选课。</p>
+<p><span>&nbsp;</span></p>
+<p><span>3</span>）在线直播</p>
+<p>“好大学在线”提供课内直播功能，教师可以利用此功能实现远程授课，避免病毒传播风险。</p>
+<p><span>&nbsp;</span></p>
+<p><span>4</span>）小程序</p>
+<p>“好大学在线”小程序实现了在线学习与移动课堂合体、在线备课与在线课程管理融合。小程序支持在线学习（视频观看、课件浏览、讨论、笔记、作业等）、教师备课、课堂教学活动（签到、头脑风暴、随堂测试、抢答、投票等）。课堂教学模块结合平台直播功能，可以支持全员有效的远程课堂互动。</p>
+<p><span>&nbsp;</span></p>
+<p><span>5</span>）在线实验</p>
+<p>“好大学在线”已经完成与国防科大<span>EduCoder</span>的无缝对接，可以将相关学科的在线实验与在线课程相融合。</p>
+<p><span>&nbsp;</span></p>
+<p><span>6</span>）在线师资培训</p>
+<p>为更好地服务高校，提升在线教学的质量，“好大学在线”将利用平台的直播功能，开展高校教师的远程教学培训，教师可以通过平台的直播功能及手机端接入参与培训。培训主题包括：<span>SPOC</span>平台使用、直播及小程序应用、教学管理及数据分析、信息化教学理论与实践、混合式教学设计基本方法及案例等。</p>
+<p>近期“好大学在线”将推出一系列在线师资培训，以帮助教师更好地进行在线教学。后续根据实际情况再安排相关培训。</p>
+<p class="MsoListParagraph"><span>l<span>&nbsp; </span></span><span>SPOC</span>平台及直播应用培训，<span>2020.2.12</span>，<span>19:00-20:00</span></p>
+<p class="MsoListParagraph"><span>l<span>&nbsp; </span></span>小程序使用培训，<span>2020.2.15</span>，<span>19:00-20:00</span></p>
+<p class="MsoListParagraph"><span>l<span>&nbsp; </span></span>基于<span>SPOC</span>平台的混合式教学实践案例分享，<span>2020.2.17</span>，<span>19:00-20:00</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>7</span>）学习数据支持</p>
+<p>平台将为高校及教师提供在线课程授课过程中的在线学习行为、课堂签到、答疑、讨论、作业等数据，利于授课教师督促学生学习，掌握学生的学习详情，方便学习评价，从而实现有针对性的备课和授课。</p>
+<p><span>&nbsp;</span></p>
+<p>二、面对疫情的严峻考验，各高校可根据实际情况灵活采用以下方式来进行远程授课：</p>
+<p>（<span>1</span>）从“好大学在线”平台可以选用优质的通识课程在校内大范围选课，此类情况无需配备本地教师；</p>
+<p>（<span>2</span>）可以选用合适的专业基础课和专业课，配备本地教师，教师通过整合课程资源，充分利用<span>SPOC</span>、直播、小程序等应用工具进行在线教学；</p>
+<p>（<span>3</span>）教师可以利用<span>SPOC</span>平台从零开始搭建课程，实现课程上网，上传视频（如果有）、<span>PPT</span>、作业、讨论题等，利用直播或线上讨论进行远程教学。</p>
+<p><span>&nbsp;</span></p>
+<p>我们建议各高校可以组织教师采用的“<span>SPOC+</span>直播<span>+</span>小程序”模式，既充分利用优质的慕课资源和信息技术优势，又充分发挥教师的自主性，实现远程授课或课堂授课。等疫情结束，教师可以方便地切换到“线上线下”混合式教学。</p>
+<p><span>&nbsp;</span></p>
+<p>好大学在线的<strong><span>SPOC</span></strong>，强力支撑线上线下混合式教学；</p>
+<p>好大学在线的<strong><span>直播功能</span></strong>，将千里之外的你带入熟悉的课堂；</p>
+<p>好大学在线的<strong><span>小程序</span></strong>，让课堂互动全覆盖，更让在家的你也能参与课堂互动。</p>
+<p>非常时期，即使你错过了课堂，也可以回溯课堂、重现老师、同学在课堂上的睿智互动场景。</p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p>“好大学在线”服务团队</p>
+<p>电话：</p>
+<p><span>4008296199</span>（周一到周五<span>9:00</span>至<span>17:00</span>）</p>
+<p>手机：</p>
+<p><span>15868345862</span>，张老师</p>
+<p><span>13057216086，朱老师</span></p>
+<p><span>13817890223</span><span>，苏老师</span></p>
+<p><span>QQ</span>：<span><a href="javascript:;" rel="nofollow"><span>2782661530</span></a></span></p>
+<p><span><span>Email</span>：<span>mooc@sjtu.edu.cn</span></span></p>
+<p><span><span><img src="static/picture/44779272cb674912981c7a9b2e10c7ba.png"><img src="static/picture/c1d7e8a3672147b292b3909bc05ea818.png"></span></span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="117.html" target="_blank">2019中美在线高等教育论坛欢迎您</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2019-05-09
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						课程建设是构建高水平人才培养体系的核心要素，在线教育及相关技术的出现和兴起，带动了互联网时代下的高等教育变革，一流在线课程是新时代提高专业教学水平的重要抓手。促进信息技术与教育教学的深度融合，发展“互...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p><img src="static/picture/1b84a4b9a8f342adab099b1c68403b0a.png"></p>
+<p><br></p>
+<p>课程建设是构建高水平人才培养体系的核心要素，在线教育及相关技术的出现和兴起，带动了互联网时代下的高等教育变革，一流在线课程是新时代提高专业教学水平的重要抓手。促进信息技术与教育教学的深度融合，发展“互联网+教育”、“智能+教育”，推进一流在线课程建设与一流本科专业建设融合，催生新的教育生产力，是高等教育面临的重大机遇和挑战。</p>
+<p>为深入贯彻落实全国教育大会和《加快推进教育现代化实施方案（2018—2022年）》精神，根据一流本科专业建设的“双万计划”和“金课”建设部署和要求，促进中美高等教育在线课程建设交流，上海交通大学与全国高等学校教学研究中心定于2019年5月31日至6月1日在上海共同举办“2019中美在线高等教育论坛”。本届论坛将围绕一流在线课程与一流本科专业建设的融合，邀请有关专家到会报告和组织到会代表交流研讨。</p>
+<p>现将本届论坛有关事宜通知如下：</p>
+<p class="MsoListParagraph"><strong>一、</strong><strong>组织机构</strong></p>
+<p class="MsoListParagraph"><strong>（一）主办单位</strong></p>
+<p>上海交通大学&nbsp;&nbsp;&nbsp;&nbsp;全国高等学校教学研究中心</p>
+<p class="MsoListParagraph"><strong>（二）联合主办</strong></p>
+<p>美国在线学习联盟（OLC）&nbsp;&nbsp;美国CMS Global</p>
+<p class="MsoListParagraph"><strong>（三）协办单位</strong></p>
+<p><span>爱课程&nbsp; &nbsp;&nbsp;</span>好大学在线</p>
+<p class="MsoListParagraph"><strong>二、</strong><strong>会议内容</strong></p>
+<p class="MsoListParagraph"><strong>（一）会议主题</strong></p>
+<p>推动一流在线课程与一流本科专业建设的融合，提升中美高等教育合作</p>
+<p class="MsoListParagraph"><strong>（二）会议议题</strong></p>
+<p class="MsoListParagraph">-中美高等教育的机遇与挑战</p>
+<p class="MsoListParagraph">-一流本科专业建设与一流在线课程</p>
+<p class="MsoListParagraph">-信息技术与教育教学深度融合</p>
+<p class="MsoListParagraph">-&nbsp;如何有效提升在线高等教育的质量</p>
+<p class="MsoListParagraph">-教学设计与师资提升计划</p>
+<p class="MsoListParagraph"><strong>（三）演讲嘉宾</strong></p>
+<p class="MsoListParagraph">-中国在线高等教育领域专家、学者，教育部高教司、地方教育主管部门相关领导；</p>
+<p class="MsoListParagraph">-美国在线学习联盟（OLC），美国知名高校在线教育领域专家、学者。目前已确定的美方嘉宾(更多嘉宾正在落实中)：弗吉尼亚大学、佛罗里达大学、佐治亚理工学院、罗格斯大学、亚利桑那大学、OLC</p>
+<p class="MsoListParagraph"><strong>三、</strong><strong>参会人员</strong></p>
+<p class="MsoListParagraph">-高校校领导，教务处负责人，教学发展中心负责人，在线教育与在线课程建设负责人，一线教师</p>
+<p class="MsoListParagraph">-高等教育研究机构负责人，在线教育领域专家</p>
+<p class="MsoListParagraph">-在线课程平台与在线教育科技公司负责人</p>
+<p class="MsoListParagraph">-媒体机构相关负责人</p>
+<p class="MsoListParagraph">-关注在线高等教育的相关人士</p>
+<p class="MsoListParagraph"><strong>四、</strong><strong>会议安排</strong></p>
+<p class="MsoListParagraph"><strong>会议日期</strong>：</p>
+<p class="MsoListParagraph">2019年5月30日至6月1日</p>
+<p class="MsoListParagraph"><strong>会议地点</strong>：上海交通大学徐汇校区（上海市华山路1954号内）</p>
+<p class="MsoListParagraph"><strong>会议语言</strong>：中文、英语（会议提供同传服务）</p>
+<p class="MsoListParagraph"><strong>会议规模</strong>：由于学校接待能力有限，本次论坛规模限额450名</p>
+<p class="MsoListParagraph">会议日程安排（详见下一轮会议通知）</p>
+<p><img src="static/picture/24f7d0ced97e44bd8bda94b17af59379.jpg"></p>
+<p><img src="static/picture/67bf6dad1c0144b4b3093412518f6c83.jpg"></p>
+<p class="MsoListParagraph"><strong>五、&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>会议费用</strong></p>
+<p class="MsoListParagraph">-会议注册费：</p>
+<p>境内参会者注册费为人民币1800元/人；</p>
+<p>境外参会者注册费为450美元/人（请与会务组联系）；</p>
+<p class="MsoListParagraph">-会议注册费由上海交通大学收费并出具会议费发票；</p>
+<p class="MsoListParagraph">-缴费方式（详见附件四）：</p>
+<p class="MsoListParagraph">-对公转账、在线支付、现场支付</p>
+<p class="MsoListParagraph">会议报到时支持银联信用卡、公务信用卡刷卡支付，并提供收款收据，会后邮寄发票。</p>
+<p class="MsoListParagraph"><strong>六、&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>食宿交通安排</strong></p>
+<p class="MsoListParagraph">-餐饮由会务组统一安排，食宿费用自理；</p>
+<p class="MsoListParagraph">-因会议期间，周边住宿紧张，会务组预订了一定数量的协议价酒店房间，优先安排5月15日之前注册缴费的代表，先到先得。如报名时已无会务组预订的房间，请参会者尽早及时自行预订。</p>
+<p class="MsoListParagraph">会议不安排接送机（站），推荐公交出行。</p>
+<p class="MsoListParagraph">&nbsp;地铁10号线/11号线，交通大学站4号口，步行至会场约500米；</p>
+<p class="MsoListParagraph">地铁1号线/9号线/11号线，徐家汇站16、17、18号口，步行至会场约800米。</p>
+<p class="MsoListParagraph"><strong>七、&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>大会官方网站</strong></p>
+<p><a href="116.html" rel="nofollow"></a><a href="" rel="nofollow">https://www.cnmooc.org/home/sysBulletin/show-1.mooc</a></p>
+<p class="MsoListParagraph"><strong>八、&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>会务组联系方式</strong></p>
+<p class="MsoListParagraph">陈老师:13916741277朱老师：13057216086</p>
+<p class="MsoListParagraph">苏老师:13817890223&nbsp;于老师：13501000627</p>
+<p>Email：<a href="javascript:;" rel="nofollow">zxjy@sjtu.edu.cn</a>（回执邮箱）</p>
+<p><br></p>
+<p></p>
+<p>【主办方】</p>
+<p><strong>上海交通大学&nbsp;&nbsp;</strong></p>
+<p>我国历史最悠久、享誉海内外的著名高等学府之一，是教育部直属并与上海市共建的全国重点大学。经过122年的不懈努力，上海交通大学已经成为一所“综合性、研究型、国际化”的国内一流、国际知名大学。</p>
+<p><br></p>
+<p><strong>全国高等学校教学研究中心</strong></p>
+<p>1999年，为进一步加强高等教育教学研究工作，经教育部党组会议研究决定，设立全国高等学校教学研究中心（简称“高教研究中心”），高教研究中心由教育部高教司与高等教育出版社共建，设在高等教育出版社，其业务工作由教育部高教司指导，对外在规定的职责范围内独立开展工作。</p>
+<p>&nbsp;</p>
+<p>【联合主办方】</p>
+<p>美国在线学习联盟（OLC） 由众多美国知名高校、在线高等教育机构、以及全球高等教育领导者和创新者联合发起的全球性教育产业联盟。联盟旨在加快全球教育产业的数字化，提升全球在线教学体系的规范化建设。OLC致力于引导全球在线教育产业资源的共建共享，推进数字技术与教育教学的全面融合。</p>
+<p><br></p>
+<p>美国CMS Global&nbsp;&nbsp;总部位于美国的国际高等教育领域的领先机构，其引入的美国高等教育体系侧重教学个性化与工作实用性。CMS Global通过专属的创新性平台化运作，旨在对接全球高等教育资源，提升学习者获取国际高等教育资源的便捷性。通过引入美国成熟的在线教学系统和技术，使每位学习者都可享受到公平、普惠的优质美国高等教育。</p>
+<p><br></p>
+<p></p>
+<p><strong>往届盛况</strong><br></p>
+<p><img src="static/picture/68794733757a43bd9aba11dbb1614a92.png"></p>
+<p>2018年中美在线高等教育论坛大会盛况</p>
+<p><br></p>
+<p><img src="static/picture/488a740324cf4fc2a5be6c6ae639b935.png"></p>
+<p><strong>2018年大会盛况——<span>加州大学伯克利分校在线部COO、副主任Scott Shireman</span></strong></p>
+<p><strong><br></strong></p>
+<p><strong><img src="static/picture/9983a3336d734694be9f15546baf645b.png"></strong></p>
+<p><strong></strong></p>
+<p><strong><strong>2018年大会盛况——</strong>内布拉斯加大学数字教育副总裁Mary Niemiec</strong></p>
+<p><strong><br></strong></p>
+<p><img src="static/picture/365b5b73a9ed4afe88687545bd5a2c65.png"></p>
+<p><strong>2018大会盛况——北京大学<strong>教授</strong>汪琼</strong></p>
+<p><strong><br></strong></p>
+<p><strong><img src="static/picture/54680938756c4216b78ab51ba21c433e.png"></strong></p>
+<p><strong>2018大会盛况——<span>佛罗里达大学数学世界研究院执行主任James Oliverio</span></strong></p>
+					</div>
+					<div>
+						
+							<a class="btn-cancel" style="margin-left: 0px;" href="javascript:;">附件下载</a>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="114.html" target="_blank">证书申请流程</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2018-11-09
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						亲爱的学员：
+你好！
+课程结束后，如果你的成绩达到合格要求，即可申请该课程证书。证书申请步骤如下：
+第一步：登录好大学在线网站，点击进入学习中心。 第二步：在左侧导航栏-我的证书-一栏中点击“未申请证...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p>亲爱的学员：</p>
+<p>你好！</p>
+<p>课程结束后，如果你的成绩达到合格要求，即可申请该课程证书。证书申请步骤如下：</p>
+<p>第一步：登录好大学在线网站，点击进入学习中心。</p>
+<p><img src="static/picture/d50ec9028d1541a4bc86c927d3aa3df5.png"></p>
+<p>第二步：在左侧导航栏<span>-</span>我的证书<span>-</span>一栏中点击“未申请证书”，随后按网站提示进行操作。</p>
+<p><img src="static/picture/ff04d62a92ad4830bef44336d84dccb8.png"><span>若申请成功，可在“已获取证书”中可查看该证书</span></p>
+<p><span><img src="static/picture/d552fcb8ab8e46f0ad5643654e60f0d3.png"></span></p>
+<p><span></span></p>
+<p>若在申请过程中出现问题导致付款未成功，可至“待付款证书”中查看详情，并按网站提示进行下一步操作，以免出现多次支付的情况。</p>
+<p>如有其他未尽事宜，请及时联系我们！</p>
+<p>祝大家学习顺利！</p>
+<p><span>&nbsp;</span></p>
+<p>好大学在线团队</p>
+<p><span>2018.11.9</span></p>
+<p><span></span><br></p>
+<p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="107.html" target="_blank">关于举办高等院校人工智能时代下慕课开发设计与 “学习之道”国际研修班的通知</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2018-04-01
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						高等院校人工智能时代下慕课开发设计与
+“学习之道”国际研修班
+各高等院校：
+近年来，国内外“慕课”热潮的到来，对高等教育产生了巨大的影响，特别是对于在校学习的大学生，其影响不能忽视。“慕课”为大学生提...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p><strong><span>高等院校人工智能时代下慕课开发设计与</span></strong></p>
+<p><strong><span>“学习之道”国际研修班</span></strong></p>
+<p><strong><span>各高等院校：</span></strong></p>
+<p><span>近年来，国内外“慕课”热潮的到来，对高等教育产生了巨大的影响，特别是对于在校学习的大学生，其影响不能忽视。“慕课”为大学生提供了更优质、更便捷、更平等的学习知识的渠道和平台。在此背景下，大学生更应注重提升自身的学习能力，养成自主学习、终身学习、合作学习、系统化学习的意识和习惯，以适应现代在线远程教育发展的大趋势。</span></p>
+<p><strong><span>“熟谙学习之道，为学方可事半功倍”，</span></strong><span>学习必须讲究一定的方法，才能提高学习效率。慕课设计必须要将系统的理论把知识组合成各种系统，加以系统化后再储入大脑。这样不仅可以像电脑软件储存信息一样，随时可以按程序调出使用；而且还可高屋建瓴，居高临下地加深理解原有知识和学习新知识。才能真正地让这些知识变成可以活用的知识，发挥最大的效益。为此，</span><strong><span>上海交通大学慕课研究院与新竹交通大学联合师培联盟教育科技研究院邀请国内外著名专家学者于</span></strong><strong><span>2018</span></strong><strong><span>年<span>5</span>月<span>16</span>日<span>- 19</span>日在上海</span></strong><strong><span>共同举办“高等院校人工智能时代下慕课开发设计与学习之道”国际研修班。</span></strong></p>
+<p><span>现将具体事宜函告如下：</span></p>
+<p><strong><span>一、主办单位<a href="javascript:;" rel="nofollow">：</a></span></strong><span>上海交通大学慕课研究院</span></p>
+<p><span>师培联盟（北京）教育科技研究院</span></p>
+<p><strong><span>二、协办单位：</span></strong><span>新竹交通大学高等教育开放资源研究中心</span></p>
+<p><strong><span>三、活动特点：专题讲座<span>+</span>案例分享<span>+</span>互动交流<span>+</span>答疑解惑</span></strong></p>
+<p><strong><span>四、时间地点：<span>2018</span>年<span>5</span>月<span>1</span></span></strong><strong><span>6</span></strong><strong><span>日<span>- 19</span>日； ※上海交通大学</span></strong></p>
+<p><strong><span>五、参加对象：</span></strong><span>各高等院校分管教学的校（院）长、各院系教学主管者，教育技术中心、电教中心、教师发展中心、学科带头人及从事教学工作的学科教师等。</span></p>
+<p><strong><span>六、特邀嘉宾：</span></strong><strong></strong></p>
+<p><strong><span>蒲慕明：</span></strong><span>中国科学院院士，美国科学院院士，台湾“中研院”院士，香港科学院院士。</span></p>
+<p><strong><span>芭芭拉•奥克利：</span></strong><span>美国密歇根州奥克兰大学工业系统与工程学系教授， 畅销书“学习之道”作者。</span></p>
+<p><strong><span>蒋建伟：</span></strong><span>上海交通大学慕课推进办公室副主任，中国高校计算机教育<span>MOOC</span>联盟企业合作工作委员会主任。</span></p>
+<p><strong><span>陈铿任：</span></strong><span>台湾新竹交通大学教育研究所助理教授，延揽特殊优秀人才。</span></p>
+<p><strong><span>苏永康：</span></strong><span>上海交通大学“好大学在线”运行主管，中国高校计算机教育<span> MOOC</span>联盟上海培训中心主任。</span></p>
+<p><strong><span>六、相关费用</span></strong><strong><span>：</span></strong></p>
+<p><span>1.</span><span>会务费<span>1680</span>元<span>/</span>人（含专家报告、场租、证书等）。住宿统一安排，费用自理。请各单位根据实际情况积极组织下属单位人员参加，</span></p>
+<p><span>2.</span><span>资料费<span>200</span>元<span>/</span>人（含师培联盟青年教师成长计划推荐图书<span>2-3</span>本，师培联盟定制笔记本文具一套，会议资料存储<span>U</span>盘）。</span></p>
+<p><span><span>3.</span></span><span><span>本期会议发票提供培训费或者会务费（项目）发票，请现场报到的参会老师注意填写清楚。且本次培训由师培联盟（北京）教育科技研究院负责收费，并开具正式发票。</span></span></p>
+<p><span><span>4.</span></span><span><span>请参加人员提前一周将回执表传真至会务组，会务组将及时发送报到通知，详告会议具体地点及乘车路线。</span></span></p>
+<p><span><strong><span>八、指定收款方式</span></strong></span><span><strong></strong></span></p>
+<p><span><span>户名：师培联盟（北京）教育科技研究院</span></span><span></span></p>
+<p><span><span>账号：<span>11050184800000000208</span></span></span><span></span></p>
+<p><span><span>行号：<span>105100019069</span></span></span><span></span></p>
+<p><span><span>开户行：中国建设银行股份有限公司北京黄亦路支行</span></span></p>
+<p><strong><span>九、联系方式</span></strong></p>
+<p><span><span>联系人： 董平<span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>报名邮箱：<span>splmhy@163.com</span></span></span></p>
+<p><span><span>电话：<span>17701029238&nbsp;&nbsp; </span>微信同步<span>&nbsp;&nbsp; QQ</span>在线咨询：<span>50402957</span></span></span></p>
+<p><span><span>上海交通大学慕课研究院咨询电话：<span>021-54745790</span></span></span></p>
+<p><strong><span>&nbsp;</span></strong><br></p>
+<p><strong><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;上海交通大学慕课研究院&nbsp;</span></strong></p>
+<p><strong><span>&nbsp; &nbsp; &nbsp; &nbsp;师培联盟（北京）教育科技研究院</span></strong></p>
+<p><strong><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span></strong><strong><span><span>&nbsp; &nbsp; &nbsp;&nbsp;</span>二〇一八年一月二十三日</span></strong></p>
+<p><span><span>&nbsp;</span></span></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>附件：专家介绍</span></strong></p>
+<p><strong><span>蒲慕明：</span></strong><span>中国科学院院士、美国科学院院士、台湾“中研院”院士、香港科学院院士。现任中国科学院神经科学研究所所长，脑科学与智能技术卓越创新中心主任。获得奖项及荣誉包括：美国<span>Ameritec</span>奖、巴黎高等师范学院和香港科技大学荣誉博士学位、中华人民共和国国际科学技术合作奖、求是杰出科学家奖、中国科学院杰出科技成就（集体）奖、<span>Gruber</span>神经科学奖等。曾任科技部<span>973</span>计划重大科学问题导向项目《人类智力的神经基础》首席科学家、中国科学院战略性先导科技专项《脑功能联结图谱》首席科学家顾问。蒲慕明在细胞膜生物物理、神经轴突导向机制、突触可塑性的机制、神经环路功能等领域取得一系列重要研究成果。现任《<span>National&nbsp;Science&nbsp;Review</span>》执行主编，《<span>Neuron</span>》等十余种国际学术期刊的编委，曾任日本<span>RIKEN</span>脑研究所等国际神经科学机构和组织的学术顾问委员会委员。<span>&nbsp;</span></span></p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>芭芭拉•奥克利：</span></strong><span>美国密歇根州奥克兰大学工业系统与工程学系教授，著有《<strong>学习之道</strong>》，该书高居美亚学习图书榜首长达一年，<span>MIT</span>、普渡大学、清华大学等中外数百所名校教授亲证有效。<span>Coursera</span>上最受欢迎学习类慕课“<span>Learning How to Learn</span>”主讲教师。</span></p>
+<p><span>芭芭拉•奥克利的研究领域集中于脑科学与社会</span><span>行</span><span>为的复杂关系，华尔街日报曾以“革命性”来报导她的研究，其所著的“</span><span>A Mind for Numbers: How to Excel at Math and Sciences – Even You Flunked Algebra”</span><span>是<span>2014</span>年纽约时报的最佳畅销科普书籍。</span></p>
+<p><span>芭芭拉•奥克利的人生充满惊奇。在成为工程学教授之前，她服役于美国陆军并获得杰出军人学者奖。她在南极工作站担任通讯专家，并曾经在白令海峡的苏联渔船上担任俄文翻译。她获得众多奖项，如美国工程教育学会的<span> Chester F. Carlson</span>工程教育科技创新奖、美国科学基金会的新世纪学者、奥克兰大学教学卓越奖、美国科学基金会的工程学新前沿教授奖以及<span>Coursera</span>的“创新教师”。她也被美国医学与生物工程学会选为院士。</span></p>
+<p><strong><span>蒋建伟：</span></strong><span>上海交通大学慕课推进办公室副主任，中国高校计算机教育<span>MOOC</span>联盟企业合作工作委员会主任。主持“好大学在线”慕课平台建设和运行，致力于探索基于慕课的混合式教学模式改革，率先在上海交大校内开展混合式教学，提高教学质量。</span></p>
+<p><strong><span>陈铿任：</span></strong><span>台湾新竹交通大学教育研究所助理教授，延揽特殊优秀人才。台湾师范大学教育学系学士、硕士，美国美国伊利诺大学香槟分校应用统计硕士、课程与教学系数理与科技教育组哲学博士。陈教授与合作者于<span>2015</span>年共同荣获全美大学科技网络<span>(National University Technology Network, NUTN) </span>年度研究学术奖，以及<span>2016</span></span><span>年</span><span>及</span><span>2017</span><span>年</span><span>美国教育传播与科技学会（</span><span>Association for Educational Communication &amp; Technology, AECT</span><span>）远距学习期刊论文奖。曾任美国博伊西州立大学数字校园中心教学设计与研究分析师、外语系兼任教师。研究兴趣在学习分析、在线学习、大学教师专业发展等。</span></p>
+<p><strong><span>苏永康：</span></strong><span>上海交通大学“好大学在线”运行主管，中国高校计算机教育<span> MOOC</span>联盟教师培训工作委员会委员，<span>MOOC</span>联盟上海培训中心主任。美国密西根大学及普渡大学长期访问学者。致力于教学信息化技术、混合式教学法研究、慕课应用过程中的教学管理机制创新及学分认定机制研究等。</span></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>暂定日程安排</span></strong></p>
+<p><strong><span>日程安排</span></strong></p>
+<p><strong><span>1</span></strong><strong><span>6</span></strong><strong><span>日&nbsp;</span></strong>报到并领取培训教材</p>
+<p><strong><span>1</span></strong><strong><span>7</span></strong><strong><span>日&nbsp;</span></strong></p>
+<p><strong>9:00-</strong><strong>9:30&nbsp;</strong>蒋建伟&nbsp;欢迎辞及演讲（慕课及教学改革）</p>
+<p><strong><span>9:30-</span></strong><strong>12:00&nbsp;</strong>Oakley 如何成功设计及开发慕课：Barbara Oakley老师的不传心法（1）（有现场作业）</p>
+<p><strong><span>14:00-</span></strong><strong>16:00&nbsp;</strong>蒲慕明 挑战线上学习者，但别太烧脑：脑科学家给慕课教师的建议</p>
+<p><strong><span>16:00-</span></strong><strong>18:00&nbsp;</strong>陈铿任 在线大班开心教：五十个让你教得更轻松的秘诀，</p>
+<p><strong><span>1</span></strong><strong><span>8</span></strong><strong><span>日</span></strong></p>
+<p><strong><span>9:00-</span></strong><strong>12:00&nbsp;</strong>Oakley 如何成功设计及开发慕课：Barbara &nbsp; Oakley老师的不传心法（2）</p>
+<p><strong><span>14:00-</span></strong><strong>15:30&nbsp;</strong>苏永康 慕课学习过程中的教学管理</p>
+<p><strong><span>15:30-</span></strong><strong>17:00&nbsp;</strong>陈铿任 作弊--大学教学的暗角，科技能做些什么</p>
+<p><strong><span>19</span></strong><strong><span>日</span></strong></p>
+<p><strong><span>9:00-</span></strong><strong>17:00&nbsp;</strong>考察</p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="101.html" target="_blank">好大学在线助教招募</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2017-11-03
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						各位慕课儿： 为了丰富和扩大助教队伍，让课程团队更有创造力和青春活力，从2018年春季学期开始，好大学在线将面向全社会招募课程助教。2017秋季学期就可以加入练手哦！ 课程助教主要工作： 负责发布课程...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p><span>各位慕课儿：<strong></strong></span></p>
+<p><span>&nbsp; &nbsp; &nbsp;&nbsp;<strong><span>为了丰富和扩大助教队伍，让课程团队更有创造力和青春活力，从2018年春季学期开始，好大学在线将面向全社会招募课程助教。</span></strong><strong>2017秋季学期就可以加入练手哦！</strong></span></p>
+<p><span><span>&nbsp; &nbsp; &nbsp;<span>&nbsp;</span><strong><span>课程助教主要工作：</span></strong></span></span></p>
+<p><span><span>&nbsp; &nbsp; &nbsp;&nbsp;</span><span><strong>负责发布课程公告，线上讨论话题的发起，论坛答疑，主观作业批改，学期末试卷批阅及成绩结算等</strong></span><span>。</span></span></p>
+<p><span>&nbsp;&nbsp;除了<span><span><strong>有免费学习及免费获取课程证书的福利，学期结束后还会给助教们颁发含金量超高的优秀助教证书</strong></span>，</span>无论是出国进修还是未来就业都是一份漂亮的履历。&nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span><span>&nbsp; &nbsp; &nbsp;&nbsp;<span><strong>选择一门你喜欢和擅长的课程。</strong></span></span><span>只要你对MOOC心怀向往，对这门课程不仅有独到的见解，还有深厚的学术能力，我们都欢迎你的加入！<span>联系电话：021-54745790</span></span></span></p>
+<p><span>&nbsp; &nbsp; &nbsp;&nbsp;<strong><span>报名方式：</span></strong></span></p>
+<p><span>&nbsp;<strong><span><span>&nbsp; &nbsp; &nbsp;姓名+课程为主题，</span><span><span>发送个人介绍及竞聘理由到邮箱</span><span>mooc@sjtu.edu.cn，期待你的加入！</span></span></span></strong></span></p>
+<p><span><span>&nbsp;&nbsp;</span></span></p>
+<p></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="82.html" target="_blank">上海交大“好大学在线”荣获第十三届上海教育博览会“十佳”高校展台奖</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2016-05-20
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						5月18日，2016第十三届上海教育博览会总结颁奖会与上海外国语大学第一报告厅举行。上海交通大学“好大学在线”慕课平台展荣获“十佳”高校奖。市教卫工作党委副书记、市教委副主任高德毅、上海外国语大学副校...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p style="text-indent:32px"><span style="font-size:20px">&nbsp;5</span><span style="font-size:20px">月<span>18</span>日，<span>2016</span>第十三届上海教育博览会总结颁奖会与上海外国语大学第一报告厅举行。上海交通大学“好大学在线”慕课平台展荣获“十佳”高校奖。市教卫工作党委副书记、市教委副主任高德毅、上海外国语大学副校长杨力与上海交通大学慕课研究院院长江志斌等出席了本次颁奖会。会议由上海教育报刊总社党委书记彭东恺主持。</span></p><p style="text-align: center; text-indent: 32px;"><img src="static/picture/26b961c810624c0788a8850ccd93cc8b.png" style="width: 281px; height: 367px;"></p><p style="text-indent:32px"><span style="font-size:20px">第十三届上海<a name="baidusnap3" href="javascript:;"></a>教育博览会以“互联网<span>+</span>教育”为主题。为期三天的展会吸引了近<span>10</span>万观众入场参观，参观者多为学生、教师、业内人士，其中不乏外省市参观者。<span>12000</span>平米展区近<span>80</span>家展示单位为参观者们全面展现了当下“互联网<span>+</span>教育”的盛景。</span></p><p style="text-indent:32px"><span style="font-size:20px">高德毅副主任为本次会议作了开场致辞，总结本次展会为“互联网<span>+</span>”教育的全面展现与推动，并给予获奖的各单位祝贺与鼓励。</span></p><p style="text-align: center; text-indent: 32px;"><span style="font-size:20px"><img src="static/picture/abb8de744d444fe792e062c638628ee5.jpg" style="width: 508px; height: 364px;"></span></p><p style="text-indent:32px"><span style="font-size:20px">上海交通大学慕课研究院院长江志斌应邀作为“十佳高校”获奖代表发言，并做了题为“共创互联网<span>+</span>高等教育的美好明天”演讲。此次展览中，上海交通大学“好大学在线”慕课平台展台向参观者展示了百门优质慕课课程，并完整呈现了平台<span>2014</span>至今针对高校在校生的学分修读机制，展现了交通大学对中国高等教育慕课教学模式的成功探索。江志斌院长表示，“好大学在线”愿与上海教育界同仁一起，共享优质在线教育资源，共创上海互联网<span>+</span>高等教育的美好未来。</span></p><p style="text-align: center; text-indent: 32px;"><span style="font-size:20px"><img src="static/picture/59c576c8b0144ffb9befd6eff4fd9289.jpg" style="width: 458px; height: 322px;"></span></p><p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="79.html" target="_blank">免费中科大夏令营游学机会来啦！</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2016-04-01
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						今年夏天，来一场专属于你的“好大学”夏令营？ 走进中科大校园，感受一下纯正理工科重点院校的秩序与理性；近距离接触“好大学”里各位风云人物；与五湖四海的学子们共同徜徉于智慧的碰撞和灵感的交流中，没错，你...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p style="text-align: center; line-height: 29px;"><span style="font-size:16px;font-family:宋体;color:black">&nbsp;&nbsp;<img src="static/picture/163cc6b7e0fb4d8f8f643c82fd67fe2b.jpg"></span></p><p style="line-height: 29px"><span style="font-size:16px;font-family:宋体;color:black">&nbsp; 今年夏天，来一场专属于你的“好大学”夏令营？</span></p><p style="line-height: 29px"><span style="font-size:16px;font-family:宋体;color:black">&nbsp; </span><span style="font-size: 16px; font-family: 宋体;"><span style="color:#000000">走进中科大校园，感受一下纯正理工科重点院校的秩序与理性；近距离接触“好大学”里各位风云人物；与五湖四海的学子们共同徜徉于智慧的碰撞和灵感的交流中，</span><span style="color:#ff0000"><strong>没错，你可以做到！</strong></span></span></p><p style="line-height: 29px"><span style="font-size:16px;font-family:宋体;color:black">&nbsp; </span><span style="font-size:16px;font-family:宋体;color:black">去年，本次活动还仅仅是面向“<span>985</span>工程”或“<span>211</span>工程”建设重点高校（涵盖少量其他高校重点学科专业）相关专业本科三年级、有志于从事科学研究、学习成绩优秀并有较强的研究能力的学生而开设的，而今年，“好大学在线”让它为你们打开大门！ 只要参与活动，就有机会获得免费中科大夏令营资格啦<span>~~</span></span></p><p style="line-height: 29px"><span style="font-size:16px;font-family:宋体;color:black"><span>&nbsp;<img src="static/picture/3abcd709c32e43ca92d9882f4d910ed0.jpg"></span></span></p><p style="line-height: 29px"><span style="font-size:16px;font-family:宋体;color:black">&nbsp; </span><span style="font-size: 16px; font-family: 宋体;color:#ff0000"><strong>接下来的内容重要！要看三遍以上哦！</strong></span></p><p style="line-height: 29px"><strong><span style="font-size:16px;font-family:宋体;color:black">(</span><span style="font-size:16px;font-family:宋体;color:black">一<span>)</span>活动时间</span></strong></p><p style="margin: 8px 0;text-indent: 24px;line-height: 18px"><span style="font-size:12px;font-family:&#39;Microsoft YaHei UI&#39;,&#39;sans-serif&#39;;color:#666666">&nbsp;&nbsp;</span><span style="font-size:16px;font-family:宋体;color:black">2016</span><span style="font-size:16px;font-family:宋体;color:black">年<span>3</span>月<span>29</span>日<span>00</span>：<span>00 - 2016</span>年<span>5</span>月<span>23</span>日<span>&nbsp;24</span>：<span>00</span></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">作品提交：</span><span style="font-size:12px;font-family:&#39;Microsoft YaHei UI&#39;,&#39;sans-serif&#39;;color:#666666">&nbsp;</span><span style="font-size:16px;font-family:宋体;color:black">2016</span><span style="font-size:16px;font-family:宋体;color:black">年<span>3</span>月<span>29</span>日<span>00</span>：<span>00- 2016</span>年<span>4</span>月<span>23</span>日<span>&nbsp;24</span>：<span>00</span></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">初赛：<span>2016</span>年<span>4</span>月<span>23</span>日<span>&nbsp;24</span>：<span>00- 2016</span>年<span>5</span>月<span>9</span>日<span>&nbsp;24</span>：<span>00</span></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">决赛：<span>2016</span>年<span>5</span>月<span>9</span>日<span>&nbsp;24</span>：<span>00- 2016</span>年<span>5</span>月<span>23</span>日<span>&nbsp;24</span>：<span>00</span></span></p><p style="line-height: 29px"><strong><a name="_Toc444963784" href="javascript:;"><span style="font-size: 16px;font-family:宋体;color:black">(</span></a><span style="font-size:16px;font-family:宋体;color:black">二<span>)</span>主办方</span></strong></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">中科大《文献管理与信息分析》课程团队<span>&amp;</span>“好大学在线”慕课平台</span></p><p style="line-height: 29px"><strong><a name="_Toc444963785" href="javascript:;"><span style="font-size: 16px;font-family:宋体;color:black">(</span></a><span style="font-size:16px;font-family:宋体;color:black">三<span>)</span>活动主题与活动形式</span></strong></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size: 16px; font-family: 宋体;"><span style="color:#000000">本期比赛采用</span><span style="text-decoration:underline;"><span style="color:#c00000">自录视频展示分享</span></span><span style="color:#000000">形式，主题为</span><span style="color:#c00000"><span style="text-decoration:underline;">“优质软件的使用心得”</span></span><span style="color:#000000">。</span><span style="color: black;">&nbsp;</span><span style="color:#000000">由学员自己录制自己使用过优质软件的分享视频，在展示时间开始前提交至课程团队工作人员。初赛阶段，由工作人员负责上传入优酷视频网展示并统计期间人气指数，最终确定决赛名单。决赛阶段，在网易云课堂进行视频展示，根据人气指数、专家评审，确认优胜学员。</span></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="color:#000000;font-family:宋体">不会做？没关系，我们贴心地给你找到了范例哟~~</span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black"><strong>历届优秀作品范例：</strong></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">1</span><span style="font-size:16px;font-family:宋体;color:black">）</span><span style="font-size: 21px;font-family: 微软雅黑, sans-serif;color: rgb(51, 51, 51)">&nbsp;chrome</span><span style="font-size: 21px;font-family: 微软雅黑, sans-serif;color: rgb(51, 51, 51)">大神级插件<span>vimium</span>介绍<span>&nbsp;</span></span><span><a href="javascript:;"><span style="font-size:18px;font-family:宋体;color:blue">http://v.youku.com/v_show/id_XMTQxODM2Njk2OA==.html?from=y1.7-1.2</span></a></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">2</span><span style="font-size:16px;font-family:宋体;color:black">） 播客软件<span>Podcast&nbsp;http://v.youku.com/v_show/id_XMTQxNTAzODUxMg==.html?from=y1.7-2</span></span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size: 16px; font-family: 宋体;color:#c00000"><span style="text-decoration:underline;">展示和投票平台<strong><span>:</span></strong>&nbsp;优酷网、网易云课堂。</span></span><span style="font-size:16px;font-family:宋体;color:black">为保证广大学员的利益以及保证视频的分享质量，提交视频分享的学员事先调节好设备，保证录制画面和声音的清晰。</span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size: 16px; font-family: 宋体;color:#c00000"><span style="text-decoration:underline;">作品要求：</span></span><span style="font-size:16px;font-family:宋体;color:black">软件需是文献检索或对日常生活和工作大有裨益的软件；分享视频需控制在<span>10</span>分钟之内，建议采用实际演示操作或<span>PPT</span>展示两种分享方式。如果内容的确需要超过<span>10</span>分钟以上，建议分成几个短小的视频。其中<span>PC</span>端软件使用的录制，请务必使用屏幕录像大师或者<span>camtasia studio</span>，以保证视频质量。关于<span>camtasia studio</span>的使用可以参考网易云课堂的免费课程《玩转屏幕录像》。</span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size: 16px; font-family: 宋体;color:#c00000"><strong><span style="text-decoration:underline;">奖励</span></strong></span><span style="font-size: 16px; font-family: 宋体;"><span style="color:#000000">：参与本次活动的所有学员，根据视频质量，期末将获得</span><span style="color: black;">5~20</span><span style="color:#000000">分的加分，同时取较优者直接获得优秀学员证书资格。根据参赛视频质量，</span><strong><span style="text-decoration:underline;"><span style="color:#c00000">我们将会挑选出1~5名学员获得2016年暑期夏令营的资格（只面向在校学生）！</span></span></strong></span></p><p style="line-height: 29px"><strong><a name="_Toc444963786" href="javascript:;"><span style="font-size: 16px;font-family:宋体;color:black">(</span></a><span style="font-size:16px;font-family:宋体;color:black">四<span>)</span>活动日程安排</span></strong></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">1</span><span style="font-size:16px;font-family:宋体;color:black">、<span>2016</span>年<span>4</span>月<span>23</span>日<span>&nbsp;24</span>：<span>00</span>之前报名参与分享的学员请发送邮件至<span>rmra@ustc.edu.cn</span>邮箱，邮件内容应包括【<span>Moocer&nbsp;</span>沙龙·课程分享报名表】，【分享内容视频】。</span></p><p style="text-indent: 0px;"><span style="text-indent: 32px; font-size: 12px; line-height: 22px;color:#666666;font-family:Arial, sans-serif">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">2</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">、2016年4月24日&nbsp;24：00之前，课程团队工作人员将合格的参赛作品上传到优酷网，进行视频初赛，并将链接发送到各大qq群以及mooc平台，以供大家投票，投票以点赞数统计，点赞数占成绩50%，专家评审占成绩50%，并根据总成绩确定决赛名单。</span></p><p style="line-height: 22px"><span style="font-size:12px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:#666666">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">3</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">、2016年5月9日&nbsp;24：00发布决赛名单，并及时将决赛视频放到网易云课堂继续决赛展示，进一步结合投票和专家投票，与2016年5月15日公布获奖名单。获奖证书在一周之内寄出。</span></p><p style="line-height: 22px"><strong><a name="_Toc444963787" style="line-height: 29px;" href="javascript:;"><span style="font-size: 16px;font-family:宋体;color:black">(</span></a><span style="line-height: 29px; font-family: 宋体; color: black;">五)温馨贴士</span></strong><span style="font-size:12px;font-family:&#39;Microsoft YaHei UI&#39;,&#39;sans-serif&#39;;color:#666666"><br></span></p><p style="line-height: 29px"><strong></strong></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:16px;font-family:宋体;color:black">1</span><span style="font-size:16px;font-family:宋体;color:black">、报名表下载地址<span>&nbsp;http://pan.baidu.com/s/1o7dent4</span></span></p><p style="line-height: 22px"><span style="font-size:13px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">2</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">、分享视频时间请控制在&nbsp;10&nbsp;分钟以内。PC端录制请务必使用屏幕录像专家或者Camtasia Studio。</span></p><p style="line-height: 22px"><span style="font-size:13px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:black">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">3</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">、非常感谢大家对本课程的爱好与支持，如有更新或变动会及时通知大家，如有任何疑问请发邮件至&nbsp;<strong>rmra@ustc.edu.cn</strong>。</span></p><p style="line-height: 22px"><span style="font-size:13px;font-family:&#39;Arial&#39;,&#39;sans-serif&#39;;color:black">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">4</span><span style="line-height: 18px; text-indent: 32px; font-family: 宋体; color: black;">、<strong>如果视频过大，</strong> 不方便使用邮件发送，可以上传到网盘，并将网盘链接发送到<strong>rmra@ustc.edu.cn</strong>。</span></p><p style="margin: 8px 0;text-indent: 32px;line-height: 18px"><span style="font-size:12px;font-family:&#39;Microsoft YaHei UI&#39;,&#39;sans-serif&#39;;color:black">&nbsp;</span></p><p style="line-height: 29px"><span style="font-size: 16px; font-family: 宋体;color:#c00000"><span style="text-decoration:underline;">夏令营将为录取的营员提供食宿以及相关活动的资助哦~还不快行动起来啦！</span></span></p><p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="47.html" target="_blank">我与“好大学”有个约定 征“文”启事</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2015-05-16
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						你我约定 挂科的往事不许提也答应永远都不让对方担心要做学霸的自己 超越自己就算某天一个人奋斗翻转课堂结束，期末考试在即，大家是否还记得刚加入“好大学在线”时的誓言呢？说好了要一起进步，一起做更好的自己...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p>你我约定 挂科的往事不许提</p><p>也答应永远都不让对方担心</p><p>要做学霸的自己 超越自己</p><p>就算某天一个人奋斗</p><p>&nbsp;</p><p>翻转课堂结束，期末考试在即，大家是否还记得刚加入“好大学在线”时的誓言呢？说好了要一起进步，一起做更好的自己哟~</p><p>快来晒出你与“好大学在线”的那些故事吧~~</p><p>【征文主题】</p><p><strong>我与“好大学在线”的故事分享</strong></p><p>&nbsp;谈谈情，说说爱，学习使我们永远的恋人，它或让人深刻，或让人博学，或让人美丽。“好大学在线”慕课课程的学习过程中，相信大家都会有这样那样的感触，又或者认识了某人，了解了某事，我们邀请大家写下这些小故事，分享并赢取大奖~~</p><p>&nbsp;</p><p>【征文要求】</p><p>可以是文字，更希望是图片或者小视频~~</p><p>内容真诚即可，文章字数在500字以上。</p><p>&nbsp;</p><p>【投稿方式】</p><p>将内容发送至 <span style="text-decoration:underline;">mooc@sjtu.edu.cn</span></p><p>&nbsp;</p><p>【活动时间】</p><p>即日起自6月30日。</p><p>&nbsp;</p><p>【活动奖励】</p><p>我们将评选出一等奖1名，二等奖10名，三等奖20名。</p><p>奖品：</p><p>一等奖：Kindle</p><p>二等奖：小米移动电源</p><p>三等奖：“好大学在线“免费证书资格</p><p><br></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="30.html" target="_blank">”好大学在线“一周年啦</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2015-04-10
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						不知不觉，我们已经一岁啦。快来看看亲爱的伙伴们都给我们送来怎么样的祝福吧\(^o^)/~，请点击最后视频链接~ 有众多神秘人物出现哦~~http://v.qq.com/page/e/8/h/e015160xk8h.html
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p>&nbsp; 不知不觉，我们已经一岁啦。快来看看亲爱的伙伴们都给我们送来怎么样的祝福吧\(^o^)/~，请点击最后视频链接~</p><p>&nbsp; &nbsp;有众多神秘人物出现哦~~</p><p><img src="static/picture/446c42fc834d41f495f11b245f57cc85.jpg"></p><p><a href="javascript:;" target="_self" title="好大学在线一周年贺">http://v.qq.com/page/e/8/h/e015160xk8h.html</a></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="20.html" target="_blank">“好大学在线”关于修学分学生完成在校认证的倡议公告</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2015-03-19
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						亲爱的用户：您好！考虑到用户使用的便捷性，“好大学在线”允许用户在注册的时候仅提供邮箱，验证激活之后即可在网站上学习课程。我们欢迎广大用户积极注册账号，学习我们的在线慕课课程。针对在校修学分学习的用户...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p style="text-align: center;"><span style="font-family: Calibri; undefinedcolor: #000000;"><br></span></p><p style="text-indent: 28px;"><span style="color: rgb(0, 0, 0); font-family: 宋体;">亲爱的用户：</span></p><p style="text-indent: 28px;"><span style="color: rgb(0, 0, 0); font-family: 宋体;">您好！</span></p><p style="text-indent: 28px;"><span style="color: rgb(0, 0, 0); font-family: 宋体;">考虑到用户使用的便捷性，<span style="color: rgb(0, 0, 0); font-family: 宋体;">“好大学在线”</span>允许用户在注册的时候仅提供邮箱，验证激活之后即可在网站上学习课程。我们欢迎广大用户积极注册账号，学习我们的在线慕课课程。</span></p><p style="text-indent: 28px;"><span style="line-height: 1.42857; color: rgb(0, 0, 0); font-family: 宋体;">针对在校修学分学习的用户，完成学习之后我们将向其所在学校提供成绩以供学分认证。自</span><span style="line-height: 1.42857; font-family: Calibri;">2015</span><span style="line-height: 1.42857; color: rgb(0, 0, 0); font-family: 宋体;">年春季起，任何没有完成<strong>在校认证</strong>的同学，我们将不提供成绩给其学校。这部分学分用户必须提供<strong>姓名、学号、学校</strong>等完整信息以供认证。</span><br></p><p style="text-indent: 28px;"><span style="background: white; color: rgb(34, 34, 34); font-family: 宋体;">我们会严格保护在校学生的真实姓名和个人信息的隐私，在网站上可以自主拟定昵称和头像。我们将努力提供更加优质的服务。</span></p><p style="text-indent: 28px;"><span style="color: rgb(0, 0, 0); font-family: 宋体;">谢谢！</span><span style="font-family: Calibri; undefinedcolor: #000000;"></span></p><p style="text-indent: 28px;"><span style="color: rgb(0, 0, 0); font-family: 宋体;">有任何问题，可联系我们：</span></p><p style="text-indent: 28px;"><strong><span style="color: rgb(0, 0, 0); font-family: 宋体;">地址：</span></strong><span style="color: rgb(0, 0, 0); font-family: 宋体;">上海市闵行区东川路</span><span style="font-family: Calibri; undefinedcolor: #000000;">800</span><span style="color: rgb(0, 0, 0); font-family: 宋体;">号上海交通大学慕课推进办公室</span></p><p style="text-indent: 28px;"><strong><span style="color: rgb(0, 0, 0); font-family: 宋体;">邮箱：</span></strong><span style="font-family: Calibri; undefinedcolor: #000000;">mooc@sjtu.edu.cn</span></p><p style="text-indent: 28px;"><strong><span style="color: rgb(0, 0, 0); font-family: 宋体;">客服电话：</span></strong><span style="font-family: Calibri; undefinedcolor: #000000;">4008296199</span></p><p><span style="font-family: Calibri; undefinedcolor: #000000;"></span></p><p><span style="font-family: Calibri; undefinedcolor: #000000;"></span></p><p><span><span style="font-family: Calibri; undefinedcolor: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span style="color: rgb(0, 0, 0); font-family: 宋体;">“好大学在线”运行团队</span></p><p><span style="undefinedfont-family: Calibri;"><span style="undefinedcolor: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(0, 0, 0);">2015.3.18</span></span></p><p></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="13.html" target="_blank">2015春季学期选课开始啦</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2014-12-30
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						亲爱的同学们： 新年新气象，“好大学在线”新学期选课也开始啦(^o^)/~。 这次，我们不但保留了原有的优秀课程，还为大家带来了哈尔滨工业大学“大数据算法”、新竹交通大学“轻松学统计”和更多台湾高校的...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<p><strong style="white-space: normal;">亲爱的同学们：</strong><br style="white-space: normal;"><span style="white-space: normal;">&nbsp; &nbsp; 新年新气象，“好大学在线”新学期选课也开始啦(^o^)/~。</span> </p><p><span style="white-space: normal;">&nbsp; &nbsp; 这次，我们不但保留了原有的优秀课程，还为大家带来了哈尔滨工业大学“大数据算法”、新竹交通大学“轻松学统计”和更多台湾高校的优秀课程，欢迎大家积极选修~</span></p><p><span style="white-space: normal;">&nbsp; &nbsp; 新学期课程将于3月16日开始，选课方式不变，请大家首先关注自己学校教务平台的相关通知，或者选择自己感兴趣的课程以“学分学习”模式进入学习，不要重复报名哦~</span></p><p><span style="white-space: normal;">&nbsp; &nbsp; 当然，惊喜不止这些，我们还会陆续推出来自全国各地的优秀课程，祝愿大家在新的一年里好好学习，天天向上！</span></p>
+					</div>
+					<div>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+			<li class="media-report-item">
+				<div class="media-report-intro">
+					<div class="news-header substr">
+						<a class="link-action" href="1.html" target="_blank">“好大学在线”【改版公告】</a>
+					</div>
+					<p><i class="icon-time01"></i>
+						2014-11-04
+
+					</p>
+					<div class="notice-item-content notice-item-up">
+						亲爱的同学们： “好大学在线”，改版啦 (^o^)/~。 自2014年4月8日“好大学在线”上线以来，得到广大用户尤其是在校学生的普遍欢迎。本次改版，融入了我们对具有中国特色的慕课模式的理解，融入了适...
+					</div>
+					<div class="notice-item-content notice-item-down" style="display:none;">
+						<div style="text-align: left;padding-left:10px;"><strong>亲爱的同学们：</strong><br>&nbsp;&nbsp;&nbsp; “好大学在线”，改版啦 (^o^)/~。<br>&nbsp;&nbsp;&nbsp; 自2014年4月8日“好大学在线”上线以来，得到广大用户尤其是在校学生的普遍欢迎。本次改版，融入了我们对具有中国特色的慕课模式的理解，融入了适应我国高等教育教学过程的方法和功能，通过这些努力，我们希望为您营造更完美的学习生态。<br>&nbsp;&nbsp;&nbsp; 本次改版，主要在系统架构、用户体验、互评策略、视频加速和访问、学习行为记载和展现、基于学习过程和能力的知识图谱及知识推送等方面进行了重新设计和优化。还有许多新功能，等待您去挖掘、体验；还有更多的功能，会不断呈现在您面前；<br>&nbsp;&nbsp;&nbsp; 在您体验新版“好大学在线”的同时，我们真诚希望您能够继续做一个睿智的“啄木鸟”，将您的真实体验和感受反馈给我们，您的任何意见和建议对我们来说都是非常宝贵的。<br>&nbsp;&nbsp;&nbsp; 相信“好大学在线”能在您的支持和帮助下，会越来越好！<br>【小贴士】新版“好大学在线”用户登录方式（邮箱、用户名、密码）不变，如有任何问题，请随时与我们联系，我们会竭诚为您服务，帮助您顺利进入新版“好大学在线”继续您的慕课学习之旅。<br>客服邮箱：mooc@sjtu.edu.cn / 客服电话：021-54745790 / 客服QQ： 2973169047<br><div style="text-align: right;padding-right:10px;">《好大学在线》运行团队<br>2014年11月4日</div></div>
+					</div>
+					<div>
+						
+							<a class="btn-cancel" style="margin-left: 0px;" href="">附件下载</a>
+						
+					</div>
+
+					
+				</div>
+			</li>
+		
+	</ul>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="pagination" id="pageId">
+        <ul class="clearfix">
+            <li class="page-dropdown">
+                <span class="factor-item" id="rowCountNum">--条记录</span>
+            </li>
+        	
+				<li class="page-dropdown">每页
+					<select class="page-select">
+                        <option value="5">5</option>
+						<option value="10">10</option>
+						<option value="20" selected="selected">20</option>
+						<option value="50">50</option>
+						
+						<option value="100">100</option>
+					</select>条
+				</li>
+			
+			<li class="page-prev">
+                <a href="javascript:void(0);" id="page-prev" pagenum='1'>&lsaquo;</a>
+            </li>
+            <li class="page-num current">
+                <a href="javascript:void(0);" pagenum="1">1</a>
+            </li>
+            
+            <li class="page-next">
+                <a href="javascript:void(0);" id="page-next" pagenum='1'>&rsaquo;</a>
+            </li>
+            <li class="page-action">
+                <input type="text" class="input-text input-page" title="Enter Search" _type="changeIndex">
+                <span class="page-total">/1 页 </span>
+            </li>
+        </ul>
+    </div>
+
+
+<script>
+    $(function () {
+        $("#rowCountNum").html(13 + "条记录");
+		var $pageSelect = $("#pageId").find(".page-select").select({
+			change:function(){
+				if (this.value == '20') {
+	                return;
+	            }
+				var fn = "";
+		
+	            if (fn.length > 0) {
+	                fn = fn+"(" + 1 + ",\""+"pageId"+"\","+this.value+")";
+	                eval(fn);
+	            } else {
+	            	gotoPage(1, "pageId",this.value);
+	            }
+			}
+		});
+        
+        $("#pageId").find(".page-num,.page-prev,.page-next").click(function () {
+            var pageNum = $(this).children('a').attr("pageNum");
+            if (typeof(pageNum) == 'undefined') {
+                return;
+            }
+            if (pageNum == '1') {
+                return;
+            }
+            var fn = "";
+
+            if (fn.length > 0) {
+                fn = fn+"(" + pageNum + ",\""+"pageId"+"\","+$pageSelect.val()+")";
+                eval(fn);
+            } else {
+            	gotoPage && gotoPage(pageNum, "pageId", $pageSelect.val());
+            }
+        })
+        $("#pageId").find('[_type="changeIndex"]').on("keyup.changeIndex", function (event) {
+            var $this = $(this);
+            if ($.trim($this.val()||"").length > 0) {
+                var pageNum = parseInt($this.val())
+                if (isNaN(pageNum)) {
+                    pageNum = 0;
+                }
+                if (pageNum > "1") {
+                    pageNum = " 1" || 0;
+                }
+                if (pageNum < 1) {
+                    pageNum = 1
+                }
+                if (pageNum == '1') {
+                    return;
+                }
+                if (event.keyCode == 13) {
+                	var fn = "";
+
+                    if (fn.length > 0) {
+                        fn = fn+"(" + pageNum + ",\""+"pageId"+"\","+$pageSelect.val()+")";
+                        eval(fn);
+                    } else {
+                    	gotoPage(pageNum, "pageId", $pageSelect.val());
+                    }
+                }
+            }
+
+        })
+    })
+</script>
+</div>
+<script type="text/javascript">
+//分页
+function gotoPage(pageIndex, pageId) {
+	location.href=CONTEXTPATH+"/home/sysBulletin/show-"+pageIndex+".mooc";
+}
+
+$(function(){
+	
+	$(".notice-intro-item").find(".link-action").toggle(function(){
+		$(this).html("收起<i class='icon-slideUp'></i>");
+		$(this).parents(".notice-item-wrap").addClass("current");
+		$(this).parents(".notice-item-wrap").find(".notice-item-up").hide();
+		$(this).parents(".notice-item-wrap").find(".notice-item-down").show();
+	},function(){
+		$(this).html("更多<i class='icon-slideDown'></i>");
+		$(this).parents(".notice-item-wrap").removeClass("current")
+		$(this).parents(".notice-item-wrap").find(".notice-item-down").hide();
+		$(this).parents(".notice-item-wrap").find(".notice-item-up").show();
+	});
+});
+</script>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

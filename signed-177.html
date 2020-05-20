@@ -1,0 +1,1660 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentContent" value="school">
+
+<div class="content-index">
+    <div class="school-picture" style="background-image:url('static/image/631ec7fbae7e4628a0365251beaa72d1.png');">
+        
+    </div>
+</div>
+<div class="content school-intro">
+    <div class="school-abstract">
+        <p class="abs-para">
+            常州大学（Changzhou University）坐落于江苏常州，是江苏省人民政府与中国石油天然气集团公司、中国石油化工集团公司、中国海洋石油总公司共建高校，教育部本科教学工作水平评估优秀学校，入选全国深化创新创业教育改革示范高校、国务院侨办华文教育基地、国家级大学生创新创业训练计划、新工科研究与实践项目，长三角高水平特色地方高校创新联盟发起成员，CDIO工程教育联盟成员单位，是经教育部考试中心及英国文化教育协会批准的英语雅思官方考点。<br>学校始建于1978年，原名为南京化工学院无锡分院、常州分院，是省属全日制本科院校；1981年经国务院批准，定名为江苏化工学院；1984年实行江苏省人民政府和中国石油化工总公司联合办学机制；1992年成为中国石油化工集团公司管理的部属院校，并更名为江苏石油化工学院；2000年实行中央与地方共建、以江苏省管理为主的管理体制；2001年江苏省商业技工学校并入；2002年更名为江苏工业学院；2010年经教育部批准更名为常州大学。<br>截至2019年10月，学校有武进、白云、西太湖三个校区，占地面积2498亩，建筑面积71万平方米，纸质图书170余万册；下设17个学院；全日制在校生20000余人；有76个本科专业，涵盖十大学科门类；有1个一级学科博士学位授权点、13个一级学科硕士学位授权点、3个硕士专业学位授权点（含9个授权领域）；化学、材料科学、工程学3个学科进入ESI全球排名前1%；教职工近1800余人，其中专任教师1250余人，硕士及以上学位教师占比95%。
+        </p>
+        <p class="abs-para">
+            学校官网：<a class="link-action" href="javascript:;" target="_blank">https://www.cczu.edu.cn/</a>
+        </p>
+    </div>
+    <div class="school-course-box">
+        <ul class="sc-list clearfix">
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/230d2dd85558456c815bdcc331dd863e.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-09-06 13:24</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>19</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>56
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            高分子化学
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                任强
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/bf67bd858d054c7a8a0b8bc789272268.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-10-12 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i></p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>4
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            电气控制技术
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                强浩
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/5db2318446f24cba8eeb5515fc21b9b7.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-22 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>14</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            钻井与完井工程
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                崔金栋
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/33aed1febdda4aff9fff9a21434c343a.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-02-03 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>20</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            《无机与分析化学》
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                黄薇
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/fe56ccb9-7e99-43c5-8cb2-93fee947.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-04-06 10:44</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>14</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>8
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            微电影创作
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/8527437895.png" class="user-min">
+                                                张宏宇
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/bb2a35d0f5e14072b0dfc2a340d961d7.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-02-29 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i></p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>3
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            线性代数
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                徐明华
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/fe327c7314694e9b8a85999848718963.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2017-03-06 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>17</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>4
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            VFP程序设计（怀）
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                薛磊
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/6dc96ce279e9430cac3d03f568039858.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-18 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>15</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>2
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            常州地方文化
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/20d660499e.png" class="user-min">
+                                                谢建生
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                
+                    <li class="sc-item">
+                        <div class="view view-course">
+                            <div class="view-show">
+                                <div class="view-img" href="/portal/course/1941/3230.mooc">
+                                    <img src="static/picture/afa722b6386c45ee83d1bc20f6b21362.jpg">
+                                    <a class="view-shadow" href="javascript:void(0)">
+                                        <div class="view-tips view-action"><i class="icon-lock"></i>已经结束</div>
+                                    </a>
+                                </div>
+                                <h3 class="view-title substr">大学物理</h3>
+                                <div class="view-subtitle">
+                                    <img src="static/picture/20d660499e.png" class="user-min">谢建生谢建生
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/1f850522f47c491da335f61d53df8a1d.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-18 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>15</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>2
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            证券投资实务
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/20d660499e.png" class="user-min">
+                                                谢建生
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/ff72c2ea3cc64e16b749390651b10ace.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-20 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>12</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>48
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            大学英语拓展课--中级口译
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                王春燕
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/354b88bd008b4859b006e67eb5a01efa.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-21 16:52</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>12</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>4
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            基础翻译
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3063.png" class="user-min">
+                                                徐萍
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/4eed85b2-8323-45e3-b07b-29d22c5f.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2014-10-08 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>8</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>8
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            唐诗宋词人文解读
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/3077.png" class="user-min">
+                                                李康化
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/1fe84bf29712446c98c25188b07ade4c.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-01 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>14</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            SPOC
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/615ef9ee94.png" class="user-min">
+                                                王峰
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/4ca96992e42043c7a495196167ffb7c6.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2016-03-01 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i></p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>30
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            Edius6编辑软件的使用
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/61d19b9513.png" class="user-min">
+                                                田中燕
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/bf2d5d27a60d482ba9ce75eaeb523b89.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2015-12-02 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>65</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            SPOC压力测试
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/90c14dec01.png" class="user-min">
+                                                常大教师账号
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/6bfb1c5c-df3a-441a-b7f4-2f436b11.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2014-10-08 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>69</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>10
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            国际经济法
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/46eb80d9ad.png" class="user-min">
+                                                胡加祥
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/ce3b75f5-8e56-45ee-acfc-80910257.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2014-10-08 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>69</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>10
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            模拟电子技术
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/423b79db2d.png" class="user-min">
+                                                郑益慧
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+                
+                    
+                    
+                        
+                        
+                            <li class="sc-item">
+                                <div class="view view-course">
+                                    <div class="view-show">
+                                        <div class="view-img" href="javascript:void(0)">
+                                            <img src="static/picture/104c9890-ecf1-4881-a8e8-3d25ffee.jpg">
+                                            <a href="javascript:;" class="view-shadow">
+                                            <div class="view-tips">
+                                                <p class="view-tip"><i class="icon-date"></i>
+                                                    2015-09-21 00:00</p>
+                                                <p class="view-tip"><i class="icon-clock"></i>19</p>
+                                                <p class="view-tip"><i class="icon-cycle"></i>4
+                                                    小时/周</p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <h3 class="view-title substr">
+                                            
+                                            工程图学
+                                        </h3>
+                                        <div class="view-subtitle">
+                                            <img src="static/picture/1029e32d87.png" class="user-min">
+                                                蒋丹
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    
+                
+                
+            
+
+        </ul>
+        <div class="newest-more">
+            <a href="javascript:;" class="btn-icon btn-course"><i class="icon-btn"><i class="i-view"></i></i>搜寻更多课程!</a>
+        </div>
+    </div>
+
+    
+        <div class="school-teacher-box">
+            <div id="teacher-slides">
+                
+                
+                    <div class="slides-item">
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">朱莉</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/8b111ad67e.png" class="user-max"></a>
+                                    <h3 class="model-title substr">常大教师账号</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">庄丽华</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">王峰</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/4b3297b7b1.png" class="user-max"></a>
+                                    <h3 class="model-title substr">邱菲</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">段锁林</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/b45478aa36.png" class="user-max"></a>
+                                    <h3 class="model-title substr">崔金栋</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/d645c86962.png" class="user-max"></a>
+                                    <h3 class="model-title substr">王春燕</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                
+                    <div class="slides-item">
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/77593e6aee.png" class="user-max"></a>
+                                    <h3 class="model-title substr">徐萍</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/97f64af06d.png" class="user-max"></a>
+                                    <h3 class="model-title substr">谢建生</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">徐明华</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/23d991d654.png" class="user-max"></a>
+                                    <h3 class="model-title substr">薛磊</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">强浩</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="static/picture/9052.png" class="user-max"></a>
+                                    <h3 class="model-title substr">黄薇</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="st-item">
+                                <div class="model-box model-user">
+                                    <a class="model-img" href="javascript:;">
+                                        <img src="https://static.cnmooc.org/repositry/usrimg/1609/27/5d327343bc2f424f9f5c7bf4d0ce66b6//90.png" class="user-max"></a>
+                                    <h3 class="model-title substr">任强</h3>
+                                    <div class="model-intro">
+                                            常州大学
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    
+</div>
+
+<script>
+
+    $(function () {
+        var len = '2';
+        if (len > 1) {
+            $('#teacher-slides').slidesjs({
+                navigation: true,
+                pagination: {
+                    active: true
+                },
+                play: {
+                    active: true,
+                    effect: "slide",
+                    interval: 20000,
+                    auto: true,
+                    swap: true,
+                    pauseOnHover: true,
+                    restartDelay: 25000
+                }
+            });
+        }
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

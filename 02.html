@@ -1,0 +1,3775 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="content person-center">
+    
+
+
+
+
+
+
+
+
+
+    <!-- sidebar start -->
+    
+
+
+
+
+
+
+
+
+<input type="hidden" id="type" value="3">
+<input type="hidden" id="menuType" value="02">
+<input type="hidden" id="menuName" value="">
+<input type="hidden" id="helpName" value="">
+<input type="hidden" id="helpIndex" value="">
+
+<div class="sidebar">
+	<div class="panel">
+		<div class="panel-body">
+			<div class="sidebar-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="nav-text current" href="javascript:void(0)" id="studyDirection"><i class="icon-nav icon-guide"></i>学习指南<i class="icon-arrow"></i></a>
+						<ul class="sub-nav publicTip" id="studyQues">
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text current" id="studyQues01">课程证书</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="studyQues02">学分认定</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="studyQues03">翻转课堂</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="studyQues04">作业互评</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-text " href="javascript:void(0)" id="questionMain"><i class="icon-nav icon-help02"></i>常见问题<i class="icon-arrow"></i></a>
+						<ul class="sub-nav publicTip" id="normalQues">
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text " id="loginQuestion">账户问题</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="otherQuestion">其它问题</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-text " href="javascript:void(0)" id="questionMain2"><i class="icon-nav icon-handbook"></i>学生手册<i class="icon-arrow"></i></a>
+						<ul class="sub-nav publicTip" id="studentQues">
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text " id="question1">登录注册</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="question2">课程选择</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="question3">课件点播</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="question4">测验与作业</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="question5">在线论坛</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="question6">翻转课堂</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item publicTip" id="teacherDoc">
+						<a class="nav-text " href="javascript:void(0)" id="teacherHelpDoc"><i class="icon-nav icon-tgroup"></i>教师手册<i class="icon-arrow"></i></a>
+						<ul class="sub-nav">
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc01"> 课程选择 课程创建</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc02">课件素材</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc03">练习题目</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc04">问卷题目</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc05">课件内容</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc06">课程公告</a>
+							</li>
+							<li class="nav-item">
+								<a href="javascript:void(0)" class="sub-nav-text" id="teacherDoc07">教学互动</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+
+	//初始化前台首页点击过来的显示右侧文档。
+	function initMenuByIndex(menuType){
+		$("#studyQues").removeClass("publicTip");
+		$("#studyQues .nav-item .sub-nav-text").each(function(){
+			$(this).removeClass("current");
+		})
+		if (menuType=='01'){ //课程证书
+			$(".studyDirection01").removeClass("publicTip");
+			$("#studyQues01").addClass("current");
+		}
+		else if (menuType=='02'){//学分认证
+			$(".studyDirection04").removeClass("publicTip");
+			$("#studyQues04").addClass("current");
+		}
+		else if (menuType=='03'){//翻转课程
+			$(".studyDirection03").removeClass("publicTip");
+			$("#studyQues03").addClass("current");
+		}
+		else if (menuType=='04'){//作业互评
+			$(".studyDirection02").removeClass("publicTip");
+			$("#studyQues02").addClass("current");
+		}
+	}
+
+	//初始化教师手册
+	function initTeacherMenu(menuType){
+		var menuName = $("#menuName").val();
+		if (menuName==null || menuName==""){
+			menuName = "teacherDoc01";
+		}
+		var helpName = $("#helpName").val();
+		if (helpName==null || helpName==""){
+			helpName = "teacherHelp1";
+		}
+		var helpIndex = $("#helpIndex").val();
+		$("#teacherDoc").removeClass("publicTip");
+		$(".nav-item .sub-nav-text").each(function(){
+			$(this).removeClass("current");
+		})
+		$("#"+menuName).addClass("current");
+		$("#"+helpName).removeClass("publicTip");
+		if (helpIndex != null && helpIndex != ""){
+			var $accordion = $("#"+helpName).find(".view-accordion").eq(helpIndex);
+			if($accordion.hasClass("current")){
+				$accordion.removeClass("current");
+				$accordion.find(".accordion-body").slideUp();
+			}else{
+				$accordion.siblings(".current").removeClass("current")
+				$accordion.addClass("current");
+				$accordion.siblings().find(".accordion-body").slideUp();
+				$accordion.find(".accordion-body").slideDown();
+			};
+		}
+	}
+
+	function initMenuByFoot(type){
+		if (type==0){ //常见问题
+			$("#normalQues").removeClass("publicTip");
+			$(".loginQuestion").removeClass("publicTip");
+		}
+		else if (type==1){ //学生手册		
+			$("#studentQues").removeClass("publicTip");
+			$(".question1").removeClass("publicTip");
+		}
+		else if (type==3){ //学习指南
+			$("#studyQues").removeClass("publicTip");
+			$(".studyDirection01").removeClass("publicTip");
+		}
+	}
+	
+    //初始化
+	$(".main-help .help-panel").show();
+	var menuType = $("#menuType").val();
+	var type = $("#type").val();
+	$(".main-help").each(function(){
+		$(this).find(".help-panel").addClass("publicTip");
+	})
+	if (menuType!='defaultmenu' && menuType!='teachermenu'){
+		initMenuByIndex(menuType);
+	}
+	else if (menuType=='teachermenu'){
+		initTeacherMenu(menuType);
+	}
+	else {
+		initMenuByFoot(type);
+	}
+	
+	//账户问题
+	$("#loginQuestion").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+			$(".loginQuestion").removeClass("publicTip");
+		})
+	})
+	
+	//其他问题
+	$("#otherQuestion").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+			$(".othersQuestion").removeClass("publicTip");
+		})
+	})
+
+	//学生手册-登陆注册
+	$("#question1").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question1").removeClass("publicTip");
+	})
+	$("#question2").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question2").removeClass("publicTip");
+	})
+	$("#question3").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question3").removeClass("publicTip");
+	})
+	$("#question4").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question4").removeClass("publicTip");
+	})
+	$("#question5").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question5").removeClass("publicTip");
+	})
+	$("#question6").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".question6").removeClass("publicTip");
+	})
+
+	//学习指南
+	$("#studyQues01").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".studyDirection01").removeClass("publicTip");
+	})
+	$("#studyQues02").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".studyDirection02").removeClass("publicTip");
+	})
+	$("#studyQues03").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".studyDirection03").removeClass("publicTip");
+	})
+	$("#studyQues04").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$(".studyDirection04").removeClass("publicTip");
+	})
+
+	//教师手册
+	$("#teacherDoc01").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp1").removeClass("publicTip");
+	})
+	$("#teacherDoc02").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp2").removeClass("publicTip");
+	})
+	$("#teacherDoc03").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp3").removeClass("publicTip");
+	})
+	$("#teacherDoc04").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp4").removeClass("publicTip");
+	})
+	$("#teacherDoc05").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp5").removeClass("publicTip");
+	})
+	$("#teacherDoc06").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp6").removeClass("publicTip");
+	})
+	$("#teacherDoc07").click(function(){
+		$(".help-panel").each(function(){
+			$(this).addClass("publicTip");
+		})
+		$("#teacherHelp7").removeClass("publicTip");
+	})
+})
+</script>
+		
+				
+
+    <!-- sidebar end -->
+    
+
+
+
+
+
+
+
+
+
+<div class="main main-help">
+	<!--登录账户问题 start-->
+	<div class="help-panel loginQuestion publicTip">
+		<!--accordion start-->
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>我的账号登录不上去怎么办，我该如何解决这个问题？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					答：使用您的电子邮件地址或者学校简称+学号和密码进行登录，登录失败并提示账号或密码有问题时，
+					请首先尝试通过登录界面上的“忘记密码”链接重设密码。您会被提示输入您的电子邮件地址，
+					我们将发送给您重设密码邮件，点击邮件中重设密码链接为您的账户设置新的登录密码。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>我如何注册好大学在线的学习账号？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：请输入好大学在线的网址http://www.cnmooc.org，在网站首界面的右上角找到登录／注册，
+						点击其后会出现登录／注册界面，想要注册新的账号，点击下方的“注册”，
+						按界面提示输入电子邮箱、密码，点击注册后我们将发送给您验证邮箱邮件，
+						点击邮件中激活账号链接，即可完成注册。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>我如何进行在校身份认证？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：完成邮箱验证激活后，第一次登录系统，可以点击”去认证“完成在校身份认证。
+						在“基本资料”页面，请填写您的相关信息，学号，所在学校等信息。或是登录系统后，
+						进入“个人设置”的“基本资料”页面完成信息录入。您的个人信息必须填写正确，才能通过在
+						校生认证，完成修学分课程学习后，我们将根据这个信息向学校提供成绩，如果您已经认证
+						的信息有误，请联系我们的客服进行修改。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">4</i>我如何知道所在学校的简称？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：请输入好大学在线的网址http://www.cnmooc.org，在网站首界面的右上角找到登录／注册，
+						点击其后会出现登录／注册界面，点击下方的“查看已签约学校”，弹出与本平台签约所有学校详情界面，
+						通过搜索您可以找到所在学校以及学校简称。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">5</i>我可以修改我的昵称及注册邮箱吗？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：昵称及注册邮箱均可修改。登录网站后，在右上角显示头像处点击头像，
+						在出现的下拉菜单中点击个人设置，在“个人资料”处可以修改昵称，在“邮箱设置”处可以修改注册邮箱。
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">6</i>我可以注销账号吗？会有什么影响？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：暂时没有此功能。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">7</i>我如何申请成为老师或者助教？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：目前没有开放申请功能。
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<!--accordion end-->
+	</div>
+	<!--登录账户问题 end-->
+	
+	<!--其它问题 start-->
+	<div class="help-panel othersQuestion publicTip">
+		<!--accordion start-->
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>为什么我不能正常访问好大学在线？是不是我的浏览器不行？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：好大学在线网站支持各主流浏览器（如果是IE浏览器，请使用8.0以上版本访问以获得最佳体验），如果您不能正常访问，
+						请先确认您的网址输入是否正确，账号密码有无错误，或测试您的网络速度是否过慢浏览器是否有问题。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>好大学在线的课程只有这几门吗？以后会有新的课程吗？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：当然不会只有这几门，目前好大学在线仍处于初试阶段，发布的课程较少，
+						以后会逐渐丰富各个学科各大高校的视频，请继续关注我们好大学在线，我们竭诚为广大求知者服务。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>我是否需要一些特殊的软件或电脑设备？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：不需要，只要确定您的网速可以打开网站，直接输入我们的网址即可，方便快捷。
+					</p>	
+				</div>
+			</div>
+		</div>
+		<!--accordion end-->
+	</div>
+	<!--其它问题 end-->
+	
+	<!--登录注册 start-->
+	<div class="help-panel question1 publicTip">
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>登录</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、登录网址http://www.cnmooc.org，进入好大学在线的首界面，点击右上角的登录／注册。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/211-01.jpg">
+					<p class="para-img-title">图1 登录/注册</p>
+				</div>
+				
+				<p class="para-help">
+					2、在图2所示界面，输入电子邮件地址和密码即可登录。
+				</p>
+				<p class="para-help">
+					如果首次访问没有账号，则点击右下方红笔标记的“注册”超链接，进行注册；
+				</p>
+				<div class="para-img">
+					<img src="static/picture/211-02.jpg">
+					<p class="para-img-title">图2 登录界面</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>注册</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击界面右上角的登录／注册中“注册”后，会出现图1所示注册界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-01.jpg">
+					<p class="para-img-title">图1 注册界面</p>
+				</div>
+				<p class="para-help">
+					按提示输入，点击注册后系统会发送邮箱验证邮件（如果没有收到邮件可以点击“重新发送”）。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-02.jpg">
+					<p class="para-img-title">图2 邮箱验证界面</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/212-03.jpg">
+					<p class="para-img-title">图3 查看邮件界面</p>
+				</div>
+				<p class="para-help">
+					点击邮件中“激活账号”按钮或链接成功会直接返回登录界面，即完成注册可以进行登录。<br>
+					如果您是在校学生，您可以进行在校认证。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-04.jpg">
+					<p class="para-img-title">图4 注册成功界面</p>
+				</div>
+				<p class="para-help">
+					如果您是在校学生，点击“去认证”，继续完成在校学生身份认证。<br>
+                                                     登录后，进入个人设置中基本资料页面，选择在校生，填写在校生信息，最后点击提交。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-05.jpg">
+					<p class="para-img-title">图5 填写在校认证信息界面</p>
+				</div>
+				<p class="para-help">
+					提交的在校认证审核通过后，您的头像旁边会有V标识哦。<br>
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-06.jpg">
+					<p class="para-img-title">图6 在校认证审核通过</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--登录注册 end-->
+	
+	<!--课程选择 start-->
+	<div class="help-panel question2 publicTip">
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>搜索课程</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					如图所示，用户可以根据自己的要求输入想要搜索的课程，点击搜索即完成搜索课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/221-01.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>课程详情</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击页眉上面的“课程”，进入课程列表界面后，可看到所有课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-01.jpg">
+					<p class="para-img-title">图1 首页</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/222-02.jpg">
+					<p class="para-img-title">图2 所有课程</p>
+				</div>
+				<p class="para-help">
+					将鼠标移动至想要查看详情的课程图片上，会出现“去看看”文字（如图2所示）。点击即可进入课程详情，如下
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-03.jpg">
+					<p class="para-img-title">图3 课程详情</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>课程加入/进入</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击页眉上面的“课程”，进入课程列表界面后，可看到所有课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/223-01.jpg">
+					<p class="para-img-title">图1 课程详情</p>
+				</div>
+				
+				<p class="para-help">
+					点击加入课程后，弹出选课提示，您需要告诉我们您的学习目的是修学分还是非学分学习。
+				</p>
+				<p class="para-help">
+					选择修学分时，如果在校身份未认证，还需要进行在校身份认证，在校认证不通过或未认证会影响您的学分获得。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-02.jpg">
+					<p class="para-img-title">图3 选课提示</p>
+				</div>
+				<p class="para-help">
+					确认选课后，课程详情界面中按钮文字“加入课程”变为“进入学习”。如下图所示：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/223-03.jpg">
+					<p class="para-img-title">图3 加入课程后</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">4</i>课程收藏</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					在课程详情界面，点击收藏，可以收藏此课程。如下图所示：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/224-01.jpg">
+					<p class="para-img-title">图1 收藏课程</p>
+				</div>
+				
+				<p class="para-help">
+					收藏课程成功后，在学习中心-收藏课程中查看您收藏的所有课程。如下图所示：
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/224-02.jpg">
+					<p class="para-img-title">图2 已收藏课程</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">5</i>课程内容查看</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					（1）、在课程详情界面中，点击“进入学习”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/225-01.jpg">
+					<p class="para-img-title">图1 进入学习</p>
+				</div>
+				
+				<p class="para-help">
+					（2）、点击“进入学习”，进入下图所示界面，点击其左侧任意模块即可进行查看课程内容。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/225-02.jpg">
+					<p class="para-img-title">图2 课程主页</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课程选择 end-->
+	
+	<!--课件点播 start-->
+	<div class="help-panel question3 publicTip">
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>点播学习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					（1）、在课程内容界面点击“章节导航”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-01.jpg">
+					<p class="para-img-title">图1 课程主页</p>
+				</div>
+				<p class="para-help">
+					（2）、点击想要点播小节下方的内容标志。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-02.jpg">
+					<p class="para-img-title">图2 章节导航</p>
+				</div>
+				<p class="para-help">
+					（3）、点击视频标志后进入观看界面（如下图所示）。此外，
+					可点击屏幕左侧导航章节目录进行观看其他章节的内容，也可点击右侧小节内容标志进行切换观看。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-03.jpg">
+					<p class="para-img-title">图3 内容学习</p>
+				</div>
+				<p class="para-help">
+					（4）、如图4所示，在右上方有个“笔记”和“提问”标志，点击笔记标志即可进入写笔记界面，
+					点击提问标志即可进入发表提问界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-04.jpg">
+					<p class="para-img-title">图4 提问/记笔记</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课件点播 end-->
+	
+	<!--测验与作业 start-->
+	<div class="help-panel question4 publicTip">
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>测验与作业说明</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					刚刚我们了解了如何点播视频，现在让我们了解一下如何去做课程中测验和作业。
+				</p>
+				<p class="para-help">
+					一：客观题练习，提交后系统评分可立即知晓成绩，称为测验；
+				</p>
+				<p class="para-help">
+					二：主观题练习，提交后需要教师批阅评分，等到成绩公布后知晓成绩，称为作业。
+				</p>
+				<p class="para-help">
+					三：主观题练习，提交后需要同学之间批阅评分，等到成绩公布后知晓成绩，称为互评作业。
+				</p>
+				<p class="para-help">
+					在章节导航界面，点击练习<i class="icon-edit02"></i>标志，进入练习。
+					（或点击课程左侧导航下方的“测验与作业”，课堂中出现的所有练习会汇总在这里，也可以由此进入）如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/241-01.jpg">
+					<p class="para-img-title">图1 章节导航界面</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/241-02.jpg">
+					<p class="para-img-title">图2 测验与作业界面</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>做测验</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、在章节导航界面，点击“练习”标志后，进入本次练习的考核说明界面，如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/242-01.jpg">
+					<p class="para-img-title">图1 考核说明</p>
+				</div>
+				
+				<p class="para-help">
+					2、点击“开始测试/再测一次”进入做题界面，如下图所示。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/242-02.jpg">
+					<p class="para-img-title">图2 进入做题</p>
+				</div>
+				<p class="para-help">
+					3、在做题界面，答题完成可以点击“提交”，答题未完成可以点击“暂存”保存本次答题记录。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/242-03.jpg">
+					<p class="para-img-title">图3 提交/暂存</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>做互评作业</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、点击课程左侧导航下方的“测验与作业”，课堂中出现的所有练习会汇总在这里。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/243-01.jpg">
+					<p class="para-img-title">图1 测验与作业</p>
+				</div>
+				
+				<p class="para-help">
+					2、选择进入一个互评作业。<strong>首次进入互评作业时，会弹出考核说明界面。</strong>
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-02.jpg">
+					<p class="para-img-title">图2 考核说明</p>
+				</div>
+				<p class="para-help">
+					3、点击“我知道了”，进入互评作业-提交阶段界面。如下图所示。答题完成后，可以点击“提交”
+					<strong>（提交前必须要勾选遵守学术诚信条款）</strong>。答题未完成可以点击“暂存”保存本次答题记录。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-03.jpg">
+					<p class="para-img-title">图3 提交互评作业</p>
+				</div>
+				<p class="para-help">
+					4、如果已提交作业并且互评阶段已开始，会进入互评作业-互评阶段界面。
+					在互评阶段中，开始批阅他人作业之前，您需要首先进行互评训练。<strong>必须看完所有互评案例，才能进入批阅作业。</strong>
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-04.jpg">
+					<p class="para-img-title">图4 互评作业-互评训练</p>
+				</div>
+				<p class="para-help">
+					5、完成互评训练后，开始批阅他人作业。
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-05.jpg">
+					<p class="para-img-title">图5 批阅作业</p>
+				</div>
+				<p class="para-help">
+					6、完成互评阶段任务后，在成绩公布期间内查看成绩详情。
+					<strong>如果您对他人批阅分数不满意，可以提出成绩申诉，由教师审核处理。</strong>
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-06.jpg">
+					<p class="para-img-title">图6 查看成绩</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--测验与作业 end-->
+	
+	<!--在线论坛 start-->
+	<div class="help-panel question5 publicTip">
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>回帖/评论他人回帖</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、点击课程左下侧“讨论区”，进入图1所示界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-01.jpg">
+					<p class="para-img-title">图1 讨论区</p>
+				</div>
+				<p class="para-help">
+					2、选择您感兴趣的讨论版块，直接点击进入查看详情。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-02.jpg">
+					<p class="para-img-title">图2 版块讨论</p>
+				</div>
+				<p class="para-help">
+					3、进入一个讨论版块后，点击查看感兴趣帖子。在帖子详情界面，可以回帖和回复他人的回帖。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-03.jpg">
+					<p class="para-img-title">图3 回帖/回复他人的回帖</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>发表新帖</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、在讨论区界面，选择您感兴趣的讨论版块，直接点击进入查看详情。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-01.jpg">
+					<p class="para-img-title">图1 讨论区</p>
+				</div>
+				<p class="para-help">
+					2、进入一个讨论版块后，即如图2所示界面，点击“发表新帖”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-02.jpg">
+					<p class="para-img-title">图2 讨论版块</p>
+				</div>
+				<p class="para-help">
+					3、点击“发表新帖”后，界面跳转到发表新帖环节，输入标题与内容，并点击“发布”即可。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-03.jpg">
+					<p class="para-img-title">图3 发表新帖</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--在线论坛 end-->
+	
+	<!--翻转课堂 start-->
+	<div class="help-panel question6 publicTip">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>翻转课堂说明</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					翻转课堂展示课程开课中组织一些线下活动，可以报名参加。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/261-01.jpg">
+					<p class="para-img-title">图1 翻转课堂</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--翻转课堂 end-->
+	
+	<!--课程证书 start-->
+	<div class="help-panel studyDirection01 publicTip">
+		<p class="para-help para-help-title">
+			“好大学在线”是国内最好的大规模在线课程（慕课）开放与公共服务的平台，跨越院校围墙，汇聚了丰富的国内一流大学的优质教学资源，
+			为在校学生获取一流大学学分提供便捷途径，也可供有兴趣参与平台学习的社会公众提供随时随地的学习机会，满足不同层次的学习需求。
+		</p>
+		<p class="para-help para-help-title">
+			“好大学在线”课程证书（简称“证书”）是学生参与平台课程修读结果的证明。所有参与“好大学在线”课程学习的学生，
+			在完成课程学习任务，且考试成绩合格者，均可申请获取。
+		</p>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>证书用途</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”课程证书是关于学生在本平台修读课程科目、完成相关学习环节且成绩合格的证明。 
+					课程证书作为学生学习或终身学习简历和结果记载，可能对学生毕业后就业、读研、出国深造或重新找工作有帮助。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>申领条件</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					  注册申请“好大学在线”课程学习的学生，在完成规定的线上学习任务（观看课程视频、完成线上作业与各类测验、参与论坛与教学互评），
+					  通过线上考试，课程总成绩合格，并经课程组核实确认，均可在线提出领取证书申请。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>证书模板</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<div class="para-img">
+						<img src="static/picture/certificate.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>申领方式</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					申请课程证书，须支付课程证书费（含申领资格审核费、证书制作工本费、邮寄费等）为100元/证，在线缴纳。
+					</p>
+					<p class="para-help">
+					提请申领学生务必注意，申领费用一经发生，将不予退还。
+					</p>
+					<p class="para-help">
+					请申领学生务必提供详细的、确定的证书投递地址。如确系地址错误致证书邮寄失败，后果自负。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">5</i>证书邮寄</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”负责证书发放的所有事项，平台在收到证书申领申请后十个工作日内，将证书邮寄至学生在线填写的收件地址。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--课程证书 end-->
+	<!--学分认定 start-->
+	<div class="help-panel studyDirection02 publicTip">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>学分认定</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学分认定是指在校大学生在“好大学在线”按照课程教学计划学习，完成课程学习所有环节，参与所有考核，且最终学习成绩合格，
+					由学生所在学校给予学分，作为其在校生学习总量的一部分，成为获取学位证书的必要组成部分。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>课程范围</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学生须在其所在学校认定的“好大学在线”课程范围内按照学校规定修读。学生所在学校对计入学分所对应的课程所属学科、课程科目、
+					课程学时均有明确的规定，并在培养计划中予以体现。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>认定条件</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学生在完成线上所有学习任务（观看课程视频、完成线上作业与各类测验、参与论坛与教学互评）），通过线上和线下考试，且最终成绩合格，经课程组确认，
+					满足学生所在学校规定的学分修读需求，“好大学在线”将给予成绩，由学生所在学校按其规定认定学分。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>认定主体</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					 “好大学在线”对符合学分认定要求的学生，负责将其课程修读成绩发送至学生所在学校教务处，具体的认定工作由该校教务处负责实施。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--学分认定 end-->
+	<!--翻转课堂 start-->
+	<div class="help-panel studyDirection03 publicTip">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>翻转课堂</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					翻转课堂译自“Flipped Classroom”或“Inverted Classroom”。一般来说，就是指学生在线自己（课堂外）学习课程内容，在课堂或其它环境下师生面对
+					面交流与讨论与讨论的一种教学形态。
+					</p>
+					<p class="para-help">
+					目前“好大学在线”实施的翻转课堂有两种形式。一种是由课程组教师或在其指导下由学生所在学校老师组织实施的师生面对面交流活动，如分组讨论、主题交流、作业答疑、
+					参观实习等；还有一种是借助网络技术，课程组教师与学生通过视频开展教学互动，如问题解答、专题讲解等。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>翻转课堂实施</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”鼓励开展形式多样的翻转课堂教学，并要求参与翻转课堂学习的学生在参与前做好充分的准备。学生须按教学日历安排，
+					完成在线学习内容，参与在线教学互动与教学互评，完成课程布置的作用、测验等。
+					</p>
+					<p class="para-help">
+					学生在参与翻转课堂之前，应按在线课程提示学习完指定的课程内容。学生须按在线课程提示，详细了解翻转课堂安排的形式、时间与地点，
+					并在规定时间段内在线报名。一旦在线报名成功，务必确保参与。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<!--翻转课堂 end-->
+	<!--作业互评 start-->
+	<div class="help-panel studyDirection04 publicTip">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>作业互评</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					作业互评是”在“好大学在线”上学习同一课程学生之间，按照要求相互批阅作业的学习环节。学生批阅别人作业情况（是否批阅以及是否认真批阅）
+					以及被别人有效批阅的成绩将作为学院学习在线考核的一个重要部分，评价结果将在学习最终成绩中占有一定比例。
+					作业互评既是学习中的一个重要环节，也是“好大学在线”的一大特色，是学生参与教学、相互学习的一种有效方式，可促进学生相互交流，体现在线学习的主动性。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>参与作业互评</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”提请在线学习学生，务必按教学日历提示，在规定时间段内，按要求完成作业互评。
+					</p>
+					<p class="para-help">
+					“好大学在线”提请在线学习学生，务必认真、客观、公正地评价学习伙伴的学习效果，您的评价对他人很重要，相信您也会从中获益。
+					</p>
+					<p class="para-help">
+					学生若对于作业被评结果有异议，可在线提出申诉。严谨任何人恶意批阅，一经发现并核实，将按照有关规定严肃处理。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<!--作业互评 end-->
+	
+	<!-- 教师手册 -->
+	<div class="main main-help">
+	<!--课程证书 start-->
+	<div class="help-panel">
+		<p class="para-help para-help-title">
+			“好大学在线”是国内最好的大规模在线课程（慕课）开放与公共服务的平台，跨越院校围墙，汇聚了丰富的国内一流大学的优质教学资源，
+			为在校学生获取一流大学学分提供便捷途径，也可供有兴趣参与平台学习的社会公众提供随时随地的学习机会，满足不同层次的学习需求。
+		</p>
+		<p class="para-help para-help-title">
+			“好大学在线”课程证书（简称“证书”）是学生参与平台课程修读结果的证明。所有参与“好大学在线”课程学习的学生，
+			在完成课程学习任务，且考试成绩合格者，均可申请获取。
+		</p>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>证书用途</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”课程证书是关于学生在本平台修读课程科目、完成相关学习环节且成绩合格的证明。 
+					课程证书作为学生学习或终身学习简历和结果记载，可能对学生毕业后就业、读研、出国深造或重新找工作有帮助。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>申领条件</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					  注册申请“好大学在线”课程学习的学生，在完成规定的线上学习任务（观看课程视频、完成线上作业与各类测验、参与论坛与教学互评），
+					  通过线上考试，课程总成绩合格，并经课程组核实确认，均可在线提出领取证书申请。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>证书模板</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<div class="para-img">
+						<img src="static/picture/certificate.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>申领方式</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					申请课程证书，须支付课程证书费（含申领资格审核费、证书制作工本费、邮寄费等）为100元/证，在线缴纳。
+					</p>
+					<p class="para-help">
+					提请申领学生务必注意，申领费用一经发生，将不予退还。
+					</p>
+					<p class="para-help">
+					请申领学生务必提供详细的、确定的证书投递地址。如确系地址错误致证书邮寄失败，后果自负。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">5</i>证书邮寄</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”负责证书发放的所有事项，平台在收到证书申领申请后十个工作日内，将证书邮寄至学生在线填写的收件地址。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--课程证书 end-->
+	<!--学分认定 start-->
+	<div class="help-panel">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>学分认定</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学分认定是指在校大学生在“好大学在线”按照课程教学计划学习，完成课程学习所有环节，参与所有考核，且最终学习成绩合格，
+					由学生所在学校给予学分，作为其在校生学习总量的一部分，成为获取学位证书的必要组成部分。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>课程范围</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学生须在其所在学校认定的“好大学在线”课程范围内按照学校规定修读。学生所在学校对计入学分所对应的课程所属学科、课程科目、
+					课程学时均有明确的规定，并在培养计划中予以体现。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>认定条件</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					学生在完成线上所有学习任务（观看课程视频、完成线上作业与各类测验、参与论坛与教学互评）），通过线上和线下考试，且最终成绩合格，经课程组确认，
+					满足学生所在学校规定的学分修读需求，“好大学在线”将给予成绩，由学生所在学校按其规定认定学分。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>认定主体</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					 “好大学在线”对符合学分认定要求的学生，负责将其课程修读成绩发送至学生所在学校教务处，具体的认定工作由该校教务处负责实施。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--学分认定 end-->
+	<!--翻转课堂 start-->
+	<div class="help-panel">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>翻转课堂</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					翻转课堂译自“Flipped Classroom”或“Inverted Classroom”。一般来说，就是指学生在线自己（课堂外）学习课程内容，在课堂或其它环境下师生面对
+					面交流与讨论与讨论的一种教学形态。
+					</p>
+					<p class="para-help">
+					目前“好大学在线”实施的翻转课堂有两种形式。一种是由课程组教师或在其指导下由学生所在学校老师组织实施的师生面对面交流活动，如分组讨论、主题交流、作业答疑、
+					参观实习等；还有一种是借助网络技术，课程组教师与学生通过视频开展教学互动，如问题解答、专题讲解等。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>翻转课堂实施</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”鼓励开展形式多样的翻转课堂教学，并要求参与翻转课堂学习的学生在参与前做好充分的准备。学生须按教学日历安排，
+					完成在线学习内容，参与在线教学互动与教学互评，完成课程布置的作用、测验等。
+					</p>
+					<p class="para-help">
+					学生在参与翻转课堂之前，应按在线课程提示学习完指定的课程内容。学生须按在线课程提示，详细了解翻转课堂安排的形式、时间与地点，
+					并在规定时间段内在线报名。一旦在线报名成功，务必确保参与。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<!--翻转课堂 end-->
+	<!--作业互评 start-->
+	<div class="help-panel">
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>作业互评</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					作业互评是”在“好大学在线”上学习同一课程学生之间，按照要求相互批阅作业的学习环节。学生批阅别人作业情况（是否批阅以及是否认证批阅）
+					以及被别人有效批阅的成绩将作为学院学习在线考核的一个重要部分，评价结果将在学习最终成绩中占有一定比例。
+					作业互评既是学习中的一个重要环节，也是“好大学在线”的一大特色，是学生参与教学、相互学习的一种有效方式，可促进学生相互交流，体现在线学习的主动性。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion viewAccordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>参与作业互评</span>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					“好大学在线”提请在线学习学生，务必按教学日历提示，在规定时间段内，按要求完成作业互评。
+					</p>
+					<p class="para-help">
+					“好大学在线”提请在线学习学生，务必认真、客观、公正地评价学习伙伴的学习效果，您的评价对他人很重要，相信您也会从中获益。
+					</p>
+					<p class="para-help">
+					学生若对于作业被评结果有异议，可在线提出申诉。严谨任何人恶意批阅，一经发现并核实，将按照有关规定严肃处理。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<!--作业互评 end-->
+	<!--登录账户问题 start-->
+	<div class="help-panel">
+		<!--accordion start-->
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>我的账号登录不上去怎么办，我该如何解决这个问题？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+					答：使用您的电子邮件地址或者学校简称+学号和密码进行登录，登录失败并提示账号或密码有问题时，
+					请首先尝试通过登录界面上的“忘记密码”链接重设密码。您会被提示输入您的电子邮件地址，
+					我们将发送给您重设密码邮件，点击邮件中重设密码链接为您的账户设置新的登录密码。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>我如何注册好大学在线的学习账号？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：请输入好大学在线的网址http://www.cnmooc.org，在网站首界面的右上角找到登录／注册，
+						点击其后会出现登录／注册界面，想要注册新的账号，点击下方的“注册”，
+						按界面提示输入电子邮箱、密码，点击注册后我们将发送给您验证邮箱邮件，
+						点击邮件中激活账号链接，即可完成注册。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>我如何激活好大学在线的学号账号？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：请输入好大学在线的网址http://www.cnmooc.org，在网站首界面的右上角找到登录／注册，
+						点击其后会出现登录／注册界面，想要激活学号，点击下方的“激活学号”，
+						按界面提示输入学号、姓名、学校、电子邮箱等信息，点击激活学号后我们给您发送验证邮箱邮件，
+						点击邮件中激活学号链接，即可完成激活学号。如果您填写的电子邮箱是已在好大学中注册，
+						可将学号和电子邮箱绑定为同一账号，之前学习记录会继续保留。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>我如何知道所在学校的简称？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：请输入好大学在线的网址http://www.cnmooc.org，在网站首界面的右上角找到登录／注册，
+						点击其后会出现登录／注册界面，点击下方的“查看已签约学校”，弹出与本平台签约所有学校详情界面，
+						通过搜索您可以找到所在学校以及学校简称。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">5</i>我的学号激活不成功怎么办，我该如何解决这个问题？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：激活学号过程中请确保您填写的学号、姓名、学校等信息符合规定要求，如果激活失败可联系所在学校进行解决。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">6</i>我可以修改我的昵称及注册邮箱吗？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：昵称及注册邮箱均可修改。登录网站后，在右上角显示头像处点击头像，
+						在出现的下拉菜单中点击个人设置，在“个人资料”处可以修改昵称，在“邮箱设置”处可以修改注册邮箱。
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">7</i>我可以注销账号吗？会有什么影响？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：暂时没有此功能。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">8</i>我如何申请成为老师或者助教？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：目前没有开放申请功能。
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<!--accordion end-->
+	</div>
+	<!--登录账户问题 end-->
+	
+	<!--其它问题 start-->
+	<div class="help-panel">
+		<!--accordion start-->
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>为什么我不能正常访问好大学在线？是不是我的浏览器不行？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：好大学在线网站支持各主流浏览器（如果是IE浏览器，请使用8.0以上版本访问以获得最佳体验），如果您不能正常访问，
+						请先确认您的网址输入是否正确，账号密码有无错误，或测试您的网络速度是否过慢浏览器是否有问题。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>好大学在线的课程只有这几门吗？以后会有新的课程吗？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：当然不会只有这几门，目前好大学在线仍处于初试阶段，发布的课程较少，
+						以后会逐渐丰富各个学科各大高校的视频，请继续关注我们好大学在线，我们竭诚为广大求知者服务。
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>我是否需要一些特殊的软件或电脑设备？</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<div class="accordion-para">
+					<p class="para-help">
+						答：不需要，只要确定您的网速可以打开网站，直接输入我们的网址即可，方便快捷。
+					</p>	
+				</div>
+			</div>
+		</div>
+		<!--accordion end-->
+	</div>
+	<!--其它问题 end-->
+	
+	<!--登录注册 start-->
+	<div class="help-panel">
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>登录</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、登录网址http://www.cnmooc.org，进入好大学在线的首界面，点击右上角的登录／注册。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/211-01.jpg">
+					<p class="para-img-title">图1 登录/注册</p>
+				</div>
+				
+				<p class="para-help">
+					2、在图2所示界面，输入电子邮件地址和密码即可登录。
+				</p>
+				<p class="para-help">
+					如果首次访问没有账号，则点击右下方红笔标记的“注册”超链接，进行注册；
+				</p>
+				<div class="para-img">
+					<img src="static/picture/211-02.jpg">
+					<p class="para-img-title">图2 登录界面</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>注册</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击界面右上角的登录／注册中“注册”后，会出现图1所示注册界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-01.jpg">
+					<p class="para-img-title">图1 注册界面</p>
+				</div>
+				<p class="para-help">
+					按提示输入，点击注册后系统会发送邮箱验证邮件（如果没有收到邮件可以点击“重新发送”）。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-02.jpg">
+					<p class="para-img-title">图2 邮箱验证界面</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/212-03.jpg">
+					<p class="para-img-title">图3 查看邮件界面</p>
+				</div>
+				<p class="para-help">
+					点击邮件中“激活账号”按钮或链接成功会直接返回登录界面，即完成注册可以进行登录。<br>
+					如果您是在校学生，您可以进行在校认证。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/212-04.jpg">
+					<p class="para-img-title">图4 注册成功界面</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<!--登录注册 end-->
+	
+	<!--课程选择 start-->
+	<div class="help-panel">
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>搜索课程</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					如图所示，用户可以根据自己的要求输入想要搜索的课程，点击搜索即完成搜索课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/221-01.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>课程详情</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击页眉上面的“课程”，进入课程列表界面后，可看到所有课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-01.jpg">
+					<p class="para-img-title">图1 首页</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/222-02.jpg">
+					<p class="para-img-title">图2 所有课程</p>
+				</div>
+				<p class="para-help">
+					将鼠标移动至想要查看详情的课程图片上，会出现“去看看”文字（如图2所示）。点击即可进入课程详情，如下
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-03.jpg">
+					<p class="para-img-title">图3 课程详情</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>课程加入/进入</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击页眉上面的“课程”，进入课程列表界面后，可看到所有课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/223-01.jpg">
+					<p class="para-img-title">图1 课程详情</p>
+				</div>
+				
+				<p class="para-help">
+					点击加入课程后，弹出选课提示，您需要告诉我们您的学习目的是修学分还是非学分学习。
+				</p>
+				<p class="para-help">
+					选择修学分时，如果在校身份未认证，还需要进行在校身份认证，在校认证不通过或未认证会影响您的学分获得。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/222-02.jpg">
+					<p class="para-img-title">图3 选课提示</p>
+				</div>
+				<p class="para-help">
+					确认选课后，课程详情界面中按钮文字“加入课程”变为“进入学习”。如下图所示：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/223-03.jpg">
+					<p class="para-img-title">图3 加入课程后</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">4</i>课程收藏</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					在课程详情界面，点击收藏，可以收藏此课程。如下图所示：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/224-01.jpg">
+					<p class="para-img-title">图1 收藏课程</p>
+				</div>
+				
+				<p class="para-help">
+					收藏课程成功后，在学习中心-收藏课程中查看您收藏的所有课程。如下图所示：
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/224-02.jpg">
+					<p class="para-img-title">图2 已收藏课程</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">5</i>课程内容查看</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					（1）、在课程详情界面中，点击“进入学习”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/225-01.jpg">
+					<p class="para-img-title">图1 进入学习</p>
+				</div>
+				
+				<p class="para-help">
+					（2）、点击“进入学习”，进入下图所示界面，点击其左侧任意模块即可进行查看课程内容。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/225-02.jpg">
+					<p class="para-img-title">图2 课程主页</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课程选择 end-->
+	
+	<!--课件点播 start-->
+	<div class="help-panel">
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>点播学习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					（1）、在课程内容界面点击“章节导航”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-01.jpg">
+					<p class="para-img-title">图1 课程主页</p>
+				</div>
+				<p class="para-help">
+					（2）、点击想要点播小节下方的内容标志。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-02.jpg">
+					<p class="para-img-title">图2 章节导航</p>
+				</div>
+				<p class="para-help">
+					（3）、点击视频标志后进入观看界面（如下图所示）。此外，
+					可点击屏幕左侧导航章节目录进行观看其他章节的内容，也可点击右侧小节内容标志进行切换观看。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-03.jpg">
+					<p class="para-img-title">图3 内容学习</p>
+				</div>
+				<p class="para-help">
+					（4）、如图4所示，在右上方有个“笔记”和“提问”标志，点击笔记标志即可进入写笔记界面，
+					点击提问标志即可进入发表提问界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/231-04.jpg">
+					<p class="para-img-title">图4 提问/记笔记</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课件点播 end-->
+	
+	<!--测验与作业 start-->
+	<div class="help-panel">
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>测验与作业说明</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					刚刚我们了解了如何点播视频，现在让我们了解一下如何去做课程中测验和作业。
+				</p>
+				<p class="para-help">
+					一：客观题练习，提交后系统评分可立即知晓成绩，称为测验；
+				</p>
+				<p class="para-help">
+					二：主观题练习，提交后需要教师批阅评分，等到成绩公布后知晓成绩，称为作业。
+				</p>
+				<p class="para-help">
+					三：主观题练习，提交后需要同学之间批阅评分，等到成绩公布后知晓成绩，称为互评作业。
+				</p>
+				<p class="para-help">
+					在章节导航界面，点击练习<i class="icon-edit02"></i>标志，进入练习。
+					（或点击课程左侧导航下方的“测验与作业”，课堂中出现的所有练习会汇总在这里，也可以由此进入）如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/241-01.jpg">
+					<p class="para-img-title">图1 章节导航界面</p>
+				</div>
+				<div class="para-img">
+					<img src="static/picture/241-02.jpg">
+					<p class="para-img-title">图2 测验与作业界面</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>做测验</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、在章节导航界面，点击“练习”标志后，进入本次练习的考核说明界面，如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/242-01.jpg">
+					<p class="para-img-title">图1 考核说明</p>
+				</div>
+				
+				<p class="para-help">
+					2、点击“开始测试/再测一次”进入做题界面，如下图所示。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/242-02.jpg">
+					<p class="para-img-title">图2 进入做题</p>
+				</div>
+				<p class="para-help">
+					3、在做题界面，答题完成可以点击“提交”，答题未完成可以点击“暂存”保存本次答题记录。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/242-03.jpg">
+					<p class="para-img-title">图3 提交/暂存</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">3</i>做互评作业</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、点击课程左侧导航下方的“测验与作业”，课堂中出现的所有练习会汇总在这里。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/243-01.jpg">
+					<p class="para-img-title">图1 测验与作业</p>
+				</div>
+				
+				<p class="para-help">
+					2、选择进入一个互评作业。<strong>首次进入互评作业时，会弹出考核说明界面。</strong>
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-02.jpg">
+					<p class="para-img-title">图2 考核说明</p>
+				</div>
+				<p class="para-help">
+					3、点击“我知道了”，进入互评作业-提交阶段界面。如下图所示。答题完成后，可以点击“提交”
+					<strong>（提交前必须要勾选遵守学术诚信条款）</strong>。答题未完成可以点击“暂存”保存本次答题记录。
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-03.jpg">
+					<p class="para-img-title">图3 提交互评作业</p>
+				</div>
+				<p class="para-help">
+					4、如果已提交作业并且互评阶段已开始，会进入互评作业-互评阶段界面。
+					在互评阶段中，开始批阅他人作业之前，您需要首先进行互评训练。<strong>必须看完所有互评案例，才能进入批阅作业。</strong>
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-04.jpg">
+					<p class="para-img-title">图4 互评作业-互评训练</p>
+				</div>
+				<p class="para-help">
+					5、完成互评训练后，开始批阅他人作业。
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-05.jpg">
+					<p class="para-img-title">图5 批阅作业</p>
+				</div>
+				<p class="para-help">
+					6、完成互评阶段任务后，在成绩公布期间内查看成绩详情。
+					<strong>如果您对他人批阅成绩不满意，可以提出成绩申诉，由教师审核处理。</strong>
+
+				</p>
+				
+				<div class="para-img">
+					<img src="static/picture/243-06.jpg">
+					<p class="para-img-title">图6 查看成绩</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--测验与作业 end-->
+	
+	<!--在线论坛 start-->
+	<div class="help-panel">
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>回帖/评论他人回帖</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、点击课程左下侧“讨论区”，进入图1所示界面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-01.jpg">
+					<p class="para-img-title">图1 讨论区</p>
+				</div>
+				<p class="para-help">
+					2、选择您感兴趣的讨论版块，直接点击进入查看详情。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-02.jpg">
+					<p class="para-img-title">图2 版块讨论</p>
+				</div>
+				<p class="para-help">
+					3、进入一个讨论版块后，点击查看感兴趣帖子。在帖子详情界面，可以回帖和回复他人的回帖。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/251-03.jpg">
+					<p class="para-img-title">图3 回帖/回复他人的回帖</p>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">2</i>发表新帖</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、在讨论区界面，选择您感兴趣的讨论版块，直接点击进入查看详情。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-01.jpg">
+					<p class="para-img-title">图1 讨论区</p>
+				</div>
+				<p class="para-help">
+					2、进入一个讨论版块后，即如图2所示界面，点击“发表新帖”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-02.jpg">
+					<p class="para-img-title">图2 讨论版块</p>
+				</div>
+				<p class="para-help">
+					3、点击“发表新帖”后，界面跳转到发表新帖环节，输入标题与内容，并点击“发布”即可。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/252-03.jpg">
+					<p class="para-img-title">图3 发表新帖</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--在线论坛 end-->
+	
+	<!--翻转课堂 start-->
+	<div class="help-panel">	
+		<div class="view-accordion">
+			<h3 class="accordion-header">
+				<span class="accordion-text"><i class="help-no">1</i>翻转课堂说明</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					翻转课堂展示课程开课中组织一些线下活动，可以报名参加。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/261-01.jpg">
+					<p class="para-img-title">图1 翻转课堂</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--翻转课堂 end-->
+	
+	<!-- 教师手册 -->
+	<!--课程管理 start-->
+	<div class="help-panel publicTip" id="teacherHelp1">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>创建课程</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					教师登录课程工作室后，可以看到当前管理所有课程。
+				</p>
+				<p class="para-help">
+					点击“创建一门课程”按钮，进入创建课程页面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/411-01.jpg">
+				</div>
+				<p class="para-help">
+					在创建课程页面，填写课程的基本信息，最后点击“创建课程”按钮。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/411-02.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>编辑课程</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					 在课程工作室中课程管理页面，可以对课程进行编辑、删除、查看课程统计分析。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/412-01.jpg">
+				</div>
+				<p class="para-help">
+					 点击“编辑”直接进入编辑课程信息页面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/412-02.jpg">
+				</div>
+				<p class="para-help">
+					 点击“删除”弹出确认删除提示，点击确定可以删除该课程。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/412-03.jpg">
+				</div>
+				<p class="para-help">
+					点击统计分析，可以查看该课程历次开课报名情况以及学员所在地域分布情况。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/412-04.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课程管理 end-->
+	<!--课件素材 start-->
+	<div class="help-panel publicTip" id="teacherHelp2">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>添加视频</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help" style="text-indent:0;">
+					<strong>注：当前暂不支持从本地直接上传视频</strong>。
+				</p>
+				<p class="para-help">
+					第三方视频是该学校已将视频上传到第三方存储空间后，在此处可以直接引用已上传视频，添加到课件素材库中。
+				</p>
+				<p class="para-help">
+					点击第三方视频按钮，进入添加第三方视频页面。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/421-01.jpg">
+				</div>
+				<p class="para-help">
+					第一步：点击关联视频，弹出插入第三方视频，选择一个视频。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/421-02.jpg">
+				</div>
+				<p class="para-help">
+					第二步：上传讲义，可以拖拽文件上传，也可以点击上传文件按钮上传。
+				</p>
+				<p class="para-help">
+					第三步：上传字幕，可以拖拽文件上传，也可以点击上传文件按钮上传。
+				</p>
+				<p class="para-help">
+					第四步：最后点击提交按钮完成。
+				</p>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>上传文档</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击上传文档按钮，进入上传文档页面。
+				</p>
+				<p class="para-help">
+					第一步：上传文档，可以拖拽文件上传，也可以点击上传文件按钮上传。
+				</p>
+				<p class="para-help">
+					第二步：最后点击提交按钮完成。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/422-01.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>设置目录</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					资源库将添加资源存放在此目录中，可对目录进行添加、编辑等维护管理。目录默认为一个根目录。
+				</p>
+				<p class="para-help">
+					1、如何编辑管理目录结构？
+				</p>
+				<p class="para-help">
+					点击“设置目录”按钮，在弹出页面中，
+				</p>
+				<p class="para-help">
+					● 添加子目录：鼠标滑过要添加子目录的上一级目录，点击添加按钮，弹出新建目录页面填写目录名称，最后确定即可。
+				</p>
+				<p class="para-help">
+					● 编辑目录名称：鼠标滑过要编辑的目录，点击编辑按钮，弹出编辑目录页面填写目录新名称，最后确定即可。
+				</p>
+				<p class="para-help">
+					● 删除目录：鼠标滑过要删除的目录，点击删除按钮，弹出确认删除提示，最后确定即可。<br><br>
+				</p>
+				<p class="para-help">
+					2、如何更换资源所在的目录 ？
+				</p>
+				<p class="para-help">
+					勾选要更换目录的资源，点击“设置目录”按钮，在弹出页面中，选择资源要存放的目录，最后点击确定即可。
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--课件素材 end-->
+	<!--练习题目 start-->
+	<div class="help-panel publicTip" id="teacherHelp3">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>添加题目</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					添加题目有2种方式：单个添加题目和批量添加题目。
+				</p>
+				<p class="para-help">
+					1、单个添加题目
+				</p>
+				<p class="para-help">
+					点击“添加题目”按钮，选择要添加题型（包含单选题、多选题、判断题、简答题）。下面以添加多选题为例讲述：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/431-01.jpg">
+				</div>
+				<p class="para-help">
+					在弹出题型下拉菜单中，点击添加多选题，进入添加多选题页面，输入问题描述内容和选项内容，最后点击提交即可。操作说明：
+				</p>
+				<p class="para-help">
+					● 点击添加图标，增加选项；<br>
+					● 点击删除图标，删除选项；<br>
+					● 点击<img src="static/picture/icon-rank.jpg">，可以切换正确选项与错误选项，用来标识该选项是正确的还是错误的，即标识本题的正确答案。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/431-02.jpg">
+				</div>
+				<p class="para-help">
+					添加单选题，添加简答题、添加判断题同添加多选题大致过程相同，这里不再做详细描述。<br><br>
+				</p>
+				<p class="para-help">
+					2、批量添加题目
+				</p>
+				<p class="para-help">
+					步骤1：点击下载导入模板，下载导入题目的样式模板，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/431-03.jpg">
+				</div>
+				<p class="para-help">
+					<strong>Excel模板说明</strong>：题目分四个字段：题型、题干、选项、答案、解析。
+				</p>
+				<p class="para-help">
+					题干是指问题的描述。
+				</p>
+				<p class="para-help">
+					选项是指选择题和判断题的选项，填写完成一个选项时，按Alt+Enter键换行，换行后程序会默认为一个选项，然后继续填写其他选项。
+				</p>
+				<p class="para-help">
+					答案是问题答案。第一个选项默认为A，填写选项答案时，请按照此顺序填写。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/431-04.jpg">
+				</div>
+				<p class="para-help">
+					步骤2：点击Excel导入，本地导入含有题目的Excel文件。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/431-05.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>编辑题目</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、编辑题目
+				</p>
+				<p class="para-help">
+					点击题目中“编辑”图标，进入编辑题目页面。编辑操作详细可参照<strong>添加题目</strong>，这里不做详细讲述。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/432-01.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					2、删除题目
+				</p>
+				<p class="para-help">
+					勾选多个题目，点击删除，进行批量删除。
+				</p>
+				<p class="para-help">
+					点击题目中删除图标，进行删除该题。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/432-02.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					3、设置题目所在目录
+				</p>
+				<p class="para-help">
+					勾选题目，点击设置目录按钮，选择要放置题目的目录，最后确定即可。
+				</p>
+				<p class="para-help">
+					详细可以参照<strong>课件素材-设置目录</strong>说明。
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--练习题目 end-->
+	<!--问卷题目 start-->
+	<div class="help-panel publicTip" id="teacherHelp4">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>添加题目</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					添加题目有2种方式：单个添加题目和批量添加题目。
+				</p>
+				<p class="para-help">
+					1、单个添加题目
+				</p>
+				<p class="para-help">
+					点击“添加题目”按钮，选择要添加题型（包含单选题、多选题）。下面以添加多选题为例讲述：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/441-01.jpg">
+				</div>
+				<p class="para-help">
+					在弹出题型下拉菜单中，点击添加多选题，进入添加多选题页面，输入问题描述内容和选项内容，最后点击提交即可。操作说明：<br>
+				</p>
+				<p class="para-help">
+					● 点击添加图标，增加选项；<br>
+					● 点击删除图标，删除选项；<br>
+					● 点击<img src="static/picture/icon-drag.png"> ，拖拽选项排序；
+				</p>
+				<div class="para-img">
+					<img src="static/picture/441-02.jpg">
+				</div>
+				<p class="para-help">
+					添加单选题同添加多选题大致过程相同，这里不再做详细描述。<br><br>
+				</p>
+				<p class="para-help">
+					2、批量添加题目
+				</p>
+				<p class="para-help">
+					步骤1：点击下载导入模板，下载导入题目的样式模板，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/441-03.jpg">
+				</div>
+				<p class="para-help">
+					<strong>Excel模板说明</strong>：题目分四个字段：题型、题干、选项。
+				</p>
+				<p class="para-help">
+					题干是指问题的描述。
+				</p>
+				<p class="para-help">
+					选项是指选择题和判断题的选项，填写完成一个选项时，按Alt+Enter键换行，换行后程序会默认为一个选项，然后继续填写其他选项。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/441-04.jpg">
+				</div>
+				<p class="para-help">
+					步骤2：点击Excel导入，本地导入含有题目的Excel文件。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/441-05.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>编辑题目</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					可以参照<strong>练习题目-编辑题目</strong>说明，这里不做详细说明。
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--问卷题目 end-->
+	<!--课件内容 start-->
+	<div class="help-panel publicTip" id="teacherHelp5">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>搭架章节结构</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、添加章
+				</p>
+				<p class="para-help">
+					点击“添加章”按钮，在弹出的添加章页面，填写章信息以及章发布时间。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/451-01.jpg">
+				</div>
+				<p class="para-help">
+					添加章完成后，鼠标滑过章，出现编辑和删除图标，可以对该章进行编辑和删除。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/451-02.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					2、添加节
+				</p>
+				<p class="para-help">
+					添加章完成后，点击章下的“添加讲”按钮。在弹出添加讲页面，填写讲信息。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/451-03.jpg">
+				</div>
+				<div class="para-img">
+					<img src="static/picture/451-04.jpg">
+				</div>
+				<p class="para-help">
+					添加节完成后，鼠标滑过节，出现编辑和删除图标，可以对该节进行编辑和删除。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/451-05.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>添加客观练习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					<strong>注：客观练习的发布时间同所在章的发布时间相同。</strong>
+				</p>
+				<p class="para-help" style="text-indent:2em;">
+					<strong>上一步完成后，可以点击按钮下一步或导航条进入下一步骤。</strong>
+				</p>
+				<p class="para-help">
+					在讲座内容编辑页面中，点击添加客观练习按钮。进入添加客观练习页面：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-01.jpg">
+				</div>
+				<p class="para-help">
+					第一步：选择试题
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-02.jpg">
+				</div>
+				<p class="para-help">
+					第二步：试卷预览编辑
+				</p>
+				<p class="para-help">
+					进入试卷预览编辑页面，可以对上一步骤选中题目进行确认、点击删除图标进行删减题目。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-03.jpg">
+				</div>
+				<p class="para-help">
+					第三步：属性设置
+				</p>
+				<p class="para-help">
+					进入属性编辑页面，对客观练习的相关属性信息进行设置。
+				</p>
+				<p class="para-help">
+					● 练习名称：展示给学生看到的练习名称。
+				</p>
+				<p class="para-help">
+					● 提交截止时间：练习什么时候提交截止，学生不能再进行提交。
+				</p>
+				<p class="para-help">
+					● 允许提交次数：学生可以提交几次答题记录。
+				</p>
+				<p class="para-help">
+					● 成绩评定算法：该练习的成绩是如何计算。
+				</p>
+				<p class="para-help">
+					● 限时：学生参与练习是否有时间限制。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-04.jpg">
+				</div>
+				<p class="para-help">
+					最后点击“提交”完成添加客观练习。回到章节列表页面，可以对已添加练习进行编辑设置、排序等操作。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-05.jpg"><br><br>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>编辑客观练习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、调整练习的题目
+				</p>
+				<p class="para-help">
+					<strong>注：可以在没有人提交练习和暂存练习时调整题目，一旦有人提交不支持进行增减题目。</strong>
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“编辑题目”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-06.jpg">
+				</div>
+				<p class="para-help">
+					进入编辑练习的题目页面，进行增加和删除题目。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-07.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					2、调整练习的提交截止时间
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-08.jpg">
+				</div>
+				<p class="para-help">
+					进入属性设置页面，进行设置练习的提交截止时间。 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/455-09.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					3、调整练习的成绩评定算法
+				</p>
+				<p class="para-help">
+					<strong>注：练习发布后，不允许修改成绩评定算法</strong>
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接， 
+				</p>
+				<p class="para-help">
+					进入属性设置页面，进行设置练习的成绩评定算法。
+				</p>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">4</i>添加主观练习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					<strong>注：客观练习的发布时间同所在章的发布时间相同。</strong>
+				</p>
+				<p class="para-help" style="text-indent:2em;">
+					<strong>上一步完成后，可以点击按钮下一步或导航条进入下一步骤。</strong>
+				</p>
+				<p class="para-help">
+					在讲座内容编辑页面中，点击添加主观练习按钮。进入添加客观练习步骤页面：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-01.jpg">
+				</div>
+				<p class="para-help">
+					第一步：选择试题
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-02.jpg">
+				</div>
+				<p class="para-help">
+					第二步：试卷预览编辑
+				</p>
+				<p class="para-help">
+					进入试卷预览编辑页面，可以对上一步骤选中题目进行确认和点击删除图标进行删减。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-03.jpg">
+				</div>
+				<p class="para-help">
+					第三步：属性设置
+				</p>
+				<p class="para-help">
+					依据成绩的批阅方式将主观练习分为：教师批阅的主观练习和同业互评的主观练习。
+				</p>
+				<p class="para-help">
+					（1）、教师批阅的主观练习：是指有教师直接批阅成绩。设置说明：
+				</p>
+				<p class="para-help">
+					● 练习名称：学生看到练习名称；
+				</p>
+				<p class="para-help">
+					● 提交截止时间：练习什么时候提交截止，学生不能再进行提交；
+				</p>
+				<p class="para-help">
+					● 	成绩发布时间：学生什么时候可以看到成绩；
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-04.jpg">
+				</div>
+				<p class="para-help">
+					（2）、同业互评的主观练习：是指学生之间进行互评成绩。设置说明：
+				</p>
+
+				<p class="para-help">
+					● 练习名称：学生看到练习名称；
+				</p>
+				<p class="para-help">
+					● 提交截止时间：练习什么时候提交截止，学生不能再进行提交；
+				</p>
+				<p class="para-help">
+					● 批阅起止时间：学生互评成绩的开始和结束时间；
+				</p>
+				<p class="para-help">
+					● 成绩发布时间：学生什么时候可以看到成绩；
+				</p>
+				<p class="para-help">
+					● 申诉截止时间：成绩公布后，学生在一段时间内可以对互评成绩进行申诉；
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-05.jpg">
+				</div>
+				<p class="para-help">
+					第四步：评分设置，主要是针对同业互评的主观练习进行设置。设置说明：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-06.jpg">
+				</div>
+				<p class="para-help">
+					（1）、成绩占比设置
+				</p>
+				<p class="para-help">
+					同业互评的主观练习成绩分为3个部分：
+				</p>
+				
+				<p class="para-help">
+					● 被批阅分数：提交的练习被他人或教师批阅的得分。
+				</p>
+				<p class="para-help">
+					● 批阅数量：按照批阅他人作业实际数量得分。
+				</p>
+				<p class="para-help">
+					● 批阅质量：只要批阅一份作业，该项就会得满分。教师会在后续根据实际情况修改该项得分。
+				</p>
+				<p class="para-help">
+					（2）、互评人数设置
+				</p>
+				<p class="para-help">
+					批阅数量：每人需要批阅他人作业份数。
+				</p>
+				<p class="para-help">
+					最少被批阅次数：作业至少被他人批阅N次时，才会有被批阅分数。
+				</p>
+				<p class="para-help">
+					（3）、成绩评定算法
+				</p>
+				<p class="para-help">
+					作业被他人批阅多次时，最后得分的计算规则。
+				</p>
+				<p class="para-help">
+					<strong>注：如果教师参与了批阅，以教师批阅分数为准。</strong>
+				</p>
+				<p class="para-help">
+					（4）、评分项填写
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-07.jpg">
+				</div>
+				<p class="para-help">
+					展示给学生效果：
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-08.jpg">
+				</div>
+				<p class="para-help">
+					最后点击“提交”完成添加主观练习。回到章节列表页面，可以对已添加练习进行编辑设置、案例设置和排序等操作。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-09.jpg"><br><br>
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">5</i>编辑主观练习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					1、调整练习的题目
+				</p>
+				<p class="para-help">
+					<strong>注：可以在没有人提交练习和暂存练习时调整题目，一旦有人提交不支持进行增减题目。</strong>
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“编辑题目”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-10.jpg">
+				</div>
+				<p class="para-help">
+					进入编辑练习的题目页面，进行增加和删除题目。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-11.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					2、调整练习的提交截止时间
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-12.jpg">
+				</div>
+				<p class="para-help">
+					进入属性设置页面，修改练习的提交截止时间。如果提交截止后，可以设置延期补交时间，为未提交学生提供提交练习机会。
+				</p>
+				<p class="para-help">
+					<strong>注：在提交截止之前，学生可以提交多次，以最后一次为准。</strong>
+				</p>
+				<p class="para-help" style="text-indent:2em;">
+					<strong>在补交截止期间，未提交的学生只有一次提交练习机会。</strong>
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-13.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					3、设置互评案例
+				</p>
+				<p class="para-help">
+					为同业互评的主观练习设置互评案例，预先训练学生批阅作业能力。
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“评分设置”链接，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-14.jpg">
+				</div>
+				<p class="para-help">
+					进入评分设置页面，设置练习互评案例，如下图所示。
+				</p>
+				<p class="para-help">
+					依据案例来源将设置案例方式分为“从现有练习中选择”和“自己制作”。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-15.jpg">
+				</div>
+				
+				<p class="para-help">
+					从现有练习中选择是指从学生已提交练习中挑选。自己制作是指直接填写练习答案。如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-16.jpg">
+				</div>
+				<p class="para-help">
+					点击确定后，回答设置案例页面。对其进行批阅填写评分和评语，最后点击保存。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-17.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					4、调整练习的互评截止时间
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-12.jpg">
+				</div>
+				<p class="para-help">
+					进入属性设置页面，修改练习的互评截止时间，即修改如下图所示的互评起止时间。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-19.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					5、调整练习的成绩考核标准
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“评分设置”链接，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-14.jpg">
+				</div>
+				<p class="para-help">
+					进入评分设置页面，修改练习成绩考核标准，如下图所示。
+				</p>
+				<p class="para-help">
+					（1）、成绩占比设置
+				</p>
+				<p class="para-help">
+					同业互评的主观练习成绩分为3个部分：
+				</p>
+				<p class="para-help">
+					被批阅分数：提交的练习被他人或教师批阅的得分。
+				</p>
+				<p class="para-help">
+					批阅数量：按照批阅他人作业实际数量得分。
+				</p>
+				<p class="para-help">
+					批阅质量：只要批阅一份作业，该项就会得满分。教师会在后续根据实际情况修改该项得分。
+				</p>
+				<p class="para-help">
+					（2）、互评人数设置
+				</p>
+				<p class="para-help">
+					批阅数量：每人需要批阅他人作业份数。
+				</p>
+				<p class="para-help">
+					最少被批阅次数：作业至少被他人批阅N次时，才会有被批阅分数。
+				</p>
+				<p class="para-help">
+					（3）、成绩评定算法
+				</p>
+				<p class="para-help">
+					作业被他人批阅多次时，最后得分的计算规则。
+				</p>
+				<p class="para-help">
+					<strong>注：如果教师参与了批阅，以教师批阅分数为准。</strong>
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-21.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					6、调整练习的成绩发布时间
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-12.jpg">
+				</div>
+				<p class="para-help">
+					进入属性设置页面，修改成绩发布时间，即修改如下图所示的成绩发布时间。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-23.jpg"><br><br>
+				</div>
+				<p class="para-help">
+					7、调整练习的成绩申诉截止时间
+				</p>
+				<p class="para-help">
+					鼠标点击练习中设置图标，在弹出下拉菜单中点击“属性设置”链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-12.jpg">
+				</div>
+				<p class="para-help">
+					进入属性设置页面，修改申诉成绩截止时间，即修改如下图所示的申诉截止时间。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/456-25.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课件内容 end-->
+	<!--课程公告 start-->
+	<div class="help-panel publicTip" id="teacherHelp6">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>发送公告</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					进入开课管理页面，点击左侧导航栏“课程内容”中公告，进入本次开课的公告管理页面，
+				</p>
+				<div class="para-img">
+					<img src="static/picture/461-01.jpg">
+				</div>
+				<p class="para-help">
+					点击按钮“新增”，弹出新建公告页面，填写公告信息，最后点击确定即可。
+				</p>
+				<p class="para-help">
+					<strong>注：勾选发送邮件给学生时，会将公告信息以邮件形式发送给学生。</strong>
+				</p>
+				<div class="para-img">
+					<img src="static/picture/461-02.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>预览公告</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					新建公告成功后，回到公告列表页面，点击“预览”图标，在新标签页中展示公告在课程中排版样式。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/462-01.jpg">
+				</div>
+				<div class="para-img">
+					<img src="static/picture/462-02.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--课程公告 end-->
+	<!--教学互动 主观练习 start-->
+	<div class="help-panel publicTip" id="teacherHelp7">	
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">1</i>查看主观练习</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					在开课管理页面，点击教学互动中主观练习，进入主观练习列表页面，如下图所示。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-01.jpg">
+				</div>
+				<p class="para-help">
+					点击练习名称链接，如下图所示。
+				</p>
+				<p class="para-help">
+					<strong>注：下面通过处理同业互评的主观练习描述功能操作。</strong>
+				</p>
+				<p class="para-help" style="text-indent:2em;">
+					<strong>教师批阅的主观练习与同业互评的主观练习大致相同，这里不再做详细描述。</strong>
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-02.jpg">
+				</div>
+				<p class="para-help">
+					进入练习详情页面，如下图所示。<br>
+					点击“分数段占比”的柱型统计图中色块，学生列表中会过滤显示该分数段的学生。<br>
+					点击列表上方的下拉菜单过滤学生：<br>
+					提交状态分为：已提交和未提交。<br>
+					互评状态分为：批阅完成（被批未完成）、批阅完成（被批完成）、批阅未完成（被批未完成）、批阅未完成（被批完成）。<br>
+					批阅完成是指：该学生已完成批阅他人作业的任务；<br>
+					被批未完成是指：该学生提交的作业没有被他人批阅或批阅次数过低不能获得分数；<br>
+					成绩申诉状态分为：待处理申诉和已处理的申诉。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-03.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">2</i>发送消息</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					进入练习详情页面，通过下拉菜单筛选，列表中显示需要发送消息的学生，点击“发送消息”。<br>
+					举例说明1：对未提交的学生发送消息。提交状态中选择未提交，过滤筛选未提交的学生。如下图所示。<br>
+					举例说明2：对未完成批阅任务的学生发送消息。互评状态中选择：批阅未完成（被批未完成）或 批阅未完成（被批完成）进行过滤筛选未提交的学生。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-04.jpg">
+				</div>
+				<p class="para-help">
+					点击发送消息，弹出发送消息框。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-05.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">3</i>设置补交延期截止时间</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					如果练习提交时间已截止，但还有很多学生没有提交。可以在此处直接设置延期补交截止时间。点击日历图标，弹出设置补交延期时间。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-06.jpg">
+				</div>
+				<div class="para-img">
+					<img src="static/picture/472-07.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">4</i>批阅作业</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击批阅作业字段下“批阅”超链接， 
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-08.jpg">
+				</div>
+				<p class="para-help">
+					进入批阅作业页面，<br>
+					第一步：填写评分和评语。<br>
+					第二步：点击提交完成批阅。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-09.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="view-accordion">
+			<h3 class="accordion-header link-header">
+				<span class="accordion-text"><i class="help-no">5</i>处理成绩申诉</span>
+				<i class="icon-arrow02"></i>
+			</h3>
+			<div class="accordion-body">
+				<p class="para-help">
+					点击下拉菜单成绩申诉状态，选择待处理申诉，列表中显示所有待处理申诉的学生。<br>
+					点击申诉处理字段下“申诉”超链接
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-10.jpg">
+				</div>
+				<p class="para-help">
+					进入申诉处理页面，查看批阅详情，依据实际情况进行处理。<br>
+					第一步：判断批阅成绩是否合理。<br>
+					如果认为该学生的练习符合当前被批阅分数，勾选保持原有成绩；<br>
+					如果认为该学生的练习不符合当前被批阅分数，勾选修改成绩，并对其进行重新打分。<br>
+					第二步：给学生留言，填写附属信息。<br>
+					第三步：点击提交，完成申诉处理。学生会实时看到申诉处理情况。
+				</p>
+				<div class="para-img">
+					<img src="static/picture/472-11.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--教学互动 主观练习 end-->
+</div>
+	
+</div>
+<script type="text/javascript">
+$(function() {
+
+	//侧栏导航
+	$(".nav-text").click(function() {
+	
+		$li = $(this).parent();
+		
+		if($li.hasClass("open-up")){
+			$li.removeClass("open-up");
+			$li.children(".sub-nav").slideUp();
+		}else{
+			$li.siblings().removeClass("open-up");
+			$li.siblings().find(".current").removeClass("current");
+			$li.siblings().find(".sub-nav").slideUp();
+			$(this).addClass("current");
+			$li.addClass("open-up");
+			$li.children(".sub-nav").removeClass("publicTip");
+			$li.children(".sub-nav").slideDown();
+			$li.children(".sub-nav").find("li:first").find("a").addClass("current");
+			
+			panelMethod();
+		}
+		
+	});
+	$(".sub-nav-text").click(function() {
+		$(this).parent().siblings().find(".current").removeClass("current");
+		$(this).addClass("current");
+		panelMethod();
+	});
+	
+	function panelMethod(){
+		$(".common-faq").find(".sub-nav-text").each(function(index){
+			var $panel=$(".help-panel");
+			if($(this).hasClass("current")){
+				$panel.hide(0);
+				$($panel.get(index)).show(0);
+			}
+		});
+	}
+	
+	$(".link-header").click(function() {
+		var $accordion = $(this).parent()
+		if($accordion.hasClass("current")){
+			$accordion.removeClass("current");
+			$accordion.find(".accordion-body").slideUp();
+		}else{
+			$accordion.siblings(".current").removeClass("current")
+			$accordion.addClass("current");
+			$accordion.siblings().find(".accordion-body").slideUp();
+			$accordion.find(".accordion-body").slideDown();
+		}
+		
+	});
+
+})
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

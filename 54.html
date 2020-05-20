@@ -1,0 +1,801 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="notice-banner" style="background: url(static/image/notice-banner.jpg) no-repeat center center"></div>
+<div class="content notice-content">
+	<div class="content ">
+	    
+
+
+
+
+
+
+
+
+
+	    <!-- sidebar start -->
+	    
+
+
+
+
+
+
+
+
+	<div class="sidebar">
+		<div class="panel">
+			<div class="panel-body">
+				<div class="sidebar-nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="show-1.html" content="sysBulletin" class="nav-text"><i class="icon-nav icon-snotice01"></i>通知通告</a>
+						</li>
+						<li class="nav-item">
+							<a href="show-11.html" content="news" class="nav-text"><i class="icon-nav icon-news"></i>新闻动态</a>
+						</li>
+						<li class="nav-item">
+							<a href="media-1.html" content="media" class="nav-text"><i class="icon-nav icon-media"></i>媒体报道</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+
+    //初始化
+	var menuType = $("#currentMenu").val();
+	$(".nav-text").each(function(){
+		if ($(this).attr("content")==menuType){
+			$(this).addClass("current");
+		}
+	})
+})
+</script>
+	    <!-- sidebar end -->
+	    
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentMenu" value="news">
+<div class="main main-media">
+	<div class="main-header">
+		“好大学在线”征文优秀作品展示
+	</div>
+	<div class="main-body static-details">
+		<p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;<strong>《好大学在线赋》</strong></span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px"><span style="line-height: 14.999999046325684px;">陆辉</span></span></p><p><img src="static/picture/c5d6e7ba95434a06b42481475c3194ec.jpg"></p><p><br></p><p style="line-height: 23px"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px;color:#000000"><span style="line-height: 23px;"><strong>《好大学，你懂她么？》+《好大学慕课铭》（外一首）</strong></span></span></p><p style="line-height: 23px"><span style="color:#000000;font-family:微软雅黑, Microsoft YaHei;font-size:12px">宋晓勇</span></p><p style="line-height: 23px"><strong></strong></p><p style="line-height: 23px"><strong><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">《好大学，你懂她么？》</span></strong></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，宛如一个曼妙的女子</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">青春年华陪伴你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">等到你，失去时</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">是否会珍惜</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，亦如父母沧桑的背影</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">风雨相伴只为你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">等到你，成功时</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">是否会想起</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，于千千万万人之中遇见你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，在无边时光荒野里守候你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，既不倾国，也不倾城</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">只愿你内心求真，春暖花开</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你可以在神秘的粒子世界里去探秘</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">也可以在科学发展史的长河里去遨游</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">领略唐诗宋词的人文解读</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">体验中国功夫的变幻神奇</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">探寻法与社会的理性尊严</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">她，既不浮躁，也不虚化</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">只待你面向大海，摸爬滚打</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">看模拟法庭，唇枪舌剑，刀光剑影，痛快淋漓</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">走读台湾茶，品味那一缕清香品，心系名茶的情操</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">赏中华魂宝，体会中医药与中华传统文化的博大精深</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">关爱生命，急救自救，人人为我，我为人人，创造和谐</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">生活中无所不在的物理，带给你生活中无所不在的乐趣</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">脚步渐行渐远，人生铅华洗尽</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你是否，会明白</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你在还是不在，她都在那儿</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你来还是没来，她都在等你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你学还是不学，她都在看你</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">一个好大学，是一个让你站起来看世界的地方</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">你若不离不弃，她必生死相依。</span></p><p style="line-height: 23px"><span style="font-size:19px;font-family:仿宋;color:black">&nbsp;</span><strong style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: small; color: black; line-height: 23px;">《好大学慕课铭》</strong></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">书不在多，看透则行，</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">课不在长，有味则灵；</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">斯是慕课，惟众德馨，</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">网络上私塾，五湖来取经；</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">舌战有鸿儒，探讨无白丁，</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">可以做习题，看高清。</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">无杂念之烦扰，离红尘之喧吵，</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">析慕课之精妙，修大学之真道，</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">众人云：慕课学堂，同窗好友！</span></p><p style="line-height: 23px"><span style="color: black;font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p><strong><span style="undefinedfont-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: small; line-height: 150%;">《好大学在线，生日咏叹调》</span></strong></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;白海拓</span></p><p style="text-indent:47px;line-height:150%"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px"><span style="line-height: 150%;">一年兮筚路蓝缕，一年兮春华秋实；一年兮栉风沐雨，一年兮玉汝于成。好大学在线一年生日兮，</span><span style="line-height: 150%; color: rgb(15, 15, 15);">俨骖騑而络绎；</span><span style="line-height: 150%;">好大学在线一年</span><span style="line-height: 150%; color: rgb(15, 15, 15);">佳节兮，飨珍馐于学子。愿洒尽潘江，抒好大学在线盛宴之饕餮；请倾尽陆海，讴好大学在线荟萃之浩繁。</span></span></p><p style="text-indent:37px;line-height:150%"><span style="line-height: 150%;font-family:微软雅黑, Microsoft YaHei;font-size:12px">“昨夜西风凋碧树，独上高楼，望尽天涯路。”登高而赋，无流水奏高山；临渊而叹，有伊人好大学。初遇好大学，若独揽皓月之逸兴遄飞；初学好大学，如云帆学海之壮阔波澜。“徜徉于山林泉石之间，而尘心渐息；夷犹予诗书图画之内，而俗气潜消”，好大学之缤纷兮，眄云霰之霞帔；好大学之旖旎兮，凌宗悫之长风。一年之前，交大之隅。芳泽兮好大学，飘飖乎而唯吾神之清明；潋滟兮好大学，浩渺乎而学子心之骀荡。芳华无加，门庭不出而犹若名校；氤氲卷帙，竹简不断而探尽芳华。骊珠之曜曜兮，采撷之以为鲍肆幽兰；德泽之姣姣兮，汲取之以为芙蕖渌波。好大学一年，云髻峨峨吾之感怀遇朗日。好大学四季，博冠巍巍吾之庆幸有挚友。一年之一步，如骐骥功在不舍；一步之一载，若孺牛只为俯身。</span></p><p style="text-indent:47px;line-height:150%"><span style="line-height: 150%;font-family:微软雅黑, Microsoft YaHei;font-size:12px">“衣带渐宽终不悔，为伊消得人憔悴。”学在好大学，吾之犹将跬而未骋；学在好大学，吾之若将飞而欲翔。一日学而好大学，八斗而横溢；一年学完好大学，五车而博学。习之好大学若轻飏行舟，熹微晨光而吾之学识渐长；访之好大学犹朝露朱华，泉巘澄澈而吾之品格砥砺。衣带渐宽好大学，始为学子格物致知；追逐不悔好大学，终成学子家国天下。</span></p><p style="text-indent:37px;line-height:150%"><span style="line-height: 150%;font-family:微软雅黑, Microsoft YaHei;font-size:12px">“蓦然回首，那人却在灯火阑珊处。”一年好大学而情不移兮，长车华盖秉烛流年乎；一人好大学而时荏苒兮，阑干北斗过隙白驹哉。璀璨哉好大学在线，巍峨哉好大学在线。期百年之好大学在线兮，茁壮树人也；祝千载之好大学在线兮，桃李天下也。</span></p><p style="text-indent:37px;line-height:150%"><span style="line-height: 150%;font-family:微软雅黑, Microsoft YaHei;font-size:12px">时值一岁好大学之生日兮，同希冀好大学造福更多学子乎；时值一年好大学之佳期兮，共祝愿好大学呈现更美课程哉。壮阔哉好大学在线，潋滟哉好大学在线。愈来愈好之好大学，明月举杯兮；愈来愈美之好大学兮，盼望翘首兮。好大学在线生日兮，一年乎筚路蓝缕，一年乎春华秋实；好大学在线佳节兮，一年乎栉风沐雨，一年乎玉汝于成。</span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px">幸甚至哉，中国慕课，唯有好大学。</span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px"><br></span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px"></span></p><p><span style="color:#000000"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: small; line-height: 1.42857;"><strong>《致好大学在线》</strong></span></span></p><p><span style="color:#000000;font-family:微软雅黑, Microsoft YaHei;font-size:12px"><span style="line-height: 14.999999046325684px;">&nbsp; 刘娟</span></span></p><p style="margin: 0 0 0;text-align: justify;line-height: 22px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">好大学在线：</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">你好！</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">认识你已经有好几个月了，真是一个艰辛的过程呀。从吸引，相识，喜爱，厌恶，再到喜爱，最后一个“结课”让我不禁觉得一丝失落。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">这是我进入大学的一次新的体验——网络课程。说起为了修学分而去认识你，我更愿意说我想要通过好大学在线养成很多好的学习习惯。</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">那天下午，班群里有公告关于你的消息。刚刚脱离以往应试教育模式，听到好大学在线这四个字，义无反顾地去了办公楼报名，还带上了我寝室六个人。其实在你之前，有尔雅课程的宣传。为什么选择你呢，一部分是被你名字所吸引，一部分是感觉吧。你知道，每一对恋人的形成都是源于最初的感觉。</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">报名之后我注册了账号，开始了这段旅程。记得刚进去的那天，只是觉得这样的课程真的不错，如果我不是大学生，只是一个辍学的人，我也是可以通过这样的一个途径去学习的。真如我在首页看到的：让每一个人都能上好大学。于是我把你介绍给我一些朋友，至于他们有没有记住你我就不知道了。毕竟机会只给需要的人嘛。了解了一番后，我开始熟悉你了。越加觉得你好赞。</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">悲伤的故事开始于几周后，学校生活太忙了，我没办法天天去看你。更加悲伤的是，我五个舍友都选择了简单统计学，唯独我一个人选择了数学之旅。他们都一起做练习，我就总是忘记。记得当初选择的时候，绝对不是装逼，只是想去学习点自己喜欢的东西。可是接触后才发现里面的东西难度太大。以至于我没能力去完成课后的练习。更加因为太忙没登录，我错过了第一章的练习。一切都在一片混乱中，一想到我会挂掉我心就更紧张了。这也很清楚的暴露了我不能坚持一件事的坏习惯。还有我的时间安排不够合理。你成了我心头的一个牵挂，只要想到学习，你就在我脑子里晃悠。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">不过，尽管这样，我还是爱你的。因为通过你我真的学会了如何去认真对待一些没有太多精力去顾及的事情。你的教学内容也是让我受益匪浅，让我学会从各个角度去思考问题。</span></p><p style="margin: 0 0 0;text-align: justify;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">如果我能重新回到一开始，我一定好好对待你。你知道的，后悔是因为有思考，后悔是因为学到了很多东西。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">不说挂不挂科了。能那么刻骨的爱一场也是很幸福的。爱你。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">再过几天就要进行线下考试了。也许过后我们就会分离，也许我会再继续爱你。但是你永远都会在我浏览器的书签上。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">马上就<span>520</span>了。你懂的，这封信送给你，满满的祝福，满满的爱意。</span></p><p style="margin: 0 0 0;text-align: justify;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">有你，有梦！</span></p><p><span style="undefinedfont-family:微软雅黑, Microsoft YaHei;font-size:12px">&nbsp;</span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px;color:#000000"><strong>《我与好大学的约定》</strong></span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:12px;color:#000000">作者羞涩地没有透露姓名</span></p><p style="margin: 0 0 0;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">身为高考大省的考生，升学的压力实在很大，高考的失利让我的名校梦在旦夕间破灭，回首“好大学”给我的帮助实在无以言表，几年前，我真的无法想象我能接受名校名师的洗礼。“好大学”满足了我太多太多的“终极幻想”。</span></p><p style="margin: 0 0 0;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">作为教育比较落后的农村孩子，应试教育夺走了我们多彩的童年，我们只能跟随者高考的指挥棒，凭着对大学象牙塔的憧憬和幻想度日，可是还是没有如愿考上自己心仪的大学，对名校的渴望，对名师的敬仰也只能让其静止在时空的想象之中了。但是，慕课的开通给我的学习生涯带来了丰富的色彩，我们不必出门，就能学习自己感兴趣的课程。“好大学”推出了移动客户端，使用移动设备（手机、平板）上课更是改变了我们传统的教育方式，实现了随时随地上课，随时随地学习的夙愿。</span></p><p style="margin: 0 0 0;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">最初上“好大学”是被他的名校名师的光环所吸引，但是随着深入的了解才发现，我收获的不只是这些光环，而是实实在在的知识和经历，其中也收获了来自天南海北<span>MOOCer</span>的友谊，我们虽来自不同的地方，但都有着一样的梦想。我感谢“好大学”为我们提供这样的一个平台。</span></p><p style="margin: 0 0 0;text-indent: 37px;line-height: 24px"><span style="color: rgb(62, 62, 62);font-family:微软雅黑, Microsoft YaHei;font-size:12px">最后，希望“好大学”能够越办越好，提供更多的课程门类，为更多的想享受优质教育资源而又无法享受的人提供便利，为更多的教育爱好者提供机遇，为终身教育提供良好的条件，当然这条路还有很长，可能我们都会经历很多坎坷和挫折，但数以万计的学员会同你一起披荆斩棘，共创美好明天。</span></p><p><span style="font-size: 19px;font-family:仿宋"><br></span><br></p><p></p>
+	</div>
+</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

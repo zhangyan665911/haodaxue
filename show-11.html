@@ -1,0 +1,1177 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="notice-banner" style="background: url(static/image/notice-banner.jpg) no-repeat center center"></div>
+<div class="content notice-content">
+	<div class="content ">
+	    
+
+
+
+
+
+
+
+
+
+	    <!-- sidebar start -->
+	    
+
+
+
+
+
+
+
+
+	<div class="sidebar">
+		<div class="panel">
+			<div class="panel-body">
+				<div class="sidebar-nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="show-1.html" content="sysBulletin" class="nav-text"><i class="icon-nav icon-snotice01"></i>通知通告</a>
+						</li>
+						<li class="nav-item">
+							<a href="" content="news" class="nav-text"><i class="icon-nav icon-news"></i>新闻动态</a>
+						</li>
+						<li class="nav-item">
+							<a href="media-1.html" content="media" class="nav-text"><i class="icon-nav icon-media"></i>媒体报道</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+
+    //初始化
+	var menuType = $("#currentMenu").val();
+	$(".nav-text").each(function(){
+		if ($(this).attr("content")==menuType){
+			$(this).addClass("current");
+		}
+	})
+})
+</script>
+	    <!-- sidebar end -->
+	    
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentMenu" value="news">
+<div class="main main-media">
+	<div class="main-header">
+		新闻动态
+	</div>
+	<div class="main-body">
+		<ul class="media-report-list clearfixlist">
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="125.html" target="_blank" class="link-action">在线考试，你准备好了么？</a></h3>
+						<div class="news-abstract">
+							受COVID-19疫情影响，全球180多个国家近13亿在校学生无法正常到校上课，在线教学已经成为全世界高校的主要教学模式，2月10日以来，我国1400多所高校近百万教师开出700多万门次在线课程，累计...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/c537ba23813b4c05ac938600bc68a870.png">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="118.html" target="_blank" class="link-action">“2019中美在线高等在线教育论坛”在上海交通大学举行</a></h3>
+						<div class="news-abstract">
+							2019年5月31日至6月1日，“2019中美在线高等教育论坛（CUOHE）”在上海交通大学徐汇校区隆重举行。 论坛开幕式由上海交通大学副教务长吴静怡主持，常务副校长、中科院院士丁奎岭致欢迎辞，中国高...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/7be745a643b145b0943faffd02e07333.png">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="108.html" target="_blank" class="link-action">跟大咖玩转大数据   搭职场蓝色直通车     —— IBM & 合作伙伴联合发布数据科学实战项目</a></h3>
+						<div class="news-abstract">
+							自IBM大数据大学、IBM认知学堂在好大学在线开辟专区以来，在线运行的IBM的一大批数据科学、机器学习等认知科学相关在线开放课程，受到高校师生及社会从业人员的欢迎，基于在线开放课程的校企合作，已经产生...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="95.html" target="_blank" class="link-action">外科医生们，好大学在线的翻转课堂来了</a></h3>
+						<div class="news-abstract">
+							（图文提供：李睿） 2017年4月26日，台湾云林科技大学的刘威德教授为上海交通大学渥太华医学院的同学们带来了一场别开生面的翻转课堂。刘老师一走进教室，学生们就发出一片惊呼。平日里只能在视频中看到的身...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="93.html" target="_blank" class="link-action">“好大学在线” 新用户注册激活及在校生认证说明</a></h3>
+						<div class="news-abstract">
+							同学们，欢迎选修“好大学在线”慕课课程。
+针对已经选修过我们课程的老用户：请直接登陆您的好大学账号，就可以在“学习中心”查看到您本学期新加入课程（在校生选课信息一般来自您所在教务处的校选信息，若暂未出...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="92.html" target="_blank" class="link-action">《生活中的货币时间价值》上线发布会在暨南大学顺利举办</a></h3>
+						<div class="news-abstract">
+							12月8日下午，《慕课，教学改革的利器》学术报告会暨《生活中的货币时间价值》上线发布会于暨南大学校友楼4楼会议厅举行。暨南大学副校长张荣华、网络中心主任张焕明、副主任周红春、教务处副处长汪勇（主持工作...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="84.html" target="_blank" class="link-action">好大学在线“IBM大数据大学”专区开通</a></h3>
+						<div class="news-abstract">
+							近期，好大学在线开辟了“IBM大数据大学”专区：http://www.cnmooc.org/ibm，提供了近40门包括Hadoop、Spark、数据分析、机器学习等各领域的高质量免费课程。所有课程按照...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/3804f56597784e778ea9c78e73cf0b20.png">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="78.html" target="_blank" class="link-action">2016“好大学在线”慕课建设与应用暨教学管理研讨会顺利开展</a></h3>
+						<div class="news-abstract">
+							“好大学在线”2016年春季学期“慕课建设与应用暨教学管理研讨会”于2016年3月18日在上海交通大学软件大楼演播厅召开。上海交通大学慕课研究院院长，慕课推进办公室主任江志斌教授致开场辞。“好大学在线...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="67.html" target="_blank" class="link-action">仁心之旅——《常见慢性病健康管理》走进温州医科大</a></h3>
+						<div class="news-abstract">
+							（图文编辑：陈博君） 2015年秋季学期即将结束，大家盼望的翻转课堂活动也在这时陆续开展啦，12月1日，我校章雅青院长一行来到了浙江著名学府—温州医科大学，与选修《常见慢性病健康管理》的各位同学一起进...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/4b91a396ded9494f8ae1e849be6abbe3.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="62.html" target="_blank" class="link-action">“好大学在线”2015年秋季学期 慕课教学研讨会顺利举行</a></h3>
+						<div class="news-abstract">
+							2015年10月23日,“好大学在线”2015年秋季学期 慕课教学研讨会于上海交通大学闵行校区学术活动中心举行。上海交通大学副校长黄震、慕课研究院院长江志斌教授及慕课推进办副主任蒋建伟老师主持并参加了...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/943cf93334aa48d2bfcc94dd947cb1b5.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="57.html" target="_blank" class="link-action">[人民网]上海交大推出首门文化软实力相关慕课课程 </a></h3>
+						<div class="news-abstract">
+							[人民网]上海交大推出首门文化软实力相关慕课课程 听原外经贸部副部长张祥教授“讲故事”阐述软实力 用“讲故事”的方式阐明“软实力较量”如何影响国际交往——国内首门文化软实力相关慕课课程《文化软实力与国...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="54.html" target="_blank" class="link-action">“好大学在线”征文优秀作品展示</a></h3>
+						<div class="news-abstract">
+							《好大学在线赋》陆辉《好大学，你懂她么？》+《好大学慕课铭》（外一首）宋晓勇《好大学，你懂她么？》她，宛如一个曼妙的女子青春年华陪伴你等到你，失去时是否会珍惜她，亦如父母沧桑的背影风雨相伴只为你等到你...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/b8fac3750a274b7686f5142bd7b40413.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="53.html" target="_blank" class="link-action">哈尔滨工业大学基础部来访“好大学在线”</a></h3>
+						<div class="news-abstract">
+							哈工大的好兄弟来了~ 7月14日，顶着台风过后的炎炎酷暑，哈尔滨工业大学基础部的师生们来到处于“烧烤模式”下的上海交通大学闵行校区，与上海交通大学慕课推进办的老师进行了慕课方面的交流。 慕课推进办徐臻...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/7163e2a5281f47a3862acea9046af966.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="50.html" target="_blank" class="link-action">交大慕课研究院举办 高校在线课程“校本化”案例展示研讨会</a></h3>
+						<div class="news-abstract">
+							5月29日至30日，上海交大慕课研究院、金智教育、浙江外国语学院联合举办首次高校在线课程“校本化”案例展示研讨会。上海交大慕课研究院院长江志斌老师、慕课推进办副主任蒋建伟老师、浙江外国语学院副院长曹仁...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/68cc92ca8d3b4b29afb8e402a168773a.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="46.html" target="_blank" class="link-action">正确而有效地关爱他人——“常见慢性病的健康管理”长江大学翻转课堂</a></h3>
+						<div class="news-abstract">
+							5月8日，“好大学在线”《常见慢性病的健康管理》课程团队来到长江大学，与长江大学的师生们做了一次立体的、深入的全方位交流活动。常见慢性病，关心长辈、关心健康的同学一定不陌生！随着中国老龄化社会的到来，...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/48cba3e970cd4a1fab97b40511f4bf6f.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="45.html" target="_blank" class="link-action">《杏林探宝》到“长江”</a></h3>
+						<div class="news-abstract">
+							（图文提供：徐臻） 5月8日，“好大学在线”《杏林探宝——认知中药》课程团队来到长江大学，与长江大学的同学们共度了一个上午的“翻转课堂”美好时光。 《杏林探宝——认知中药》课程是好大学在线上广受师生好...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/157caf03e6ef4230b4f96f8e63bd157a.png">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="44.html" target="_blank" class="link-action">“好大学在线”的精英名师翻转到合肥</a></h3>
+						<div class="news-abstract">
+							(图文提供：李睿） 2015年5月5日星期二安徽建筑大学南区主教楼1404教室上海交通大学农业与生物学院教授，博士生导师孟和老师与合肥地区的好大学学员进行了生动深刻的翻转探讨。“好大学在线”的精英名师...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+						<div class="media-logo">
+							<img src="static/picture/d0207cedc24b4e2db07971b191cf71ae.jpg">
+						</div>
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="43.html" target="_blank" class="link-action">《当代应用心理学》走进安建大</a></h3>
+						<div class="news-abstract">
+							2015年5月5日星期二晚上18:30-21:00,在安徽建筑大学南校区东辅楼2501教室云林科技大学的刘威德老师跟学生们进行了一场别开生面的翻转。 （图文提供：李睿） 刘老师与同学们进行了亲切的互动...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="40.html" target="_blank" class="link-action">“好大学在线“与中国科学技术大学取得SPOC合作</a></h3>
+						<div class="news-abstract">
+							（图文提供：徐臻）2015年4月27日，上海交通大学慕课推进办江志斌主任一行来到“好大学在线”合作院校中国科学技术大学访问，与中国科学技术大学陈初生副校长、教务处周丛照处长就慕课的合作交流事宜，进行了...
+						</div>
+					</div>
+				</li>
+			
+				<li class="media-report-item">
+					
+					<div class="media-report-intro">
+						<h3 class="news-header substr"><a href="38.html" target="_blank" class="link-action">慕课，让教育更美好 ——好大学在线哈工大之行</a></h3>
+						<div class="news-abstract">
+							（图文提供：苏永康 陆晓阳） 2015年4月24日上午，好大学在线蒋建伟老师和苏永康老师来到了美丽的哈尔滨工业大学~ 让我们来看看他们有着如何精彩的哈工大之行吧？【与哈工大相关领导进行座谈会】慕课办公...
+						</div>
+					</div>
+				</li>
+			
+		</ul>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="pagination" id="pageId">
+        <ul class="clearfix">
+            <li class="page-dropdown">
+                <span class="factor-item" id="rowCountNum">--条记录</span>
+            </li>
+        	
+				<li class="page-dropdown">每页
+					<select class="page-select">
+                        <option value="5">5</option>
+						<option value="10">10</option>
+						<option value="20" selected="selected">20</option>
+						<option value="50">50</option>
+						
+						<option value="100">100</option>
+					</select>条
+				</li>
+			
+			<li class="page-prev">
+                <a href="javascript:void(0);" id="page-prev" pagenum='1'>&lsaquo;</a>
+            </li>
+            <li class="page-num current">
+                <a href="javascript:void(0);" pagenum="1">1</a>
+            </li>
+            
+                
+                
+                
+                <li class="page-num ">
+                    <a href="javascript:void(0);" pagenum='2'>2</a>
+                </li>
+            
+            <li class="page-next">
+                <a href="javascript:void(0);" id="page-next" pagenum='2'>&rsaquo;</a>
+            </li>
+            <li class="page-action">
+                <input type="text" class="input-text input-page" title="Enter Search" _type="changeIndex">
+                <span class="page-total">/2 页 </span>
+            </li>
+        </ul>
+    </div>
+
+
+<script>
+    $(function () {
+        $("#rowCountNum").html(32 + "条记录");
+		var $pageSelect = $("#pageId").find(".page-select").select({
+			change:function(){
+				if (this.value == '20') {
+	                return;
+	            }
+				var fn = "";
+		
+	            if (fn.length > 0) {
+	                fn = fn+"(" + 1 + ",\""+"pageId"+"\","+this.value+")";
+	                eval(fn);
+	            } else {
+	            	gotoPage(1, "pageId",this.value);
+	            }
+			}
+		});
+        
+        $("#pageId").find(".page-num,.page-prev,.page-next").click(function () {
+            var pageNum = $(this).children('a').attr("pageNum");
+            if (typeof(pageNum) == 'undefined') {
+                return;
+            }
+            if (pageNum == '1') {
+                return;
+            }
+            var fn = "";
+
+            if (fn.length > 0) {
+                fn = fn+"(" + pageNum + ",\""+"pageId"+"\","+$pageSelect.val()+")";
+                eval(fn);
+            } else {
+            	gotoPage && gotoPage(pageNum, "pageId", $pageSelect.val());
+            }
+        })
+        $("#pageId").find('[_type="changeIndex"]').on("keyup.changeIndex", function (event) {
+            var $this = $(this);
+            if ($.trim($this.val()||"").length > 0) {
+                var pageNum = parseInt($this.val())
+                if (isNaN(pageNum)) {
+                    pageNum = 0;
+                }
+                if (pageNum > "2") {
+                    pageNum = " 2" || 0;
+                }
+                if (pageNum < 1) {
+                    pageNum = 1
+                }
+                if (pageNum == '1') {
+                    return;
+                }
+                if (event.keyCode == 13) {
+                	var fn = "";
+
+                    if (fn.length > 0) {
+                        fn = fn+"(" + pageNum + ",\""+"pageId"+"\","+$pageSelect.val()+")";
+                        eval(fn);
+                    } else {
+                    	gotoPage(pageNum, "pageId", $pageSelect.val());
+                    }
+                }
+            }
+
+        })
+    })
+</script>
+</div>
+<script type="text/javascript">
+//分页
+function gotoPage(pageIndex, pageId) {
+	location.href=CONTEXTPATH+"/home/news/show-"+pageIndex+".mooc";
+}
+</script>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>

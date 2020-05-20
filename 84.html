@@ -1,0 +1,801 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit">
+    <meta name="Keywords" content="慕课,大学,MOOC,在线教育,慕课平台,互联网教育">
+    <meta name="Description" content="“好大学在线”（CNMOOC）是上海交通大学拥有的中国顶尖慕课平台。依托该平台，上海交通大学与百度及金智教育实施战略合作，致力于在互联网教育时代发展在线教育，让所有大学生有机会学习一流大学的课程并获得学分，让所有学习者能够享受优质教育资源，让“所有人都能上最好的大学”成为现实！">
+    <meta http-equiv="X-UA-Compatible" content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width">
+
+    <!--[if lt IE 8]>
+    <meta http-equiv="Refresh" content="0;url=/upgrade/">
+
+    <![endif]-->
+    <title>
+        
+        
+        好大学在线CNMOOC_中国顶尖的慕课平台
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="PowerBy" content="江苏知途教育技术有限公司">
+    
+        
+        
+            <link rel="stylesheet" href="static/css/plugin.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/import.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/elements.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/sub-view.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/classroom.min.css" type="text/css">
+            <link rel="stylesheet" href="static/css/d-view.min.css" type="text/css">
+            
+        
+    
+
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <script src="static/js/base.min.js" type="text/javascript"></script>
+    <script src="static/js/classroom-v1.1.0-f28f8c084a.js" type="text/javascript"></script>
+    <script src="static/js/d3.js" type="text/javascript"></script>
+    <script src="static/js/lottie.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        
+        var CONTEXTPATH = '';
+        var TEACH_WS_URL = 'wss://ws.cnmooc.org';
+    </script>
+    <script type="text/javascript" src="static/js/i18nBrowse-zh_CN_f28f8c084a.js"></script>
+    <script>
+        
+        var host = document.location.host;
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            if (host == "sjtu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?55e4a27691c87697faed90869c5d13c7";
+            else if (host == "hainu.cnmooc.org")
+                hm.src = "//hm.baidu.com/hm.js?8225a9194a5d3424df73c9ae31e5e0ed";
+            else
+                return;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?ed399044071fc36c6b711fa9d81c2d1c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        
+        (function($){
+            //常量
+            $.G_LOGIN_COEUS_USER_ID = "-1";
+            $.G_QQ_URL = "http://cnmooc.org/oauth/QQCallback.mooc";
+            $.G_QQ_APP_ID = "101456445";
+            $.G_SINA_URL = "";
+            $.G_SINA_APP_ID = "";
+            $.G_SINA_APP_KEY = "";
+            $.G_SINA_ACCESS_TOKEN = "";
+            $.G_WECHAT_URL = "http://cnmooc.org/oauth/WechatCallback.mooc";
+            $.G_WECHAT_APP_ID = "wx128dc6858a42b687";
+        })(jQuery);
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="lang" value="zh_CN">
+
+
+
+<div id="header">
+    
+    
+    <div id="inner-header" class="clearfix">
+        
+        
+        
+            <a class="logo" href="index1.html"><img src="static/picture/logo.png"></a>
+
+            <div class="header-nav nav-center " style="margin-left:18px;">
+                <a class="h-nav-item" content="index" href="index1.html">  
+	               <span class="h-nav-text">首页</span><span class="h-sub-text">Home</span>
+	           </a>
+               <a class="h-nav-item" content="course" href="course.html">
+	               <span class="h-nav-text">课程</span><span class="h-sub-text">Courses</span>
+                </a>
+                <a class="h-nav-item" content="micro" href="index2.html">
+                    <span class="h-nav-text">微专业<img src="static/picture/nav-new.gif" class="new-nav"></span>
+                    <span class="h-sub-text">Micro Spec</span>
+                </a>
+                <a class="h-nav-item" content="school" href="signed.html" tab="school">
+	               <span class="h-nav-text">院校</span>	<span class="h-sub-text">Universities</span>
+                </a>
+            </div>
+        
+
+        <div class="header-info header-info-index">
+            <div class="user-info">
+                
+				 <div class="login-nav">
+                     
+                         <a href="register.html" id="register">注册</a>/
+                     
+                     <a href="login.html">登录</a>
+					</div>
+                
+                
+            </div>
+            
+            <div class="user-info" style="display:none;">
+                <div class="login-nav">
+                    <a href="javascript:void(0)">注册</a>/<a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+
+            <!-- 移动端 -->
+            
+                <div class="matrix-effect">
+                    <a href="app.html" class="icon-app "></a>
+
+                    <div class="matrix-slide">
+                        
+                        <div class="matrix-item">
+                            <a href="app.html">
+                                <img src="static/picture/wx-app.jpg">
+                            </a>
+                            <a href="app.html" class="matrix-header">
+                                <span class="matrix-title">微信小程序</span>
+                                <span class="matrix-subtitle">好大学在线</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="header-search">
+                    <i class="icon-search01"></i>
+                    <div class="search">
+                        <input type="text" placeholder="根据课程名称、学校、教师搜索" id="globalKeyword" class="input-search">
+                    	<a href="javascript:void(0)" class="icon-search globalSearchCourse"><i class="i-search"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="static/js/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        initBulletin();
+        function initBulletin() {
+            $.ajax({
+                type: 'post',
+                url: CONTEXTPATH + "/home/getBulletin.mooc",
+                success: function (result) {
+                    if (result.isNewBulletin == '1') {
+                        $(".sysBulletin").find("sup").removeClass("publicTip");
+                    }
+                }
+            })
+        }
+
+        //头标签加当前选中css
+        function addCurrentToHeadLink() {
+            var content = $('#currentContent').val();
+            $('.header-nav a').each(function () {
+                var $this = $(this);
+                if ($this.attr("content") == content) {
+                    $this.addClass("current");
+                }
+                else {
+                    $this.removeClass("current");
+                }
+            })
+        }
+
+        addCurrentToHeadLink();
+    })
+    //获取语言
+    $(".lang_option").click(function () {
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type: 'post',
+            data: {
+                lang: lang
+            },
+            url: CONTEXTPATH + "/home/setLanguage.mooc",
+            success: function (result) {
+                if (result.returnCode == "success") {
+                    location.reload();
+                }
+            }
+        })
+    })
+
+    //ajax加载spoc学校定制的栏目
+    var schoolId = '';
+    if (schoolId != null && schoolId != "") {
+        $.ajax({
+            type: 'post',
+            data: {
+                schoolId: schoolId
+            },
+            url: CONTEXTPATH + "/home/querySchoolColumn.mooc",
+            success: function (result) {
+                $("#schoolColumn").empty().html(result);
+            }
+        })
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="notice-banner" style="background: url(static/image/notice-banner.jpg) no-repeat center center"></div>
+<div class="content notice-content">
+	<div class="content ">
+	    
+
+
+
+
+
+
+
+
+
+	    <!-- sidebar start -->
+	    
+
+
+
+
+
+
+
+
+	<div class="sidebar">
+		<div class="panel">
+			<div class="panel-body">
+				<div class="sidebar-nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="show-1.html" content="sysBulletin" class="nav-text"><i class="icon-nav icon-snotice01"></i>通知通告</a>
+						</li>
+						<li class="nav-item">
+							<a href="show-11.html" content="news" class="nav-text"><i class="icon-nav icon-news"></i>新闻动态</a>
+						</li>
+						<li class="nav-item">
+							<a href="media-1.html" content="media" class="nav-text"><i class="icon-nav icon-media"></i>媒体报道</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+
+    //初始化
+	var menuType = $("#currentMenu").val();
+	$(".nav-text").each(function(){
+		if ($(this).attr("content")==menuType){
+			$(this).addClass("current");
+		}
+	})
+})
+</script>
+	    <!-- sidebar end -->
+	    
+
+
+
+
+
+
+
+
+<input type="hidden" id="currentMenu" value="news">
+<div class="main main-media">
+	<div class="main-header">
+		好大学在线“IBM大数据大学”专区开通
+	</div>
+	<div class="main-body static-details">
+		<p style="white-space: normal; line-height: 23px;"><span style="font-size: 14px; color: black;">近期，好大学在线开辟了</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“IBM</span><span style="font-size: 14px; color: black;">大数据大学</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">专区</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">：<a href="javascript:;" target="_self">http://www.cnmooc.org/ibm</a></span><span style="font-size: 14px; color: black;">，提供了近</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">40</span><span style="font-size: 14px; color: black;">门包括</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">&nbsp;Hadoop</span><span style="font-size: 14px; color: black;">、</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span><span style="font-size: 14px; color: black;">、数据分析、机器学习等各领域的高质量免费课程。所有课程按照</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">数据分析师</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">、</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">数据工程师</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">、</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">数据科学家</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">三个职业学习路径进行整编，并将通过</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">好大学在线</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">创立的</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">进校园、给成绩、认学分</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">的模式，为高校学生提供线上线下混合式教学服务。所有课程遵循</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“5-5-5”</span><span style="font-size: 14px; color: black;">架构（即每门课程含</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">5</span><span style="font-size: 14px; color: black;">节讲座、每节讲座含</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">5</span><span style="font-size: 14px; color: black;">段视频、每段视频时长在</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">5</span><span style="font-size: 14px; color: black;">分钟左右），给学习者提供最具效率和灵活性的学习体验，真正地让基于实践且优质的大数据应用课程为师生所学所用。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br></span><em><span style="font-size: 14px; color: black;">如果你对大数据一无所知，《大数据基础－快速介绍》将满足你的一切好奇。它用自上而下和自下而上两种观点回答了以下问题：什么是大数据？我们如何对待大数据？为什么我们对它感兴趣？什么是大数据平台？这门课程的讲师</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Glen R.J. Mules</span></em><em><span style="font-size: 14px; color: black;">是</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">IBM Information Management</span></em><em><span style="font-size: 14px; color: black;">全球教育的高级讲师和首席顾问，曾经设计、编写和管理过曼哈顿和波士顿的银行系统。整个课程只需花费</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">1.5</span></em><em><span style="font-size: 14px; color: black;">小时。</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">&nbsp;</span></em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br></span><em><span style="font-size: 14px; color: black;">如果是具备一些基础知识的入门级选手，可以选择如</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Hadoop</span></em><em><span style="font-size: 14px; color: black;">基础课程、</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">课程、</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Scala</span></em><em><span style="font-size: 14px; color: black;">多范式编程语言课程、</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Watson Analytics</span></em><em><span style="font-size: 14px; color: black;">课程等进行深入学习。所有课程均由具备大数据实战经验的</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">IBM</span></em><em><span style="font-size: 14px; color: black;">专家和教师授课。作为大数据分析的基础分布式系统架构，</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Hadoop</span></em><em><span style="font-size: 14px; color: black;">可以让开发者充分利用集群的威力进行高速运算和存储。</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Hadoop&nbsp;</span></em><em><span style="font-size: 14px; color: black;">基础课程将为大学生提供系统的大数据分析及如何进行数据处理的原理讲解。与</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Hadoop</span></em><em><span style="font-size: 14px; color: black;">相似，</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">是一种开源集群的计算环境。在本门课上，讲师会带领学生更好地了解</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">的基础构架，共同进一步探索大数据分布以及任务的并发执行，进一步了解</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">在做连接时是如何优化数据的，</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">的内存缓存机制，以及如何使用</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Spark</span></em><em><span style="font-size: 14px; color: black;">高级</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">API</span></em><em><span style="font-size: 14px; color: black;">等。</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">&nbsp;</span></em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br><em>Scala</em></span><em><span style="font-size: 14px; color: black;">编程零基础的爱好者们不妨选择由资深咨询顾问</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Jamie Allen</span></em><em><span style="font-size: 14px; color: black;">教授的</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Scala</span></em><em><span style="font-size: 14px; color: black;">数据科学课程来入门，通过学习可以掌握扎实的编程语言基础，工具使用以及开发流程等高级功能。</span></em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br></span><em><span style="font-size: 14px; color: black;">而对于梦想成为销售或市场人员的大学生来说，</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Watson Analytics</span></em><em><span style="font-size: 14px; color: black;">能够帮助他们实现最简便的数据分析与处理，使他们直观的看到数据分析结果，了解整体的销售情况，针对性地帮他们定位精准的业务渠道，采取适当的销售策略吸引潜在客户。由产品支持经理</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Jackie Ross</span></em><em><span style="font-size: 14px; color: black;">讲授的</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Watson Analytics</span></em><em><span style="font-size: 14px; color: black;">基础课程将有效地帮助学习者提高对数据的云端智能挖掘、分析、预测能力，教会人们如何使用大数据分析软件在众多纷繁的数据中在最短时间内获得最精准的结果和洞察。</span></em><em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">&nbsp;</span></em><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br></span><span style="font-size: 14px; color: black;">除此之外，</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">IBM</span><span style="font-size: 14px; color: black;">大数据大学还为所有学习者提供了一个免费的基于开源的</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">一站式</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”&nbsp;</span><span style="font-size: 14px; color: black;">数据科学家集成工作台</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="color: rgb(29, 108, 163);">https://datascientistworkbench.cn/</span></a></span><span style="font-size: 14px; color: black;">。作为课程的一部分，该平台具有云端</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">软件即服务</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">(SaaS)”</span><span style="font-size: 14px; color: black;">的特点，无需任何本地安装、配置和维护，只需一分钟的简单注册即可开始使用，非常利于未来的数据科学家快速、便捷的使用</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Jupyter/iPython notebook</span><span style="font-size: 14px; color: black;">、</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">Apache Zeppelin</span><span style="font-size: 14px; color: black;">、</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">RStudio IDE</span><span style="font-size: 14px; color: black;">以及</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">OpenRefine</span><span style="font-size: 14px; color: black;">等开源工具，并以</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">“</span><span style="font-size: 14px; color: black;">一键</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">”</span><span style="font-size: 14px; color: black;">式的企业级部署支持大规模的数据分析和计算。所有这些，将为学习者提供最佳的上机实战练习体验。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br><br></span><span style="font-size: 14px; color: black;">值得一提是，</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">IBM</span><span style="font-size: 14px; color: black;">大数据大学的以开源技术为主的数据科学系列课程正受到越来越多企业客户的青睐，短短一个月内，包括全球</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;">500</span><span style="font-size: 14px; color: black;">强的知名银行以及国内保险公司，例如中美联泰大都会人寿保险公司、中国人寿保险（集团）公司、华泰保险集团等等已经或者正在其大数据团队的内训体系中引进这些课程，我们相信，人才供需两端的信息闭环的实现，将为学习者未来的就业提供良好的助力。</span></p><p style="white-space: normal; line-height: 23px;"><strong><span style="font-size: 14px; color: rgb(47, 47, 47);">数据分析师</span></strong><strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">&nbsp;Data Analyst</span></strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据分析师主要的工作是将枯燥的数字信息，转化成普通可以理解的语言。每个商业都会收集相关的业务数据，从销售数据，市场研究，物流组织到成本核算。一个数据分析师主要的工作是将收集到的数据进行分析，找出内在的信息，帮助企业进行业务决策。下面的学习路径中的核心课程，将帮助你快速掌握相关的核心知识体系，了解基本的方法学和思想，并最终可以进行高级算法的分析和最终结果的可视化。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">每一个成功的分析师，都应该是数据分析挖掘方面的能手。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Introduction to Data Analysis with Demos</span></a></span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">课程很好的帮助你了解数据分析需要的基本技能，并通过案例演示，帮助你更好的理解数据分析的流程和管理。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">R</span><span style="font-size: 13px; color: rgb(47, 47, 47);">是基于开源，被广泛应用于数据统计和数据科学的一门编程语言。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Introduction to R</span></a></span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">和</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Introduction to Data Analysis using R</span></a></span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">课程，就很好的帮助你解决数据分析中语言的难点，快速的掌握统计方法，通过有效的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">R</span><span style="font-size: 13px; color: rgb(47, 47, 47);">语言编程，快速解决数据分析的问题。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据科学对数据分析师来说是一门非常重要的学科，</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: black;">Data Science Methodology</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">作为一个数据科学方法论的入门课程，帮助数据分析师了解相关的基本理论，为数据分析工作建立完整的知识体系。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: black;">完成本系列的全部课程以及相配套的系列课程实践项目（即将发布）之后，可以获得由好大学在线颁发的官方系列课程证书。</span></p><p style="white-space: normal; line-height: 23px;"><strong><span style="font-size: 14px; color: rgb(47, 47, 47);">数据工程师</span></strong><strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">&nbsp;Data Engineer</span></strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: rgb(47, 47, 47);">随着存储和大数据量处理的最新进展，越来越多的金融企业正在广泛使用大数据技术，以获得更深入地了解他们的商业风险和机遇。数据工程师负责开发，维护，测试和评估组织内部的大数据解决方案。因为他们具备</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">技术的经验，所以参与大部分解决方案的设计。一个数据工程师应该具备丰富的软件工程经验，然后才能比较顺利的进入大数据领域。一个大数据工程师需要建立大规模的数据处理系统，并且是数据仓库解决方案的专家，应该能够使用最新的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">NoSQL</span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据库技术。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">通过学习</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的基本面与大数据以及和</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">MPP</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的概念来快速掌握大数据基本知识</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">(</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Hadoop Fundamentals I</span></a></span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">主要的编程范式的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">MapReduce</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的最严重的局限性主要与可扩展性，资源利用率，并从不同的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">MapReduce</span><span style="font-size: 13px; color: rgb(47, 47, 47);">支持的工作负载。虽然</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的被认为是一个可靠的，可扩展的，具有成本效益的解决方案，它连续被一个大型社区的开发人员提高。现在</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">2.0</span><span style="font-size: 13px; color: rgb(47, 47, 47);">版本提供了几个革命的功能，包括又一资源协调器</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">. (</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">MapReduce and YARN</span></a></span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">如果您正在使用</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据仓库</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hive</span><span style="font-size: 13px; color: rgb(47, 47, 47);">工具，它会让查询更容易，比写</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">map / reduce</span><span style="font-size: 13px; color: rgb(47, 47, 47);">程序更加有效的一个实用工具</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">. (</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Accessing Hadoop Data Using Hive</span></a></span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">使用</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">，并通过</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">shell</span><span style="font-size: 13px; color: rgb(47, 47, 47);">命令数据交互以及使用像</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Sqoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">和</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Flume</span><span style="font-size: 13px; color: rgb(47, 47, 47);">工具</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">. (</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Moving Data into Hadoop</span></a></span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">为了加强针对</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">MapReduce</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的不建做分析处理性能，数据工程师可以利用</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Spark</span><span style="font-size: 13px; color: rgb(47, 47, 47);">开源处理引擎，提供了内存集群计算。</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">&nbsp;(</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: black;">Spark Overview for Scala Analytics</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: black;">完成本系列的全部课程以及相配套的系列课程实践项目（即将发布）之后，可以获得由好大学在线颁发的官方系列课程证书。</span></p><p style="white-space: normal; line-height: 23px;"><strong><span style="font-size: 14px; color: rgb(47, 47, 47);">数据科学家</span></strong><strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">&nbsp;Data Scientist</span></strong><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据科学家在大数据发展中的角色变得日益重要，已经逐步成为大数据领域的核心。数据科学家应该有统计的经验和知识，以及编程，机器学习，数据改写</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">/</span><span style="font-size: 13px; color: rgb(47, 47, 47);">处理，数据可视化</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">/</span><span style="font-size: 13px; color: rgb(47, 47, 47);">通信和软件工程的知识。成为一个好的科学家，需要根据数据的重要组成部分，提出正确的问题，并能够分析和解决问题。数据科学家必须使用他们的技能来设计大数据的解决方案，利用各种合适的工具，持续的提供解决方案的深化，变革和升级。</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Spark</span><span style="font-size: 13px; color: rgb(47, 47, 47);">是一个开源的集群计算框架，而相比于</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Hadoop</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">MapReduce</span><span style="font-size: 13px; color: rgb(47, 47, 47);">，它更多的是利用内存中</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">RDD</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的处理，加快应用程序的性能。执行迭代分析工作，并通过</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Spark</span><span style="font-size: 13px; color: rgb(47, 47, 47);">的</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">API</span><span style="font-size: 13px; color: rgb(47, 47, 47);">，很容易高效的整合各项基于</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">Spark</span><span style="font-size: 13px; color: rgb(47, 47, 47);">应用。</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">可以参考</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Spark Fundamentals I</span></a></span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">和</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Spark Fundamentals II</span></a></span><span style="font-size: 13px; color: rgb(47, 47, 47);">课程</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">许多应用程序（特别是金融）利用算法来预测未来结果的可能性。数据科学家使用预测建模来创建，测试和验证对于给定的应用程序是摄取该数据的模型。请参考课程</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Predictive Modeling Fundamentals I</span></a><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">数据操作是任何人都与大数据工作的一项基本技能。维数降低是无监督机器学习技术，以减少在给定数据集中的特征的数量。</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">请参考课程</span><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: black;">Machine Learning - Dimensionality Reduction</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; font-family: Wingdings; color: black;">&nbsp;</span><span style="font-size: 13px; color: rgb(47, 47, 47);">公开提供的信息量成倍增加。通过文本的深层次的分析，可以洞察出令人难以置信的信息！</span>&nbsp;<span style="font-size: 13px; color: rgb(47, 47, 47);">请参考课程</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">&nbsp;</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><a href="javascript:;"><span style="font-size: 13px; color: rgb(65, 129, 192);">Text Analytics Essentials&nbsp;</span></a></span><span style="font-size: 13px; color: rgb(47, 47, 47);">和</span><span style="text-decoration: underline;"><span style="font-size: 13px; font-family: &#39;Times New Roman&#39;, serif; color: rgb(65, 129, 192);">&nbsp;</span></span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: black;">Text mining in action: Analyzing Twitter data for Democratic General Elections</span><span style="font-size: 13px; font-family: Helvetica, sans-serif; color: rgb(47, 47, 47);">)</span><span style="font-size: 14px; font-family: Helvetica, sans-serif; color: black;"><br></span><span style="font-size: 13px; color: black;">完成本系列的全部课程以及相配套的系列课程实践项目（即将发布）之后，可以获得由好大学在线颁发的官方系列课程证书。</span></p><p style="line-height: 22.8571186065674px; white-space: normal;">&nbsp;</p><p style="white-space: normal; color: rgb(0, 0, 0); font-family: Helvetica, &#39;Microsoft Yahei&#39;, verdana; font-size: 14px; line-height: 23.3240013122559px;"><span style="font-size: 12px;"></span><br></p><div align="center" style="white-space: normal; color: rgb(0, 0, 0); font-family: Helvetica, &#39;Microsoft Yahei&#39;, verdana; font-size: 14px; line-height: 23.3240013122559px;"><table border="1"><tbody><tr valign="top"><td width="118" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><strong><span style="font-size: 12px;">Learning Path</span></strong></td><td width="420" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><strong><span style="font-size: 12px;">Core Course</span></strong></td></tr><tr valign="top"><td width="118" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><strong><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">数据分析师</span></strong><br><span style="font-size: 12px;">Data Analyst</span></td><td width="420" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><ul><li type="disc"><span style="font-size: 12px;">Introduction to R</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Data Analysis using R</span></li><li type="disc"><span style="font-size: 12px;">Test Analytics Essentials</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Data Analysis with Demos</span></li><li type="disc"><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">大数据统计分析技术</span></li><li type="disc"><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">预测模型基础</span><span style="font-size: 12px;">&nbsp;Predictive Modeling Fundamental I</span></li><li type="disc"><span style="font-size: 12px;">Watson Analytics&nbsp;</span><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">基础课程</span></li></ul></td></tr><tr valign="top"><td width="118" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><strong><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">数据工程师</span></strong><br><span style="font-size: 12px;">Data Engineer</span></td><td width="420" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><ul><li type="disc"><span style="font-size: 12px;">Big Data Fundamentals</span></li><li type="disc"><span style="font-size: 12px;">Hadoop Fundamentals I</span></li><li type="disc"><span style="font-size: 12px;">MapReduce and YARN</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Python</span></li><li type="disc"><span style="font-size: 12px;">Python for Data Analysis</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Data Analysis using R</span></li><li type="disc"><span style="font-size: 12px;">Spark Fundamentals I</span></li><li type="disc"><span style="font-size: 12px;">Spark Fundamentals II</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Pig</span></li><li type="disc"><span style="font-size: 12px;">Introduction to MapReduce Programming</span></li></ul></td></tr><tr valign="top"><td width="118" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><strong><span style="font-size: 12px; font-family: &#39;Arial Unicode MS&#39;;">数据科学家</span></strong><br><span style="font-size: 12px;">Data Scientist</span></td><td width="420" style="font-family: arial, verdana, sans-serif; line-height: 1.666;"><ul><li type="disc"><span style="font-size: 12px;">Big Data Fundamentals</span></li><li type="disc"><span style="font-size: 12px;">Hadoop Fundamentals I</span></li><li type="disc"><span style="font-size: 12px;">Data Science Methodology</span></li><li type="disc"><span style="font-size: 12px;">Python for Data Analysis</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Machine Learning using Python</span></li><li type="disc"><span style="font-size: 12px;">Introduction to Machine Learning using R</span></li><li type="disc"><span style="font-size: 12px;">Machine Learning – Clustering</span></li><li type="disc"><span style="font-size: 12px;">Advanced Classification and Prediction</span></li><li type="disc"><span style="font-size: 12px;">Predictive Modeling Fundamental I</span></li><li type="disc"><span style="font-size: 12px;">Machine Learning – Cluster Analysis</span></li><li type="disc"><span style="font-size: 12px;">Machine Learning – Neural Networks</span></li><li type="disc"><span style="font-size: 12px;">Machine Learning – Regression Analysis</span></li><li type="disc"><span style="font-size: 12px;">Scala for Data Science</span></li></ul></td></tr></tbody></table></div><p><br></p>
+	</div>
+</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+<!--好干部 -->
+
+<!-- 好大学平台 -->
+
+    <div id="inner-footer" class="clearfix">
+        <div class="copyright clearfix">
+				<div class="cr-lang">
+					
+	                    
+	                                                             中国高水平大学慕课联盟官方网站
+	                    
+	                    
+	                
+					<div class="lang-info" lang="zh_CN">
+		                <div class="my-select dk-select lang-select">
+		                    <div class="dk-selected" tabindex="0">
+		                        
+                                    <span class="substr" lang="en_US">English</span>
+		                        
+		                        
+		                    </div>
+		                    <ul class="dk-select-options">
+		                        <li class="dk-option lang_option" lang="zh_CN">
+		                            <span class="substr">简体中文</span>
+		                        </li>
+		                        <li class="dk-option lang_option" lang="en_US">
+		                            <span class="substr">English</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </div>
+				 </div>
+				<p>&copy; 版权所有 2015 上海交通大学慕课研究院</p>
+                <p>&nbsp;技术支持：<a href="javascript:;" target="_blank" class="links-text">江苏知途教育科技有限公司</a></p>
+				<p class="parnter-para">战略合作：
+                    <a href="javascript:;" target="_blank" class="partner-link baidu"></a>
+                    
+                    <a href="javascript:;" target="_blank" class="partner-link zhitu"></a>
+                </p>
+                <p><a href="javascript:;" class="links-text" target="_blank">沪ICP备06018291号-18</a> <img src="static/picture/beian20.png" class="beian"><a href="javascript:;" class="links-text" target="_blank">沪公安网备31009102000063</a></p>
+		</div>
+
+		<div class="contact-box">
+			<div class="input-group">
+				客服电话：4008296199<br>（周一到周五9:00至17:00）
+			</div>
+		    <div class="input-group">
+				QQ 客服：<a class="btn-icon btn-contact" title="在线咨询" href="javascript:;"><i class="icon-wechat icon-btn"></i>2782661530</a>
+			</div>
+			<div class="input-group input-wechat">
+				关注微信：<a href="javascript:void(0)" class="btn-icon btn-contact"><img src="static/picture/7.jpg" class="wechat-img"><i class="icon-qq icon-btn"></i>sjtucnmooc</a>
+			</div>
+		</div>
+
+        <div class="links">
+	            <dl class="links-list">
+	                <dt>
+	                    <span>联盟</span>
+	                </dt>
+	                <dd class="links-item">
+	                    <a class="links-text" href="moocService.html">服务条款</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="about.html">关于我们</a>
+	                </dd>
+	                <dd class="links-item">
+	                    <a class="links-text" href="contact.html">联系我们</a>
+	                </dd>
+	            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>帮助</span>
+                </dt>
+                 <dd class="links-item">
+                    <a class="links-text" href="defaultmenu.html">常见问题</a>
+                </dd>
+                <dd class="links-item">
+                    <a class="links-text" href="defaultmenu1.html">学生手册</a>
+                </dd>
+                <!-- 证书查询(好大学) -->
+					<dd class="links-item">
+						<a href="searchCert.html" class="links-text">证书查询</a>
+					</dd>
+            </dl>
+            <dl class="links-list">
+                <dt>
+                    <span>更多</span>
+                </dt>
+                <!-- 通知通告 -->
+                <dd class="links-item">
+                 	<a class="links-text" href="show-1.html">通知通告</a>
+                </dd>
+                <!-- 新闻动态 -->
+                <dd class="links-item">
+                    <a class="links-text" href="show-11.html">新闻动态</a>
+                </dd>
+                <!-- 媒体报道 -->
+              	<dd class="links-item">
+                    <a class="links-text" href="media-1.html">媒体报道</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+<!-- 联盟 -->
+
+<!-- spoc -->
+
+</div>
+<input type="hidden" id="isGuest" value="true">
+<input type="hidden" id="loginAccountFlag" value="">
+<input type="hidden" id="passwordType" value="">
+
+<div id="checkUserPassword"></div>
+<!-- 弹出重新登陆框 -->
+<div id="reLoginDialog"></div>
+
+
+    
+    
+        <div class="fix-contact-us">
+            <div class="view-left">联系客服</div>
+            <div class="view-right">
+                <ul class="contact-list">
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/tel.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>客服电话：</dt>
+                            <dd class="phone-number">4008296199</dd>
+                            <dd><i>周一到周五9:00至17:00</i></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/floatqq.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>在线QQ：</dt>
+                            <dd><a href="javascript:;" class="link-action">2782661530
+                            </a></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/weixin.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>官方微信：</dt>
+                            <dd class="wx-qcode"><img src="static/picture/7.jpg" alt=""></dd>
+                        </dl>
+                    </li>
+                    <li style="padding:10px 0;">
+						<span class="cl-img">
+							<img src="static/picture/icon-sub01.png" alt="">
+						</span>
+                        <dl class="cl-txt">
+                            <dt>查看手册：</dt>
+                            <dd><a href="defaultmenu1.html" class="link-action">学习手册</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+<div class="dialog dialog-check-email ui-dialog-public ui-dialog-form">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-e-point"></i>经检测，当前账号未设置邮箱，请设置邮箱</span>
+        </div>
+        <p class="public-tip"><i class="icon-tip"></i> 添加邮箱之后即可用邮箱登录！</p>
+        <p class="public-tip"><i class="icon-tip"></i> 忘记密码时，只能通过邮箱找回！</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="dialog ui-dialog-public ui-dialog-form dialog-email-add">
+    <div class="dialog-form-list">
+        <div class="input-group">
+            <span class="print-text print-tip"><i class="icon-right"></i>添加邮箱</span>
+        </div>
+        <p class="public-tip" style="padding-left:20px;"><i class="icon-tip"></i>请您添加邮箱，否则就无法进行其他操作！</p>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        var url=window.location.href;
+        var userEmailStatus = null;
+        var isTh = true;
+        if(userEmailStatus == false  && url.indexOf("setting.mooc") == -1){
+            $.dialog({
+                title:"提示",
+                content:$(".dialog-email-add")[0],
+                lock:true,
+                ok:function(){
+                    window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                },
+                okValue:'去添加',
+                cancel:false,
+                cancelValue:"关闭",
+                width:650
+            })
+        }else{
+            $(".dialog-pwd-edit").remove();
+        }
+
+    })
+
+</script>
+
+<script type="text/javascript">
+function importIntroJs(cookieName){
+    var needFlag=true;
+    var val=getCookie(cookieName);
+    if (val==null&&needFlag&&navigator.userAgent.indexOf("MSIE 8.0") < 0){
+        var tour = introJs();
+        tour.setOption('nextLabel', '下一步');
+        tour.setOption('prevLabel', '上一步');
+        tour.setOption('skipLabel', '跳过');
+        tour.setOption('doneLabel', '知道了');
+        tour.setOption('tooltipPosition', 'auto');
+        tour.setOption('positionPrecedence', ['left', 'right', 'right', 'top']);
+        tour.start();
+        tour.onexit(function () {
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+        tour.oncomplete(function(){
+            setCookie(cookieName,'true');
+            /*if(cookieName.indexOf("cookieForMyCourseInro")!=-1){
+                bindAccountDialog("cookieBindAccountDialog_-1");
+            }*/
+        });
+    }
+}
+/*function bindAccountDialog(cookieName){
+    var isBindDialog =  false;
+    var val = getCookie("cookieBindAccountDialog_-1");
+    if(isBindDialog && val==null){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-bind-account")[0],
+            lock:true,
+            button:[{
+                id:'b',
+                value:"否，为本账号添加邮箱",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=false";
+                    setCookie(cookieName,'true');
+                },
+                focus: true
+            },{
+                id:'a',
+                value:"是，去绑定已有邮箱账号",
+                callback:function(){
+                    window.location.href = "/portal/setting.mooc?isTh=true";
+                    setCookie(cookieName,'true');
+                },
+                focus: false
+            }],
+            cancel:false
+        });
+    }
+}*/
+
+function checkEmailBind(){
+    var checkEmail = false;
+    var isTh = false;
+    if(checkEmail){
+        $.dialog({
+            title:"提示",
+            width:"500px",
+            content:$(".dialog-check-email")[0],
+            lock:true,
+            okValue:"去添加邮箱",
+            cancelValue:"取消",
+            ok:function () {
+                window.location.href = "/portal/setting.mooc?isTh="+encodeURIComponent(encodeURIComponent(isTh));
+                $("#emailSet").trigger("click");
+            },
+            cancel:function () {
+                $.dialog.close();
+            }
+        })
+    }
+}
+$(function () {
+    if (false){
+        var iknown = false;
+        
+        if (iknown||(getCookie("SJFXS_LIVE")&&getCookie("SJFXS_LIVE")=='1')){
+
+        } else {
+            var dialog=$.dialog({
+                skin:'dialog-simple',
+                title:"提示",
+                lock:true,
+                content:$(".dialog-countdown")[0]
+            })
+
+            $(".has-show .input-cr").on("click",function(){
+                $(this).find(".input-c").toggleClass("selected")
+            })
+            $(".i-know").on("click",function(){
+                dialog.close();
+                var showAgain = 1;
+                if ($(".not-show-again i.selected").length>0){
+                    setCookie("SJFXS_LIVE", "1");
+                    showAgain = 0;
+                }
+                $.ajax({
+                    type:"post",
+                    url:CONTEXTPATH+"/home/ikown.mooc",
+                    data:{
+                        showAgain:showAgain
+                    },
+                    dataType:"json",
+                    success:function(result){
+
+                    }
+                });
+            })
+        }
+    }
+
+     var isGuest = $("#isGuest").val();
+     var loginAccountFlag = $("#loginAccountFlag").val();
+     var passwordType=$("#passwordType").val();
+     if ((passwordType==null ||(passwordType!=null && passwordType!=1))&&isGuest == 'false' && loginAccountFlag == '1') { //登录并设置了下次提醒。
+         $("#checkUserPassword").load(CONTEXTPATH + "/home/noneUserPassword.mooc", {"setLoginFlag": 1}, function () {
+             $.dialog({
+                 title: Msg.get("mooc.dialog.tip"),
+                 content: $("#checkUserPassword .dialog")[0],
+                 width: "600px",
+                 lock: true
+             });
+         });
+     }
+
+     //获取语言
+     $(".lang_option").click(function(){
+        var lang = $(this).attr("lang");
+        if (!lang) return;
+        var currLang = $(".lang-info").attr("lang");
+        if (currLang == lang) return;
+        $.ajax({
+            type:'post',
+            data:{
+                lang:lang
+            },
+            url:CONTEXTPATH+"/home/setLanguage.mooc",
+            success:function(result){
+                if (result.returnCode=="success"){
+                    location.reload();
+                }
+            }
+        })
+    })
+
+})
+</script>
+
+<script src="static/js/plugins.min.js" type="text/javascript"></script>
+<script src="static/js/swiper.min.js" type="text/javascript"></script>
+<script src="static/js/jquery.slides.min.js" type="text/javascript"></script>
+<!--[if lt IE 10]>
+<script src="static/js/PIE.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if !IE 9]>
+<style>
+    .view-shadow {
+        filter: alpha(opacity=50);
+        background-color: #000;
+    }
+
+    .mooc-item:hover {
+        filter: alpha(opacity=80);
+        background-color: #f2f6f6;
+    }
+
+    .search-nav {
+        background-color: #b2b2b2;
+        filter: alpha(opacity=80);
+    }
+</style>
+<![endif]-->
+<script src="static/js/core.min.js" type="text/javascript"></script>
+<script src="static/js/uploader.min.js" type="text/javascript"></script>
+<script src="static/js/plugins2.min.js" type="text/javascript"></script>
+<script src="static/js/plugins3.min.js" type="text/javascript"></script>
+<script src="static/js/editor.min.js" type="text/javascript"></script>
+
+    
+        <script src="static/js/zh-cn.js" type="text/javascript"></script>
+    
+    
+
+<div id="dialog_home" style="display: none"></div>
+<script src="static/js/factory.min.js" type="text/javascript"></script>
+
+<script src="static/js/clipboard.js" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+        try {
+            MathJax.Hub.Config({
+                showMathMenu:false,
+                tex2jax: {inlineMath: [["$MathJax","$MathJax"]], displayMath: [["&&MathJax","&&MathJax"]]}
+            });
+        } catch (e) {
+            console.info(e);
+        }
+</script>
+<script src="static/js/MathJax-TeX-AMS-MML_HTMLorMML.js" type="text/javascript"></script>
+
+</body>
+</html>
